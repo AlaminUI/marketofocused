@@ -1,0 +1,43 @@
+<html>
+<head>
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.min.js"></script>
+    <script type='text/javascript' src='http://davidlynch.org/projects/maphilight/jquery.maphilight.js'></script>
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $('.map').maphilight({ alwaysOn: true });
+            // uncomment this line for normal hover highlighting
+            // $('.map').maphilight();
+
+            // $(".map").trigger('alwaysOn.maphilight').find('area[coords]')
+            // .bind('click.maphilight', mouseover)
+            // .bind('mouseout.maphilight', function(e) { clear_canvas(canvas); });
+
+        });   
+
+        $('.mianchor').click(function(e) {
+        e.preventDefault();
+        var colorx = $(this).attr('title');
+        var data = {};
+        data.alwaysOn = !data.alwaysOn;
+        data.stroke = 'none';
+        data.strokeWidth = 0.0000001;
+        data.strokeColor = colorx;
+        data.fillColor = colorx; // Sample color
+        data.fillOpacity = 1;
+        $('#mapa').data('maphilight', data).trigger('alwaysOn.maphilight');         
+    });
+    </script>
+</head>
+<body>
+    <img class="map" title="Knight Campus, Warwick - Third Floor" src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6b/Big_Sur_June_2008.jpg/1024px-Big_Sur_June_2008.jpg" alt="Knight Campus, Warwick - Third Floor" usemap="#simple" />
+    <map name="simple">
+      <area href="#" data-state="VT" data-full="Vermont" shape="rect" coords="377,34,407,43" />
+      <area href="#" data-state="MA" data-full="Massachusetts" shape="rect" coords="358,47,406,56">
+      <area shape="poly" coords="211,3,121,67,112,53,95,103,146,108,136,92,229,25" href="#" alt="arrow">
+      <area shape="poly" coords="78,83,70,100,52,104,64,115,61,133,78,124,94,133,91,116,104,102,87,101,79,88" href="#" alt="star">
+      <area shape="poly" coords="248,126,222,150,202,122,233,105,239,118,249,125,250,128" href="#" alt="a square">
+      <area shape="poly" coords="151,249,175,225,182,222,167,193,136,221,153,250" href="#" alt="another square">
+      <area shape="rect" coords="250,250,290,290" href="#" alt="Shadow for some">
+    </map>
+</body>
+</html>

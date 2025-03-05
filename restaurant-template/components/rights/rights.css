@@ -1,0 +1,35 @@
+.rights {#A7443D
+	font-family: "Cabin Condensed", sans-serif;
+	font-size: 17px;
+	font-weight: 400;
+	letter-spacing: normal;
+}
+
+.rights-logo {
+	display: block;
+}
+
+.rights-text {
+	display: block;
+}
+
+.rights-link {
+	font-weight: 400;
+	color: inherit;
+}
+
+.rights-link:hover {
+	color: #e0807c;
+}
+
+@media (min-width: 576px) {
+	.rights-logo {
+		display: inline-block;
+		vertical-align: bottom;
+		margin-bottom: -0.125rem;
+		margin-right: 1.125rem;
+	}
+	.rights-text {
+		display: inline;
+	}
+}

@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+    <title>Document</title>
+    <style>
+        .form {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin: 40px 0px;
+}
+    </style>
+</head>
+<body>
+    
+    <div class="form">
+        <form id="mktoForm_1319"></form>
+    </div>
+ 
+
+
+    <script src="//info.preplanafuneral.com/js/forms2/js/forms2.min.js"></script>
+    
+      <script>MktoForms2.loadForm("//info.preplanafuneral.com", "852-LNK-689", 1319);</script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.0.0/jquery.min.js"></script>
+   
+
+
+      <script>
+//          function setCookie(cname, cvalue, exdays) {
+//   const d = new Date();
+//   d.setTime(d.getTime() + (exdays*24*60*60*1000));
+//   let expires = "expires="+ d.toUTCString();
+//   document.cookie = cname + "=" + cvalue + ";" + expires + ";path=/";
+// }
+
+MktoForms2.whenReady(function(form){
+ 
+  document.querySelector("button").addEventListener("click",function(e) {
+      
+
+// Assuming you have an array of values like this
+const quizValues = [
+     form.getValues().leadQuizContacts,
+     form.getValues().leadQuizEmploymentHistory,
+     form.getValues().leadQuizInsurancePolicies,
+     form.getValues().leadQuizPersonalPreferences,
+     form.getValues().leadQuizTaxRecords,
+     form.getValues().leadQuizWill,
+     form.getValues().leadQuiz_FuneralOptions,
+     form.getValues().leadQuiz_MedicalRecords,
+     form.getValues().leadQuiz_MilitaryRecords,
+     form.getValues().leadQuiz_Propertyassetsdebt,
+     form.getValues().leadQuiz_VitalStats,
+];
+
+// Count the number of "Yes" values
+const yesCount = quizValues.filter(value => value === 'Yes').length;
+ 
+ 
+switch (yesCount) {
+    case 11:
+        window.location.href = 'https://info.preplanafuneral.com/Quiz--Thank-you-100.html';
+        break;
+    case 10:
+        window.location.href = 'https://info.preplanafuneral.com/Quiz--Thank-you-91.html';
+        break;
+    case 9:
+        window.location.href = 'https://info.preplanafuneral.com/Quiz--Thank-you-82.html';
+        break;
+    case 8:
+        window.location.href = 'https://info.preplanafuneral.com/Quiz--Thank-you-73.html';
+        break;
+    case 7:
+        window.location.href = 'https://info.preplanafuneral.com/Quiz--Thank-you-64.html';
+        break;
+    case 6:
+        window.location.href = 'https://info.preplanafuneral.com/Quiz--Thank-you-55.html';
+        break;
+    case 5:
+        window.location.href = 'https://info.preplanafuneral.com/Quiz--Thank-you-45.html';
+        break;
+    case 4:
+        window.location.href = 'https://info.preplanafuneral.com/Quiz--Thank-you-36.html';
+        break;
+    case 3:
+        window.location.href = 'https://info.preplanafuneral.com/Quiz--Thank-you-27.html';
+        break;
+    case 2:
+        window.location.href = 'https://info.preplanafuneral.com/Quiz--Thank-you-18.html';
+        break;
+    case 1:
+        window.location.href = 'https://info.preplanafuneral.com/Quiz--Thank-you-9.html';
+        break;
+    case 0:
+        window.location.href = 'https://info.preplanafuneral.com/Quiz--Thank-you-0.html';
+        break;
+    default:
+        // Handle unexpected values or add additional cases as needed
+        break;
+}
+ 
+      
+   })
+
+
+ form.onSuccess(function(vals,formLevelTyURL){
+  
+//    location.href = 'https://info.preplanafuneral.com/Survey-thankyou.html?client_code='+ querys;
+ console.log("success");
+   return false;
+ 
+ });
+ 
+ });
+
+ 
+      </script>
+
+      
+</body>
+</html>

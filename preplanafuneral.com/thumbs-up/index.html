@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Landing Page</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    
+    <style>
+        *{
+            padding:0;
+            margin:0;
+            box-sizing: border-box;
+        }
+
+
+        body{
+            padding:0px;
+            margin:0px;
+            font-family: Helvetica, Arial !important;
+            background: #2F5383;
+            padding: 0px 15px;
+            color:#21354D;
+            border: 2px solid #fff;
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+.container {
+    max-width: 970px;
+    padding: 0px 15px;
+    margin: 0 auto;
+    height: 100%;
+}
+
+ 
+ 
+.review-wrap {
+    max-width: 1180px;
+    margin: 0 auto;
+    padding: 72px 24px;
+    background: #fff;
+    margin-top: 32px;
+    margin-bottom: 32px;
+    border-radius: 4px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+}
+
+.review-links a img {
+    width: 100%;
+    max-width: 220px;
+}
+
+.review-links {
+    display: flex;
+    align-items: center;
+    gap: 24px;
+    justify-content: center;
+    margin-top: 40px;
+}
+
+.review-wrap-inner {
+    text-align: center;
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+.review-wrap-inner h2 {
+    font-size: 36px;
+    line-height: 1.3;
+    margin-bottom: 8px;
+}
+
+.review-wrap-inner p {
+    font-size: 20px;
+    line-height: 1.5;
+}
+.section-title {
+    text-align: center;
+}
+
+.section-title img {
+    max-width: 220px;
+    width: 100%;
+}
+.logo img {
+    max-width: 200px;
+    width: 100%;
+    margin-bottom: 50px;
+}
+.review-flex {
+    display: flex;
+    align-items: center;
+}
+.thumbs-section {
+    background: #fff;
+    width: 100%;
+    max-width: 900px;
+    padding: 48px 0px;
+    border-radius: 4px;
+}
+
+.thumbs-wrap {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 24px;
+}
+.heading h1 {
+    text-align: center;
+    font-size: 20px;
+}
+
+.heading {
+    padding-top: 40px;
+}
+.thumbs-wrap a img {
+    width: 100%;
+    max-width: 170px;
+}
+@media (max-width:767px) {
+    .review-links a img {
+    width: 100%;
+    max-width: 132px;
+}
+.review-wrap-inner h2 {
+    font-size: 30px;
+     
+}
+.review-wrap-inner p {
+    font-size: 17px;
+    line-height: 1.4;
+}
+.review-wrap {
+ 
+    padding: 24px 16px;
+   
+}
+.logo img {
+    max-width: 160px;
+    width: 100%;
+    margin-bottom: 32px;
+}
+.thumbs-wrap a img {
+    width: 100%;
+    max-width: 120px;
+}
+.section-title img {
+    max-width: 250px;
+    width: 100%;
+}
+.thumbs-section {
+ 
+    padding: 32px 0px;
+     
+}
+}
+    </style>
+</head>
+<body>
+ 
+
+
+<div class="thumbs-section">
+    <div class="container">
+        <div class="section-title">
+            <img id="logo" src="" alt="logo">
+        </div>
+        <div class="heading">
+            <h1>Let us know how we're doing?            </h1>
+        </div>
+        <div class="thumbs-wrap">
+            <a href="" id="thumbs-up"><img src="thumbs-up.png" alt="thumbs-up"></a>
+            <a href="" id="thumbs-down"><img src="thumbs-down.png" alt="thumbs-down"></a>
+        </div>
+    </div>
+</div>
+
+
+
+ 
+
+ 
+
+
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.0.0/jquery.min.js"></script>
+
+ 
+<script src="../data.js"></script>
+<script>
+ 
+
+ 
+
+    var query = window.location.search.match(/client_code=([^&]*)/i)[1];
+
+    
+ 
+    var ReviewData=[]
+         
+    listing_data.forEach(function(d) {
+       
+        ReviewData.push({
+          Parameter:  d['URL Param'] ,
+          FacebookReview:  d['Final FB Reviews URL'] ,
+          GoogleReview:  d['Google Review URL'] ,
+          CompanyLogo:  d['Funeral Home Logos URL'] 
+    });
+    
+    });
+    
+     
+    
+    for(let a=0; a<ReviewData.length; a++){
+        if(ReviewData[a].Parameter == query){
+            document.getElementById('thumbs-up').href= 'https://marketofocused.netlify.app/preplanafuneral.com?client_code='+  ReviewData[a].Parameter;
+            document.getElementById('thumbs-down').href= 'https://marketofocused.netlify.app/preplanafuneral.com/form?client_code='+  ReviewData[a].Parameter;
+            document.getElementById('logo').src=ReviewData[a].CompanyLogo;
+        } 
+       
+    }
+    
+    </script>
+ 
+
+</body>
+</html>

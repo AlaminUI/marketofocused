@@ -1,0 +1,585 @@
+
+<!doctype html><html lang="en"><head>
+    <meta charset="utf-8">
+    <title>Deduce Email Services</title>
+    <!-- Le HTML5 shim, for IE6-8 support of HTML elements -->
+    <!--[if lt IE 9]>
+        <script src="//html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+    
+    <style type="text/css">
+        .widget-type-email_subscriptions .cell-wrapper,
+        .widget-type-email_subscriptions_confirmation .cell-wrapper,
+        .widget-type-email_simple_subscription .cell-wrapper {
+            margin-bottom: 0px;
+        }
+        .widget-type-email_subscriptions p,
+        .widget-type-email_subscriptions h1,
+        .widget-type-email_subscriptions h2,
+        .widget-type-email_subscriptions_confirmation p,
+        .widget-type-email_subscriptions_confirmation h1,
+        .widget-type-email_subscriptions_confirmation h2,
+        .widget-type-email_simple_subscription p,
+        .widget-type-email_simple_subscription h1,
+        .widget-type-email_simple_subscription h2 {
+            font-weight: normal;
+            font-size: 20px;
+            line-height: 25px;
+            margin: 1px 0px 4px;
+        }
+        html body .page-header {
+            margin: 0px;
+            padding-bottom: 1em;
+        }
+        .widget-type-email_subscriptions p,
+        .widget-type-email_subscriptions_confirmation p,
+        .widget-type-email_simple_subscription p {
+            font-size: 14px;
+        }
+        .widget-type-email_subscriptions h2,
+        .widget-type-email_subscriptions_confirmation h2,
+        .widget-type-email_simple_subscription h2 {
+            font-size: 14px;
+        }
+        .email-prefs .item {
+               -moz-user-select: none;
+            -webkit-user-select: none;
+                 -o-user-select: none;
+                    user-select: none;
+            padding-bottom: 1px;
+            position: relative;
+            margin:20px 0px;
+            cursor: pointer;
+            cursor: hand;
+        }
+        label {
+            cursor: pointer;
+            cursor: hand;
+        }
+        .email-prefs .item.disabled {
+            opacity: 0.6;
+            cursor: not-allowed;
+        }
+        .email-prefs .item .item-inner * {
+            color: #444;
+        }
+        .email-prefs .item .item-inner {
+               -moz-user-select: none;
+            -webkit-user-select: none;
+                 -o-user-select: none;
+                    user-select: none;
+            -webkit-border-radius: 8px;
+               -moz-border-radius: 8px;
+                    border-radius: 8px;
+            -moz-transition-property: background;
+            -webkit-transition-property: background;
+            -o-transition-property: background;
+            transition-property: background;
+            -moz-transition-duration: 0.15s;
+            -webkit-transition-duration: 0.15s;
+            -o-transition-duration: 0.15s;
+            transition-duration: 0.15s;
+            -moz-transition-timing-function: linear;
+            -webkit-transition-timing-function: linear;
+            -o-transition-timing-function: linear;
+            transition-timing-function: linear;
+            border: 1px solid #E4E4E4;
+            overflow: hidden;
+            margin-top: 0;
+            padding: 15px;
+            background: #f7f7f7;
+        }
+        .email-prefs .item .item-inner.hovered {
+            -moz-box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.1);
+            -webkit-box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.1);
+            -o-box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.1);
+            box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.1);
+        }
+        .email-prefs .item .item-inner.highlighted-subscription {
+            background: #fff1ee;
+        }
+        .email-prefs .item .item-inner.highlighted-subscription.selected {
+            background: #fff1ee;
+        }
+        .email-prefs .item .item-inner.selected {
+            background: #f0f7fc;
+            border: 1px solid #e0e7ec;
+        }
+        .email-prefs .item.disabled .item-inner.hovered {
+            -moz-box-shadow: none;
+            -webkit-box-shadow: none;
+            -o-box-shadow: none;
+            box-shadow: none;
+        }
+        .checkbox-row {
+            margin-top:0;
+            overflow:hidden;
+        }
+        .checkbox-row span.fakelabel {
+               -moz-user-select: none;
+            -webkit-user-select: none;
+                 -o-user-select: none;
+                    user-select: none;
+            text-transform: normal;
+            vertical-align: middle;
+        }
+        .checkbox-row input {
+            vertical-align: middle;
+            margin:0;
+            padding:0;
+            float:left;
+        }
+        @media screen and (-webkit-min-device-pixel-ratio:0) {
+            .checkbox-row input {
+                position: relative;
+                top: 3px;
+            }
+        }
+        p.header {
+            margin-left: 7px;
+        }
+        .checkbox-row span.fakelabel span {
+            float: left;
+            font-weight: bold;
+            margin-left: 7px;
+            vertical-align: top;
+        }
+        .email-prefs .item p {
+            clear: both;
+            margin: 5px 20px 0px;
+        }
+        .email-prefs .thumbnail {
+            bottom: 1px;
+            position: absolute;
+            right: 6px;
+        }
+        .email-prefs .thumbnail.float-top {
+            top: 7px;
+        }
+        .subscribe-options {
+            margin-bottom: 12px;
+            overflow: hidden;
+        }
+        .subscribe-options label {
+            font-size:13px;
+            margin-left:16px;
+            margin-right:16px;
+        }
+        .subscribe-options label span {
+            font-weight: normal;
+            margin-left: 3px;
+            font-size: 14px;
+            font-weight: bold;
+        }
+        #submitbutton {
+            margin-bottom: 0px;
+        }
+        #email-prefs-form {
+            margin-bottom: 0px;
+        }
+        html body input.hs-input.email-edit {
+            font-size: 20px;
+            line-height: 25px;
+            margin: 0px 0px 2px -6px;
+            width: 450px;
+        }
+    </style>
+    <!-- The style tag has been deprecated. Attached stylesheets are included in the required_head_tags page variable. -->
+    
+
+
+<meta property="og:description" content="">
+<meta property="og:title" content="">
+<meta name="twitter:description" content="">
+<meta name="twitter:title" content="">
+
+
+
+
+<style>
+a.cta_button{-moz-box-sizing:content-box !important;-webkit-box-sizing:content-box !important;box-sizing:content-box !important;vertical-align:middle}.hs-breadcrumb-menu{list-style-type:none;margin:0px 0px 0px 0px;padding:0px 0px 0px 0px}.hs-breadcrumb-menu-item{float:left;padding:10px 0px 10px 10px}.hs-breadcrumb-menu-divider:before{content:'›';padding-left:10px}.hs-featured-image-link{border:0}.hs-featured-image{float:right;margin:0 0 20px 20px;max-width:50%}@media (max-width: 568px){.hs-featured-image{float:none;margin:0;width:100%;max-width:100%}}.hs-screen-reader-text{clip:rect(1px, 1px, 1px, 1px);height:1px;overflow:hidden;position:absolute !important;width:1px}
+</style>
+
+
+
+
+<link rel="canonical" href="https://lp.deducesecurity.com/7dea362b-3fac-3e00-956a-4952a3d4f474">
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<meta property="og:url" content="https://lp.deducesecurity.com/7dea362b-3fac-3e00-956a-4952a3d4f474">
+<script>var hsVars = { app_hs_base_url: 'https://app.hubspot.com' };</script>
+
+<meta name="twitter:card" content="summary">
+<link rel="stylesheet" href="//cdn2.hubspot.net/hub/7052064/hub_generated/template_assets/1639689277720/hubspot/hubspot_default/shared/responsive/layout.min.css">
+
+
+
+
+
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap');
+.header-container-wrapper {
+ position: relative;
+}
+body{
+ font-family: 'Roboto', sans-serif;
+}
+.page-header h1 {
+font-family: 'Roboto', sans-serif;
+position: absolute;
+top: 51px;
+left: 246px;
+color: #e8317b;
+font-size: 24px;
+padding-left: 15px;
+margin-left: 16px;
+border-left: 2px solid #e8317b;
+line-height: 37px;
+}
+span#hs_cos_wrapper_logo img {
+ width: 100%;
+ max-width: 200px;
+}
+form#email-prefs-form .page-header h2 {
+font-size: 18px;
+background: #f7f7f7;
+padding: 14px 36px;
+border-radius: 11px;
+margin-top: 40px;
+border: 1px solid #e9e9e9;
+}
+.cell-wrapper.layout-widget-wrapper {
+ max-width: 545px;
+}
+.header-container-wrapper {
+padding-top: 48px;
+padding-left: 36px;
+}
+
+.body-container-wrapper {
+padding-left: 36px;
+padding-bottom: 16px;
+}
+p.header {font-size: 18px;margin-left: 0;margin-bottom: 0;}
+
+.email-prefs .item .item-inner {background: transparent;border: 0px;margin-left: 16px;padding: 8px 16px;padding-top: 0;}
+
+.checkbox-row span.fakelabel span {
+font-size: 18px;
+font-weight: 500;
+position: relative;
+padding-left: 32px;
+margin-bottom:2px;
+}
+.email-prefs .item .item-inner span.fakelabel span:after {
+width: 16px;
+height: 16px;
+position: absolute;
+left: 0;
+top: 5px;
+content: "";
+border: 1px solid #e8317b;
+border-radius: 2px;
+}
+
+.email-prefs .item .item-inner.selected  span.fakelabel span:before {
+content: '';
+display: block;
+position: absolute;
+top: 5px;
+left: 6px;
+width: 5px;
+height: 10px;
+border: solid  #e8317b;
+border-width: 0 2px 2px 0;
+transform: rotate(45deg);
+}
+
+
+.subscribe-options label{
+position:relative;
+}
+
+ 
+
+.subscribe-options label:after{
+    width: 16px;
+    height: 16px;
+    position: absolute;
+    left: 12px;
+    top: 5px;
+    content: "";
+    border: 1px solid #e8317b;
+    border-radius: 2px;
+}
+.subscribe-options input[type="checkbox"]:checked + label:before{
+    content: '';
+display: block;
+position: absolute;
+top: 5px;
+left: 6px;
+width: 5px;
+height: 10px;
+border: solid  #e8317b;
+border-width: 0 2px 2px 0;
+transform: rotate(45deg);
+}
+
+.subscribe-options  input {
+  position: absolute;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  width: 5em;
+  height: 1.5em;
+   
+  outline: 0;
+}
+ 
+.subscribe-options  input[type="checkbox"]:checked {
+    content: '';
+    display: block;
+    position: absolute;
+    top: 3px;
+    left: 13px;
+    width: 8px;
+    height: 13px;
+ 
+    border: solid  #e8317b;
+    border-width: 0 2px 2px 0;
+    transform: rotate(45deg);
+}
+ 
+
+.item-inner.hovered{
+box-shadow:none !important; 
+}
+.checkbox-row span.fakelabel input {
+display: none;
+}
+.email-prefs .item p {
+font-size: 16px;
+padding-left:21px;
+}
+
+.subscribe-options label {
+margin-left: 28px;
+margin-top: 24px;
+display: block;
+}
+
+.subscribe-options label span {font-size: 16px;font-weight: 400;padding-left: 40px;}
+
+#submitbutton {background: #e8317b;padding: 13px 16px;border-radius: 8px;border: 0px;color: #fff;font-weight: 500;font-family: 'Roboto';font-size: 18px;margin-top: 19px;cursor: pointer;}
+footer {
+padding-left: 34px;
+margin-top: 24px;
+padding-bottom:24px;
+}
+
+footer span {
+font-size: 13px;
+}
+.email-prefs .item .item-inner.selected {
+background: transparent;
+border: 0px;
+box-shadow: none;
+}
+
+@media (max-width:600px) {
+    .body-container-wrapper {
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.header-container-wrapper {
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.page-header h1 {
+    font-size: 17px;
+    left: 164px;
+    padding-left: 8px;
+    margin-left: 8px;
+    line-height: 1.6;
+    top: 52px;
+}
+
+span#hs_cos_wrapper_logo img {
+    max-width: 140px;
+}
+
+.email-prefs .item .item-inner {
+    margin-left: 0px;
+}
+
+.subscribe-options label {
+    margin-left: 17px;
+}
+}
+</style>
+
+
+<meta name="generator" content="HubSpot"></head>
+<body class="   hs-content-id-1 hs-landing-page hs-page " style="">
+    <div class="header-container-wrapper">
+<div class="header-container container-fluid">
+
+<div class="row-fluid-wrapper row-depth-1 row-number-1 ">
+<div class="row-fluid ">
+<div class="span12 widget-span widget-type-logo " style="" data-widget-type="logo" data-x="0" data-w="12">
+<div class="cell-wrapper layout-widget-wrapper">
+<span id="hs_cos_wrapper_logo" class="hs_cos_wrapper hs_cos_wrapper_widget hs_cos_wrapper_type_logo" style="" data-hs-cos-general-type="widget" data-hs-cos-type="logo"><a href="https://www.deduce.com/assets/images/logo.svg" id="hs-link-logo" style="border-width:0px;border:0px;"><img src="https://f.hubspotusercontent20.net/hubfs/8249770/logo.svg" class="hs-image-widget " style="width:400px;border-width:0px;border:0px;" width="400" alt="logo" title="logo"></a></span></div><!--end layout-widget-wrapper -->
+</div><!--end widget-span -->
+</div><!--end row-->
+</div><!--end row-wrapper -->
+
+</div><!--end header -->
+</div><!--end header wrapper -->
+
+<div class="body-container-wrapper">
+<div class="body-container container-fluid">
+
+<div class="row-fluid-wrapper row-depth-1 row-number-1 ">
+<div class="row-fluid ">
+<div class="span12 widget-span widget-type-email_subscriptions " style="" data-widget-type="email_subscriptions" data-x="0" data-w="12">
+<div class="cell-wrapper layout-widget-wrapper">
+<span id="hs_cos_wrapper_email_subscriptions" class="hs_cos_wrapper hs_cos_wrapper_widget hs_cos_wrapper_type_email_subscriptions" style="" data-hs-cos-general-type="widget" data-hs-cos-type="email_subscriptions">        
+    <form id="email-prefs-form" method="post">
+        <div class="page-header">
+            <h1>Communication Preferences</h1>
+            <h2><a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="3b5e435a564b575e7b5e565a525715585456">[email&#160;protected]</a></h2>
+            <br>
+            <p>
+If this is not your email address, please ignore this page since the email associated with this page was most likely forwarded to you.
+</p>
+        </div>  
+        
+        
+        <div id="content" class="email-prefs">
+            
+
+            <input type="hidden" name="email" value="example@email.com">
+            <input type="hidden" name="unsub_url" value="">
+            <input type="hidden" name="unsubed_all" value="false">
+            
+            
+            
+            
+            
+
+            
+
+              <p class="header">Uncheck the types of emails you do not want to receive:</p>
+              <input type="hidden" name="subscription_ids" value="">
+              
+              
+                  <div class="item">
+                      <div class="item-inner ">
+                          <div class="checkbox-row">
+                              <span class="fakelabel">
+                                  <input id="id_10116733" type="checkbox" name="id_10116733">
+                                  
+                                  
+                                  <span>Marketing Information</span>
+                              </span>
+                          </div>
+                          <p>Marketing offers and updates.</p>
+                      </div>
+                  </div>
+              
+              <script data-cfasync="false" src="https://lp.deducesecurity.com/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script>
+                  window.disabledHsPopups = ['LEADFLOW', 'FEEDBACK'];
+              </script>
+              <div class="subscribe-options" style="margin-right: 0">
+                  <p class="header">Or check here to never receive any emails</p>
+                  <p>
+                      <label for="globalunsub">
+                          <input name="globalunsub" id="globalunsub" type="checkbox">
+                          <span>
+                              No more calls, no more texts - we're breaking up.
+                          </span>
+                      </label>
+                  </p>
+              </div>
+              <input type="submit" class="hs-button primary" id="submitbutton" value="Update communication preferences">
+            
+          <div class="clearer"></div>
+        </div>
+        
+    </form>
+    
+
+</span></div><!--end layout-widget-wrapper -->
+</div><!--end widget-span -->
+</div><!--end row-->
+</div><!--end row-wrapper -->
+
+</div><!--end body -->
+</div><!--end body wrapper -->
+
+<div class="footer-container-wrapper">
+<div class="footer-container container-fluid">
+
+<div class="row-fluid-wrapper row-depth-1 row-number-1 ">
+<div class="row-fluid ">
+<div class="span12 widget-span widget-type-page_footer " style="" data-widget-type="page_footer" data-x="0" data-w="12">
+<div class="cell-wrapper layout-widget-wrapper">
+<span id="hs_cos_wrapper_page_footer" class="hs_cos_wrapper hs_cos_wrapper_widget hs_cos_wrapper_type_page_footer" style="" data-hs-cos-general-type="widget" data-hs-cos-type="page_footer">
+<footer>
+<span class="hs-footer-company-copyright">© 2021 Deduce</span>
+</footer>
+</span></div><!--end layout-widget-wrapper -->
+</div><!--end widget-span -->
+</div><!--end row-->
+</div><!--end row-wrapper -->
+
+</div><!--end footer -->
+</div><!--end footer wrapper -->
+
+    
+
+
+<!-- Start of HubSpot Analytics Code Not Loaded -->
+<script>
+(function(){
+const timeoutEvent = document.createEvent('CustomEvent');
+timeoutEvent.initCustomEvent("content-analytics-code-not-loaded", true, true, { detail: "Not loaded in preview mode" });
+window.dispatchEvent(timeoutEvent);
+})();
+</script>
+<!-- End of HubSpot Analytics Code Not Loaded -->
+
+
+<script type="text/javascript">
+var hsVars = {
+ticks: 1640010602280,
+page_id: 1,
+
+content_group_id: 0,
+portal_id: 8249770,
+app_hs_base_url: "https://app.hubspot.com",
+cp_hs_base_url: "https://cp.hubspot.com",
+language: "en",
+analytics_page_type: "landing-page",
+analytics_page_id: "null",
+category_id: 1,
+folder_id: 0,
+is_hubspot_user: false
+}
+</script>
+
+
+<script defer src="https://static.hsappstatic.net/HubspotToolsMenu/static-1.119/js/index.js"></script>
+
+
+
+
+    <script src="https://lp.deducesecurity.com/hs/hsstatic/SubscriptionPreferences/static-1.1/subscription_preferences_asset.js"></script>
+
+ 
+
+
+</body></html>

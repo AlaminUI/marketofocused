@@ -1,0 +1,349 @@
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap');
+.header-container-wrapper {
+ position: relative;
+}
+body{
+ font-family: 'Roboto', sans-serif;
+}
+.page-header h1 {font-family: 'Roboto', sans-serif;position: absolute;top: 94px;left: 168px;color: #0025ff;font-size: 24px;padding-left: 15px;margin-left: 16px;border-left: 2px solid #0025ff;line-height: 37px;}
+span#hs_cos_wrapper_logo img {
+ width: 100%;
+ max-width: 100px;
+}
+form#email-prefs-form .page-header h2 {
+font-size: 18px;
+background: #f7f7f7;
+padding: 14px 36px;
+border-radius: 11px;
+margin-top: 40px;
+border: 1px solid #e9e9e9;
+}
+.cell-wrapper.layout-widget-wrapper {
+ max-width: 545px;
+}
+.header-container-wrapper {
+padding-top: 48px;
+padding-left: 36px;
+}
+
+.body-container-wrapper {
+padding-left: 36px;
+padding-bottom: 16px;
+}
+p.header {font-size: 18px;margin-left: 0;margin-bottom: 0;}
+
+.email-prefs .item .item-inner {background: transparent;border: 0px;margin-left: 16px;padding: 8px 16px;padding-top: 0;}
+
+.checkbox-row span.fakelabel span {
+font-size: 18px;
+font-weight: 500;
+position: relative;
+padding-left: 32px;
+margin-bottom:2px;
+}
+.email-prefs .item .item-inner span.fakelabel span:after {width: 16px;height: 16px;position: absolute;left: 0;top: 5px;content: "";border: 1px solid #0025ff;border-radius: 2px;}
+
+.email-prefs .item .item-inner.selected  span.fakelabel span:before {content: '';display: block;position: absolute;top: 5px;left: 6px;width: 5px;height: 10px;border: solid  #0025ff;border-width: 0 2px 2px 0;transform: rotate(45deg);}
+
+
+.subscribe-options label{
+position:relative;
+}
+
+ 
+
+.subscribe-options label:after{
+    width: 16px;
+    height: 16px;
+    position: absolute;
+    left: 12px;
+    top: 5px;
+    content: "";
+    border: 1px solid #0025ff;
+    border-radius: 2px;
+}
+.subscribe-options input[type="checkbox"]:checked + label:before{
+    content: '';
+display: block;
+position: absolute;
+top: 5px;
+left: 6px;
+width: 5px;
+height: 10px;
+border: solid  #F44336;
+border-width: 0 2px 2px 0;
+transform: rotate(45deg);
+}
+
+.subscribe-options  input {
+  position: absolute;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  width: 5em;
+  height: 1.5em;
+   
+  outline: 0;
+}
+ 
+.subscribe-options  input[type="checkbox"]:checked {
+    content: '';
+    display: block;
+    position: absolute;
+    top: 3px;
+    left: 13px;
+    width: 8px;
+    height: 13px;
+ 
+    border: solid  #0025ff;
+    border-width: 0 2px 2px 0;
+    transform: rotate(45deg);
+}
+ 
+
+.item-inner.hovered{
+box-shadow:none !important; 
+}
+.checkbox-row span.fakelabel input {
+display: none;
+}
+.email-prefs .item p {
+font-size: 16px;
+padding-left:21px;
+}
+
+.subscribe-options label {
+margin-left: 28px;
+margin-top: 24px;
+display: block;
+}
+
+.subscribe-options label span {font-size: 16px;font-weight: 400;padding-left: 40px;}
+
+#submitbutton {background: #0025ff;padding: 13px 16px;border-radius: 8px;border: 0px;color: #fff;font-weight: 500;font-family: 'Roboto';font-size: 18px;margin-top: 19px;cursor: pointer;}
+footer {
+padding-left: 34px;
+margin-top: 24px;
+padding-bottom:24px;
+}
+
+footer span {
+font-size: 13px;
+}
+.email-prefs .item .item-inner.selected {
+background: transparent;
+border: 0px;
+box-shadow: none;
+}
+
+@media (max-width:600px) {
+    .body-container-wrapper {
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.header-container-wrapper {
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.page-header h1 {
+    font-size: 17px;
+    left: 140px;
+    padding-left: 8px;
+    margin-left: 8px;
+    line-height: 1.6;
+    top: 90px;
+}
+
+span#hs_cos_wrapper_logo img {
+    max-width: 90px;
+}
+
+.email-prefs .item .item-inner {
+    margin-left: 0px;
+}
+
+.subscribe-options label {
+    margin-left: 17px;
+}
+}
+    
+        .widget-type-email_subscriptions .cell-wrapper,
+        .widget-type-email_subscriptions_confirmation .cell-wrapper,
+        .widget-type-email_simple_subscription .cell-wrapper {
+            margin-bottom: 0px;
+        }
+        .widget-type-email_subscriptions p,
+        .widget-type-email_subscriptions h1,
+        .widget-type-email_subscriptions h2,
+        .widget-type-email_subscriptions_confirmation p,
+        .widget-type-email_subscriptions_confirmation h1,
+        .widget-type-email_subscriptions_confirmation h2,
+        .widget-type-email_simple_subscription p,
+        .widget-type-email_simple_subscription h1,
+        .widget-type-email_simple_subscription h2 {
+            font-weight: normal;
+            font-size: 20px;
+            line-height: 25px;
+            margin: 1px 0px 4px;
+        }
+        html body .page-header {
+            margin: 0px;
+            padding-bottom: 1em;
+        }
+        .widget-type-email_subscriptions p,
+        .widget-type-email_subscriptions_confirmation p,
+        .widget-type-email_simple_subscription p {
+            font-size: 14px;
+        }
+        .widget-type-email_subscriptions h2,
+        .widget-type-email_subscriptions_confirmation h2,
+        .widget-type-email_simple_subscription h2 {
+            font-size: 14px;
+        }
+        .email-prefs .item {
+               -moz-user-select: none;
+            -webkit-user-select: none;
+                 -o-user-select: none;
+                    user-select: none;
+            padding-bottom: 1px;
+            position: relative;
+            margin:20px 0px;
+            cursor: pointer;
+            cursor: hand;
+        }
+        label {
+            cursor: pointer;
+            cursor: hand;
+        }
+        .email-prefs .item.disabled {
+            opacity: 0.6;
+            cursor: not-allowed;
+        }
+        .email-prefs .item .item-inner * {
+            color: #444;
+        }
+        .email-prefs .item .item-inner {
+               -moz-user-select: none;
+            -webkit-user-select: none;
+                 -o-user-select: none;
+                    user-select: none;
+            -webkit-border-radius: 8px;
+               -moz-border-radius: 8px;
+                    border-radius: 8px;
+            -moz-transition-property: background;
+            -webkit-transition-property: background;
+            -o-transition-property: background;
+            transition-property: background;
+            -moz-transition-duration: 0.15s;
+            -webkit-transition-duration: 0.15s;
+            -o-transition-duration: 0.15s;
+            transition-duration: 0.15s;
+            -moz-transition-timing-function: linear;
+            -webkit-transition-timing-function: linear;
+            -o-transition-timing-function: linear;
+            transition-timing-function: linear;
+            border: 1px solid #E4E4E4;
+            overflow: hidden;
+            margin-top: 0;
+            padding: 15px;
+            background: #f7f7f7;
+        }
+        .email-prefs .item .item-inner.hovered {
+            -moz-box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.1);
+            -webkit-box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.1);
+            -o-box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.1);
+            box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.1);
+        }
+        .email-prefs .item .item-inner.highlighted-subscription {
+            background: #fff1ee;
+        }
+        .email-prefs .item .item-inner.highlighted-subscription.selected {
+            background: #fff1ee;
+        }
+        .email-prefs .item .item-inner.selected {
+            background: #f0f7fc;
+            border: 1px solid #e0e7ec;
+        }
+        .email-prefs .item.disabled .item-inner.hovered {
+            -moz-box-shadow: none;
+            -webkit-box-shadow: none;
+            -o-box-shadow: none;
+            box-shadow: none;
+        }
+        .checkbox-row {
+            margin-top:0;
+            overflow:hidden;
+        }
+        .checkbox-row span.fakelabel {
+               -moz-user-select: none;
+            -webkit-user-select: none;
+                 -o-user-select: none;
+                    user-select: none;
+            text-transform: normal;
+            vertical-align: middle;
+        }
+        .checkbox-row input {
+            vertical-align: middle;
+            margin:0;
+            padding:0;
+            float:left;
+        }
+        @media screen and (-webkit-min-device-pixel-ratio:0) {
+            .checkbox-row input {
+                position: relative;
+                top: 3px;
+            }
+        }
+        p.header {
+            margin-left: 7px;
+        }
+        .checkbox-row span.fakelabel span {
+            float: left;
+            font-weight: bold;
+            margin-left: 7px;
+            vertical-align: top;
+        }
+        .email-prefs .item p {
+            clear: both;
+            margin: 5px 20px 0px;
+        }
+        .email-prefs .thumbnail {
+            bottom: 1px;
+            position: absolute;
+            right: 6px;
+        }
+        .email-prefs .thumbnail.float-top {
+            top: 7px;
+        }
+        .subscribe-options {
+            margin-bottom: 12px;
+            overflow: hidden;
+        }
+        .subscribe-options label {
+            font-size:13px;
+            margin-left:16px;
+            margin-right:16px;
+        }
+        .subscribe-options label span {
+            font-weight: normal;
+            margin-left: 3px;
+            font-size: 14px;
+            font-weight: bold;
+        }
+        #submitbutton {
+            margin-bottom: 0px;
+        }
+        #email-prefs-form {
+            margin-bottom: 0px;
+        }
+        html body input.hs-input.email-edit {
+            font-size: 20px;
+            line-height: 25px;
+            margin: 0px 0px 2px -6px;
+            width: 450px;
+        }
+    </style>
+    

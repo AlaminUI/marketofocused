@@ -1,0 +1,35 @@
+<%-- link to Kendo documentation http://demos.kendoui.com/web/menu/index.html --%>
+<script type="text/javascript">
+    (function ($) {
+        var whetherToOpenOnClick = true;
+
+        var kendoMenu = $('.navigation').not('.k-menu').kendoMenu({
+            animation: false,
+            openOnClick: whetherToOpenOnClick,
+            open: function (e) {
+                if (window.DataIntelligenceSubmitScript) {
+                    var item = $(e.item);
+
+                    DataIntelligenceSubmitScript._client.sentenceClient.writeSentence({
+                        predicate: "Toggle navigation",
+                        object: item.find("a:first").text(),
+                        objectMetadata: [
+                                                    {
+                                                        'K': 'PageTitle',
+                                                        'V': document.title
+                                                    },
+                                                    {
+                                                        'K': 'PageUrl',
+                                                        'V': location.href
+                                                    }
+                        ]
+                    });
+                }
+            }
+        }).data('kendoMenu');
+
+      //   if (whetherToOpenOnClick && kendoMenu) {
+      //       jQuery(kendoMenu.element).find("li:has(ul) > a").attr("href", "javascript:void(0)");
+       //  }
+    })(jQuery);
+</script>

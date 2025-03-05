@@ -1,0 +1,31 @@
+    <!-- Insert body here -->
+    {% module "email_template_logo" path="@hubspot/logo" label="Logo" %}
+    {% module "email_template_main_email_body" path="@hubspot/email_body" label="Main Email Body" %}
+    <!-- Office location information and unsubscribe links -->
+    <p id="footer">
+      {{ site_settings.company_name }}&nbsp;
+      {{ site_settings.company_street_address_1 }}&nbsp;
+      {{ site_settings.company_street_address_2 }}&nbsp;
+      {{ site_settings.company_city }}&nbsp;
+      {{ site_settings.company_state }}&nbsp;
+      {{ site_settings.company_zip }}&nbsp;
+      {{ site_settings.company_country }}&nbsp;
+      <br/>
+      You received this email because you are subscribed to {{ subscription_name }} from {{ site_settings.company_name }}.
+      <br/>
+      Update your <a class="hubspot-mergetag" data-unsubscribe="true" href="{{ unsubscribe_link }}">email preferences</a> to choose the types of emails you receive.
+      <br/>
+      <a class="hubspot-mergetag" data-unsubscribe="true" href="{{ unsubscribe_link_all }}">Unsubscribe from all future emails</a>
+    </p>
+
+    <tr> 
+        <td align="center" height="48" width="180" valign="middle" style="font-family: 'Roboto', sans-serif; font-size:16px; font-weight:bold; "> 
+          {% set href = module.button_two.button2_link.url.href %}
+       {% if module.button_two.button2_link.url.type is equalto "EMAIL_ADDRESS" %}
+            {% set href = "mailto:" + href %}
+          {% endif %}
+              <a href="{{ href }}" {% if module.button_two.button2_link.open_in_new_tab %}target="_blank"{% endif %}
+{% if module.button_two.button2_link.rel %}rel="{{ module.button_two.button2_link.rel }}"{% endif %} style="padding: 11px; display: block; font-family: 'Roboto', sans-serif; color: #fff; text-decoration: none; line-height: 20px; font-weight: bold; text-transform: capitalize; font-size: 16px;" target="_blank">{% inline_text field="button_one.button2" value="{{ module.button_one.button2 }}" %}</a> 
+          
+         </td> 
+      </tr> 

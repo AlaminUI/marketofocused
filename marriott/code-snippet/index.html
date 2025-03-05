@@ -1,0 +1,1799 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Marriott Bonvoy Code Snippet</title>
+    <link rel="shortcut icon" href="https://www.marriott.com/favicon.ico" type="image/x-icon">
+    <style type="text/css">
+        * { -webkit-text-size-adjust: none;}
+td { mso-line-height-rule: exactly;}
+a[x-apple-data-detectors] { color: inherit !important; text-decoration: none !important; font-size: inherit !important; font-family: inherit !important; font-weight: inherit !important; line-height: inherit !important;}
+.body-fix { height: 100% !important; margin: 0 auto !important; padding: 0 !important; width: 100% !important; -webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; -webkit-font-smoothing: antialiased; word-spacing: normal;}
+div[style*="margin:0 0"] { margin: 0 !important;}
+table, td { border-collapse: collapse !important; mso-table-lspace: 0pt; mso-table-rspace: 0pt; -webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%;}
+img { border: 0; line-height: 100%; outline: none; text-decoration: none; display: block;} 
+        @font-face { font-family: 'Aldine-Light';
+        src: url('https://cache.marriott.com/aka-fonts/MarriottDigital/aldine/tt0804m.eot') format('embedded-opentype'),
+        url('https://cache.marriott.com/aka-fonts/MarriottDigital/aldine/tt0804m.otf') format('otf'),
+        url('https://cache.marriott.com/aka-fonts/MarriottDigital/aldine/tt0804m.woff') format('woff'),
+        url('https://cache.marriott.com/aka-fonts/MarriottDigital/aldine/tt0804m.woff2') format('woff2'),
+        url('https://cache.marriott.com/aka-fonts/MarriottDigital/aldine/tt0804m_.ttf') format('truetype'),
+        url('https://cache.marriott.com/aka-fonts/MarriottDigital/aldine/tt0804m.svg') format('svg');}
+        .Aldine-Light { font-family: 'Aldine-Light', 'Times New Roman', serif !important;}
+        @font-face { font-family: 'Aldine-Light-Italic';
+        src: url('https://cache.marriott.com/aka-fonts/MarriottDigital/aldine/tt0805m.eot') format('embedded-opentype'),
+        url('https://cache.marriott.com/aka-fonts/MarriottDigital/aldine/tt0805m.otf') format('otf'),
+        url('https://cache.marriott.com/aka-fonts/MarriottDigital/aldine/tt0805m.woff') format('woff'),
+        url('https://cache.marriott.com/aka-fonts/MarriottDigital/aldine/tt0805m.woff2') format('woff2'),
+        url('https://cache.marriott.com/aka-fonts/MarriottDigital/aldine/tt0805m_.ttf') format('truetype'),
+        url('https://cache.marriott.com/aka-fonts/MarriottDigital/aldine/tt0805m.svg') format('svg');}
+        .Aldine-Light-Italic { font-family: 'Aldine-Light-Italic', 'Times New Roman', serif !important;}
+        @font-face { font-family: 'Swiss-Light';
+        src: url('https://cache.marriott.com/aka-fonts/MarriottDigital/swiss/Swiss721BT-Light.eot') format('embedded-opentype'),
+        url('https://cache.marriott.com/aka-fonts/MarriottDigital/swiss/Swiss721BT-Light.otf') format('otf'),
+        url('https://cache.marriott.com/aka-fonts/MarriottDigital/swiss/Swiss721BT-Light.woff') format('woff'),
+        url('https://cache.marriott.com/aka-fonts/MarriottDigital/swiss/Swiss721BT-Light.woff2') format('woff2'),
+        url('https://cache.marriott.com/aka-fonts/MarriottDigital/swiss/Swiss721BT-Light.ttf') format('truetype'),
+        url('https://cache.marriott.com/aka-fonts/MarriottDigital/swiss/Swiss721BT-Light.svg') format('svg');}
+        .Swiss-Light { font-family: 'Swiss-Light', Arial, sans-serif !important;}
+        @font-face { font-family: 'Swiss-Regular';
+        src: url('https://cache.marriott.com/aka-fonts/MarriottDigital/swiss/Swiss721BT-Regular.eot') format('embedded-opentype'),
+        url('https://cache.marriott.com/aka-fonts/MarriottDigital/swiss/Swiss721BT-Regular.otf') format('otf'),
+        url('https://cache.marriott.com/aka-fonts/MarriottDigital/swiss/Swiss721BT-Regular.woff') format('woff'),
+        url('https://cache.marriott.com/aka-fonts/MarriottDigital/swiss/Swiss721BT-Regular.woff2') format('woff2'),
+        url('https://cache.marriott.com/aka-fonts/MarriottDigital/swiss/Swiss721BT-Regular.ttf') format('truetype'),
+        url('https://cache.marriott.com/aka-fonts/MarriottDigital/swiss/Swiss721BT-Regular.svg') format('svg');}
+        .Swiss-Regular { font-family: 'Swiss-Regular', Arial, sans-serif !important;}
+        @media screen and (-webkit-min-device-pixel-ratio:0) {
+        .Aldine-Light { font-family: 'Aldine-Light', 'Times New Roman', serif !important; font-weight: normal !important;}
+        .Aldine-Light-Italic { font-family: 'Aldine-Light-Italic', 'Times New Roman', serif !important; font-weight: normal !important; font-style: normal !important;}
+        [class~="x_Aldine-Light-Italic"] { font-family: 'Aldine-Light-Italic', 'Times New Roman', serif !important; font-weight: normal !important; font-style: italic !important;}
+        .Swiss-Light { font-family: 'Swiss-Light', Arial, sans-serif !important; font-weight: normal !important;}}
+        </style>
+ 
+    <!-- <link rel="stylesheet" href="assets/css/github-dark.css"> -->
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+    
+<header>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="logo">
+                <img width="220" src="https://ci3.googleusercontent.com/meips/ADKq_NYByqrhQ19BuqjgJqirznI-mBnqAvO-4ZJByHTCKK4_IoIMiKlRZCG9ktDD9es4n2jwPnJyw_HSyM_PTxhSe6R7p_g05rqrGiUnpG9G7dqrENr2J0vdVuuLTkK-pwS9Lg=s0-d-e1-ft#https://media.4at5.net/email_domains/mar/264715/images/header_logo_mbv.png" alt="">
+                </div>
+            </div>
+
+        
+        </div>
+    </div>
+</header>
+
+<main>
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-md-8">
+                        <!-- code snippet start  -->
+                        <div class="code-snippet">
+                            <h2>Pixel code</h2>
+                            <button class="copy-btn" data-clipboard-target=".code-block">Copy</button>
+            
+                            <div class="code-block">
+                                [@includeTrackingPixel/]
+                            </div>
+                        </div>
+                        <!-- code snippet start  -->
+                        <div class="code-snippet">
+                            <h2>Html Entity code</h2>
+                            <button class="copy-btn" data-clipboard-target=".code-block">Copy</button>
+            
+                            <div class="code-block">
+                              &lt;Name&gt;
+                            </div>
+                        </div>
+
+                <div class="code-snippet">
+                    <h2>Round icon section</h2>
+                <button class="copy-btn" data-clipboard-target=".code-block">Copy</button>
+
+                    <div class="code-block">
+                        <table role="presentation" cellpadding="0" bgcolor="#faeae1" style="background-color: #faeae1;" cellspacing="0" border="0" width="100%">
+                   
+                            <tbody>
+                              <tr>
+                                <td align="center" style="padding:24px 74px 34px 74px;" class="mobileSidePadding25">
+                                  <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0">
+                                    <tbody>
+                                      <tr>
+                                        <td align="center">
+                                          <img border="0" src="https://images.harmony.epsilon.com/ContentHandler/images/53f8cdc5-f8c9-4f2b-a7dd-75b24dd12773/SOLOS/CS0337103/check-mark-icon.png" width="50" height="50" alt="Check Mark Icon" style="display:block;">
+                                        </td>
+                                      
+                                      </tr>
+                                      <tr>
+                                        <td height="10" style="font-size:10px; line-height:10px;">&nbsp;</td>
+                                      </tr>
+                                      <tr>
+                                      <td align="center" valign="bottom" style="font-family:Arial, sans-serif; font-weight:300; font-size:16px; line-height:22px; color:#1c1c1c; padding:0px 0px 0px 0px;" class="Swiss-Light"><b style="font-weight:bold;" class="Swiss-Regular">Apply now to find out if you’re approved with no impact to your credit score.</b> If you’re approved and accept this Card, your credit score may be impacted.</td>
+                                    </tr>
+                         
+                                  </tbody></table>
+                                </td>
+                              </tr>
+                            </tbody>
+                           </table>
+                    </div>
+
+                </div>
+
+                <div class="code-snippet">
+                    <h2>Own a business section</h2>
+                    <button class="copy-btn" data-clipboard-target=".code-block">Copy</button>
+    
+                        <div class="code-block">
+                            <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" bgcolor="#ffffff">
+                                <tbody>
+                                  <tr>
+                                    <td align="center" style="padding:0px 12px 24px 50px;border-top: 4px solid #FFB995;" class="mobileSidePadding25">
+                                      <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0">
+                                        <tbody>
+                                          <tr>
+                                            <td valign="top"> 
+                                              <!--[if (gte mso 9)|(IE)]>
+                                                    <table cellpadding="0" cellspacing="0" border="0" role="presentation" style="width: 100%;">
+                                                    <tr>
+                                                    <td valign="top" style="width:364px;">
+                                                    <![endif]-->
+                                                    <div style="display:inline-block;vertical-align:middle;" class="stackTbl">
+                                                    <table role="presentation" width="364" align="left" class="stackTbl" cellpadding="0" cellspacing="0" border="0" style="display:inline; width:364px;">
+                                                    <tbody>
+                                              
+                                   
+                                                      <tr>
+                                                      <td align="left">
+                                                        <table role="presentation" width="150" style="width:150px;" class="mx-auto" height="34" bgcolor="#FFB995" cellpadding="0" cellspacing="0" border="0">
+                                                          <tbody>
+                                                            <tr>
+                                                              <td align="center" valign="bottom" style="font-family:'Times New Roman', serif;font-style: italic; font-weight:300;font-size:18px; line-height:34px; color:#1C1C1C;" class="Aldine-Light">Own a business?</td>
+                                                            </tr>
+                                                          </tbody>
+                                                        </table>
+                                                      </td>
+                                                      </tr>
+                                                      <tr>
+                                                        <td align="left" valign="bottom" style="font-family:Arial, sans-serif; font-weight:300;font-size:15px; line-height:22px; color:#000;padding: 14px 0px 20px 0px;" class="Swiss-Light  alignCenter  "> 
+                                                        
+                                                          Business owners, explore the Marriott Bonvoy Business<span style="font-size:10px;line-height:10px;vertical-align: 4px;">®</span> Amex Card benefits. Terms apply.
+                                                        </td>
+                                                      </tr>
+                         
+                          
+                                                           <!-- CTA -->
+                                                           <tr>
+                                                            <td align="left" valign="top" class="alignCenter Swiss-Light" style="font-family:Arial, sans-serif; font-weight:300; font-size:14px; line-height:18px; letter-spacing:1.0px; color:#1c1c1c; text-transform:uppercase;"><a href="[@trackurl LinkID='5447fc727aea48bc8a291ac9e403ca1a' LinkName='SMB RAB_Learn More' LinkTag='1000695315' Tracked='ON' Encode='OFF' AppendSuffix='ON' Render='ON' LinkType='REDIRECT']https://apply.americanexpress.com/en-us/marriott-sclp/page/103?nck=${Profile.CustomerKey}&amp;ck=${CAMPAIGN_KEY}&amp;lk=1000695315[/@trackurl]" style="color:#1c1c1c; text-decoration:none;" target="_blank"><span style="font-family:Arial, sans-serif; font-weight:300; color:#ff9662; font-size:22px; line-height:23px; vertical-align:-1px;" aria-hidden="true">»</span> LEARN MORE</a> </td>
+                                                          </tr>
+                                              <!-- end CTA -->
+                         
+                     
+                                                    
+                                                    </tbody>
+                                                  </table>
+                                                </div>
+                                                  <!--[if (gte mso 9)|(IE)]>
+                                              </td>
+                                              
+                                              <td valign="top" style="width:209px;">
+                                              <![endif]-->
+                                              <div style="display:inline-block;vertical-align:top;" class="stackTbl">
+                                              <table role="presentation" width="209" align="right" class="stackTbl" cellpadding="0" cellspacing="0" border="0" style="display:inline; width:209px;">
+                         
+                                              <tbody>
+                                                <tr>
+                                                  <td align="center" class="topPadding20" style="padding: 48px 0px 0px 0px;">
+                                            
+                                            <img src="https://images.harmony.epsilon.com/ContentHandler/images/53f8cdc5-f8c9-4f2b-a7dd-75b24dd12773/SOLOS/CS0337103/marriott-bonvoy-business-amex-card.png" width="154" height="120" style="display:block;" alt="Marriott Bonvoy Business Amex Card">
+                                            
+                          
+                                                  </td>
+                                                </tr>
+                                              </tbody>
+                                            </table>
+                                            </div>
+                                            <!--[if (gte mso 9)|(IE)]>
+                                                </td>
+                                                </tr>
+                                                </table>
+                                                <![endif]-->
+                                            </td>
+                                      
+                                          </tr>
+                                        </tbody>
+                                      </table>
+                                      
+                                    
+                                    </td>
+                                  </tr>
+                  
+                                </tbody>
+                              </table>
+                        </div>
+    
+                    </div>
+
+                    <!-- code snippet start  -->
+                    <div class="code-snippet">
+                        <h2>Learn more button</h2>
+                        <button class="copy-btn" data-clipboard-target=".code-block">Copy</button>
+        
+                        <div class="code-block">
+                            <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" align="center">
+                                <tbody><tr>
+                                  <td align="left" valign="top" style="font-family:Arial, sans-serif; font-weight:300; font-size:14px; line-height:18px; letter-spacing:1.0px; color:#1c1c1c; text-transform:uppercase;" class=" "><a href="#" style="color:#1c1c1c; text-decoration:none;" target="_blank"><span style="font-family:Arial, sans-serif; font-weight:300; color:#ff9662; font-size:22px; line-height:23px; vertical-align:-1px;" aria-hidden="true">»</span> LEARN MORE</a> </td>
+                                </tr>
+                              </tbody>
+                            </table>
+                        </div>
+                    </div>
+
+                    <!-- code snippet start  -->
+                    <div class="code-snippet">
+                        <h2>Apply Now button</h2>
+                        <button class="copy-btn" data-clipboard-target=".code-block">Copy</button>
+        
+                        <div class="code-block">
+                            <table role="presentation" border="0" cellpadding="0" cellspacing="0">
+                                <tbody><tr>
+                                  <td align="center" style="background-color:#FF9662; border-radius:100px;">
+                                    <a href="#" target="_blank" role="button" style="font-family:Arial, sans-serif; font-size:15px; letter-spacing:1.0px; color:#1C1C1C; text-align:center; text-decoration:none; text-transform:uppercase; display:block; padding:8px 37px 7px 37px; mso-border-alt:1px solid #FF9662;" class="Swiss-Regular ctaCopy">Apply now</a></td>
+                                </tr>
+                              </tbody></table>
+                        </div>
+                    </div>
+
+                    <!-- code snippet start  -->
+                    <div class="code-snippet">
+                        <h2>Background image hero</h2>
+                        <button class="copy-btn" data-clipboard-target=".code-block">Copy</button>
+        
+                        <div class="code-block">
+                            <table role="presentation" cellpadding="0" align="center" cellspacing="0" border="0" width="100%" bgcolor="#ffffff">
+                                <tbody>
+                                  <!-- Hero Title and Image  -->
+                                  <tr>
+                                   <td align="center" background="https://marketofocused.netlify.app/marriott/amex-consumer-bau/briliant/images/hero-bg.png" bgcolor="#ffffff" style="background-repeat:no-repeat; background-size:cover;background-color:#ffffff;">
+               
+                                 <!--[if (mso 9)|(mso 10)|(mso 11)|(mso 12)|(mso 14)|(mso 15)]>
+                                 <img src="https://marketofocused.netlify.app/marriott/amex-consumer-bau/briliant/images/hero-bg.png" alt="banner" border="0" width="640" height="387" style="display:block;" />
+                  <v:rect xmlns:v="urn:schemas-microsoft-com:vml" fill="true" stroke="false" style="width:640px;height:387px; position:absolute;top:0;left:0; border: 0; z-index: 2">
+                                 <v:fill color="#333" opacity="0%" style="z-index: 1;" />
+                                 <v:textbox style="mso-fit-shape-to-text:true" inset="0,0,0,0"> 
+                               <![endif]-->
+               
+                       
+                                     <table role="presentation" width="100%" align="center" cellpadding="0" cellspacing="0" border="0">
+                                       <tbody>
+                                         <tr>
+                                           <td align="center" style="padding:40px 0px 10px 0px;" class="mobileSidePadding25 topPadding25">  
+                                             <table role="presentation" width="100%" align="center" cellpadding="0" cellspacing="0" border="0">
+                                             <tbody>
+                                               <tr>
+                                                 <td height="12" style="font-size:12px; line-height:12px;">&nbsp;</td>
+                                               </tr>
+                                               <tr>
+                                                 <td align="center" valign="bottom" style="font-family:'Times New Roman', sans-serif; font-weight:300; font-style: italic; font-size:22px; line-height:31px; color:#1c1c1c;" class="Aldine-Light-Italic  alignCenter eyebrowCopy dark-text">Enjoy Enriched Rewards by Earning</td>
+                                               </tr>
+                                            
+                                               <tr>
+                                                 <td align="center" valign="bottom" style="font-family:'Times New Roman', sans-serif; font-weight:300; font-size:27px; line-height:38px; color:#1c1c1c;" class="Aldine-Light alignCenter headlineCopy dark-text">95,000 Bonus Points and Platinum Elite Status</td>
+                                               </tr>
+                                               <tr>
+                                                 <td height="36" style="font-size:36px; line-height:36px;">&nbsp;</td>
+                                               </tr>
+                                               <tr>
+                                                 <td align="center">
+                                                     <!--[if !mso]><!-->
+                                                   <img border="0" src="https://marketofocused.netlify.app/marriott/amex-consumer-bau/briliant/images/marriott-briliant-hero-card.gif" width="295" class="fullWidthImg" alt="image" style="display:block;">
+                                                     <!--<![endif]-->
+               
+                                                  <!--[if gte mso 9]>
+                                                     <img src="https://marketofocused.netlify.app/marriott/amex-consumer-bau/briliant/images/briliant-animation-fallback.png"  style="width: 295px;border:0;display:block;" width="295"  alt="card" />
+                                                 <![endif]-->
+                                                 </td>
+                                               </tr>
+                 
+                                              
+                                             </tbody>
+                                           </table>
+               
+                                            <!-- annual fee  -->
+                                           <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0">
+                                             <tbody><tr>
+                                               <td align="center">
+                                               
+                                                 <table role="presentation" width="100%" align="center" class="stackTbl" cellpadding="0" cellspacing="0" border="0">
+               
+                                                   <tbody><tr>
+                                                     <td align="center" style="font-family:Arial, sans-serif; font-weight:300; color:#1c1c1c; font-size:15px; line-height:22px" class="Swiss-Regular ">
+                                                       $650 annual fee. 
+                                                       <span style="color: #C05617;line-height:26px;">
+                                                         <a href="[@trackurl LinkID='' LinkName='Hero Module' LinkTag='1000684225' Tracked='ON' Encode='OFF' LinkType='REDIRECT']https://www.americanexpress.com/us/credit-cards/card-application/apply/partner/print/personal-card/mar/marriott-bonvoy-brilliant-card/ep-mar-mic-360?print=false&amp;nck=${Profile.CustomerKey}&amp;ck=${CAMPAIGN_KEY}&amp;lk=1000684225#offer-terms[/@trackurl]" target="_blank" style="color: #C05617; text-decoration: none; font-weight:300;" class="Swiss-Light"><br>Offer Terms</a> <span style="color: #000000;">|</span>
+                                                         <a href="[@trackurl LinkID='' LinkName='Hero Module' LinkTag='1000684226' Tracked='ON' Encode='OFF' LinkType='REDIRECT']https://www.americanexpress.com/us/credit-cards/card-application/apply/partner/print/personal-card/mar/marriott-bonvoy-brilliant-card/ep-mar-mic-360?print=false&amp;nck=${Profile.CustomerKey}&amp;ck=${CAMPAIGN_KEY}&amp;lk=1000684226#benefit-terms[/@trackurl]" target="_blank" style="color: #C05617; text-decoration: none; font-weight:300;" class="Swiss-Light">Benefit Terms</a>
+                                                         </span>
+                                                         <span style="color: #000000;">|</span>
+                                                         <a href="[@trackurl LinkID='' LinkName='Hero Module' LinkTag='1000684227' Tracked='ON' Encode='OFF' LinkType='REDIRECT']https://www.americanexpress.com/us/credit-cards/card-application/apply/partner/print/personal-card/mar/marriott-bonvoy-brilliant-card/ep-mar-mic-360?print=false&amp;nck=${Profile.CustomerKey}&amp;ck=${CAMPAIGN_KEY}&amp;lk=1000684227[/@trackurl]" target="_blank" style="color: #C05617; text-decoration: none; font-weight:300;" class="Swiss-Light">Rates &amp; Fees</a>
+                                                         </td>
+                                                   </tr>
+                           
+                                                 </tbody></table>
+                                               </td>
+                                             </tr>
+                                             <tr>
+                                               <td height="12" style="font-size:12px; line-height:12px;">&nbsp;</td>
+                                             </tr>
+                                           </tbody></table>
+                                           <!-- end annual fee  -->
+                                           </td>
+                      
+                                         </tr>
+               
+                                
+               
+                                       </tbody>
+                                     </table>
+                                     
+               <!--[if (mso 9)|(mso 10)|(mso 11)|(mso 12)|(mso 14)|(mso 15)]>
+                                 </v:textbox>
+                                 </v:fill>
+                               </v:rect>
+               
+                               <![endif]--> 
+               
+                               
+                                   </td>
+                                 </tr>
+                                 <!-- End Hero Title and Image  -->
+               
+                
+                                </tbody>
+                               </table>
+                        </div>
+                    </div>
+
+                    <!-- code snippet start  -->
+                    <div class="code-snippet">
+                        <h2>Line heading section</h2>
+                        <button class="copy-btn" data-clipboard-target=".code-block">Copy</button>
+        
+                        <div class="code-block">
+                            <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0">
+                                <tbody>
+                                <tr>
+                                  <td style="padding: 0px 0px 14px 0px;" class="bottomPadding0">
+                                     <table role="presentation" cellpadding="0" cellspacing="0" border="0" width="100%">
+                                     <tbody><tr>
+                              <!-- left third -->
+                              <td align="left" valign="middle" width="160px" style="width: 14%;min-width:30px;padding:0px 0px 0px 0px;">
+                                <table role="presentation" cellpadding="0" cellspacing="0" border="0" width="100%">
+                                  <tbody><tr>
+                                    <td align="center">
+                                      <table role="presentation" cellpadding="0" cellspacing="0" border="0" width="100%">
+                                        <tbody><tr>
+                                          <td align="center" height="21" style="height:21px; border-bottom: 1px solid #FF9662;"></td>
+                                        </tr>
+                                      </tbody></table>
+                                    </td>
+                                  </tr>
+                                  <tr>
+                                    <td align="center">
+                                      <table role="presentation" cellpadding="0" cellspacing="0" border="0" width="100%" bgcolor="#ffffff">
+                                        <tbody><tr>
+                                          <td align="center" width="100%" height="18" style="width:100%;height:18px;">&nbsp;</td>
+                                        </tr>
+                                      </tbody></table>
+                                    </td>
+                                  </tr>
+                                </tbody></table>
+                              </td>
+                          
+                              <!-- center third -->
+                              <td align="center" valign="middle" rowspan="2" width="425" height="100%" class="full-width" style="width:425px; height:100%;">
+                                <table role="presentation" cellpadding="0" cellspacing="0" border="0" class="full-width" width="425" height="100%">
+                                  <tbody><tr>
+                                    <td align="center" valign="center" style="font-family:'Times New Roman', serif; font-weight:lighter; font-style: normal; font-size:30px; line-height:34px; color:#1c1c1c; padding:10px 2px 12px 2px;" class="Aldine-Light fontSize16   gmail">Choose Your Travel Companion</td>
+                                  </tr>
+                                </tbody></table>
+                              </td>
+                          
+                              <!-- last third -->
+                              <td align="right" valign="middle" width="160px" style="width:14%;min-width:40px; padding: 0px 0px 0px 0px;">
+                                <table role="presentation" cellpadding="0" cellspacing="0" border="0" width="100%">
+                                  <tbody><tr>
+                                    <td align="center">
+                                      <table role="presentation" cellpadding="0" cellspacing="0" border="0" width="100%">
+                                        <tbody><tr>
+                                          <td align="center" height="21" style="height:21px; border-bottom: 1px solid #FF9662;"></td>
+                                        </tr>
+                                      </tbody></table>
+                                    </td>
+                                  </tr>
+                                  <tr>
+                                    <td align="center">
+                                      <table role="presentation" cellpadding="0" cellspacing="0" border="0" width="100%" bgcolor="#ffffff">
+                                        <tbody><tr>
+                                          <td align="center" width="100%" height="18" style="width:100%;height:18px;">&nbsp;</td>
+                                        </tr>
+                                      </tbody></table>
+                                    </td>
+                                  </tr>
+                                </tbody></table>
+                              </td>
+                            </tr>
+                          </tbody></table>
+                          <!-- END FLAG EYEBROW -->
+                                  </td>
+                                  </tr>
+                        
+                                
+                            </tbody>
+                          </table>
+                        </div>
+                    </div>
+
+                    <!-- code snippet start  -->
+                    <div class="code-snippet">
+                        <h2>Suitcase section</h2>
+                        <button class="copy-btn" data-clipboard-target=".code-block">Copy</button>
+        
+                        <div class="code-block">
+                            <table role="presentation" cellpadding="0" cellspacing="0" border="0" width="100%" bgcolor="#ffffff">
+                                <tbody><tr>
+                                  <td valign="top" class="rightPadding20 leftPadding20 bottomPadding20" style="padding: 24px 34px 24px 34px;">
+                                    <table role="presentation" cellpadding="0" cellspacing="0" border="0" width="100%" bgcolor="#ffffff">
+                                     <tbody><tr>
+                                      <td valign="top">
+                                        <img src="https://marketofocused.netlify.app/marriott/dual-issuer-emails/images/bag.png" width="30" alt="bag icon">
+                                      </td>
+                                      <td valign="top" style="padding: 0px 0px 0px 11px;">
+                                        <table role="presentation" cellpadding="0" cellspacing="0" border="0" width="100%" bgcolor="#ffffff">
+                                          <tbody>
+                                            <tr>
+                                              <td align="left" valign="top" style="font-family:'Times New Roman', serif; font-weight:lighter; font-size:20px; line-height:22px; color:#1c1c1c; padding: 0px 0px 4px 0px; " class="Aldine-Light fontSize16">Want to earn rewards for business spending?</td>
+                                            </tr>
+                                            <tr>
+                                              <td align="left" valign="top" style="font-family:'Times New Roman', serif; font-weight:lighter; font-size:15px; line-height:22px; color:#000;  " class="Swiss-Light fontSize12">
+                                                Business owners, explore the Marriott Bonvoy Business<span class="superscript10" style="font-family: Arial, sans-serif; line-height: 0px; font-size: 9px; vertical-align: 4px;">®</span> Amex Card to earn an additional 15 Elite Night Credits. Terms apply. <a href="#" style="color:#B84C16;text-decoration:none;"><b>Learn more.</b></a></td>
+                                            </tr>
+                                          </tbody>
+                                        </table>
+                                      </td>
+                                     </tr>
+                                    </tbody></table>
+                                  </td>
+                                </tr>
+                              </tbody></table>
+                        </div>
+                    </div>
+
+                    <!-- code snippet start  -->
+                    <div class="code-snippet">
+                        <h2>Left card section</h2>
+                        <button class="copy-btn" data-clipboard-target=".code-block">Copy</button>
+        
+                        <div class="code-block">
+                            <table role="presentation" cellpadding="0" cellspacing="0" border="0" width="100%" bgcolor="#ffffff">
+                 
+                                <tbody><tr>
+                                  <td align="center" style="padding:40px 45px 40px 54px;" class="bottomPadding40 leftPadding10 rightPadding10">
+                                    <!-- image left/copy right -->
+                                    <table role="presentation" cellpadding="0" cellspacing="0" border="0" width="100%">
+                                      <tbody><tr>
+                                        <td>
+                                          <!--[if gte mso 9]><table role="presentation" cellpadding="0" cellspacing="0" border="0" width="100%"><tr><td align="left" valign="top" ><![endif]-->
+                                          <!-- image -->
+                                          <table role="presentation" width="164" align="left" class="stackTbl" cellpadding="0" cellspacing="0" border="0" style="display:inline; width:164px; float: left;">
+                                            <tbody><tr>
+                                              <td align="center" valign="top" style="padding-top:12px;" class="topPadding0">
+                                               <a href="[@trackurl LinkID='' LinkName='Boundless_RAB_CTA' LinkTag='1000692863' Tracked='ON' Encode='OFF' LinkType='REDIRECT']https://www.marriott.com/loyalty/offers/chase.mi?SPID=HFG6&amp;CELL=6XFX&amp;COMBO=Y&amp;nck=${Profile.CustomerKey}&amp;ck=${CAMPAIGN_KEY}&amp;lk=1000692863[/@trackurl]" target="_blank"><img border="0" src="https://images.harmony.epsilon.com/ContentHandler/images/53f8cdc5-f8c9-4f2b-a7dd-75b24dd12773/SOLOS/CS0337103/marriott-bonvoy-business-amex-card.png" width="164" height="140" alt="Make Travel Even More Rewarding" style="display:block;" class=""></a>
+                                              </td>
+                                            </tr>
+                                          </tbody></table>
+                                          <!-- end image -->
+                                          <!--[if gte mso 9]></td><td align="left" valign="top"><![endif]-->
+                                          <!-- copy -->
+                                          <table role="presentation" width="374" align="right" class="stackTbl" cellpadding="0" cellspacing="0" border="0" style="display:inline; width:374px; float: right;">
+                                            <tbody><tr>
+                                              <!-- adjust td height value to match image height -->
+                                              <td align="left" valign="middle" style="padding: 0px 0px 0px 24px;" class="leftPadding0">
+                                                <table role="presentation" cellpadding="0" cellspacing="0" border="0" width="100%">
+                                                   <tbody><tr>
+                                                    <td align="left" valign="top" style="font-family:'Times New Roman', serif; font-weight:lighter;font-style: italic; font-size:17px; line-height:22px; color:#000; padding:0px 0px 10px 0px;" class="Aldine-Light-Italic  alignCenter topPadding20 alignCenter leftPadding0"> Make Travel Even More Rewarding</td>
+                                                  </tr>
+                                                  <tr>
+                                                    <td align="left" valign="top" style="font-family:'Times New Roman', serif; font-weight:lighter; font-size:24px; line-height:28px;letter-spacing: -0.48px; color:#1c1c1c; padding:0px 0px 10px 0px;" class="Aldine-Light  alignCenter rightPadding10 leftPadding10">
+                                                      <a href="[@trackurl LinkID='' LinkName='Boundless_RAB_CTA' LinkTag='1000692863' Tracked='ON' Encode='OFF' LinkType='REDIRECT']https://www.marriott.com/loyalty/offers/chase.mi?SPID=HFG6&amp;CELL=6XFX&amp;COMBO=Y&amp;nck=${Profile.CustomerKey}&amp;ck=${CAMPAIGN_KEY}&amp;lk=1000692863[/@trackurl]" target="_blank" style="color:#1c1c1c; text-decoration:none;">
+                                                        Earn 3 Free Nights with the Marriott Bonvoy Boundless<span style="font-size:12px;line-height:12px;vertical-align:8px;">®</span> Card
+                                                      </a></td>
+                                                  </tr>
+                                                  <tr>
+                                                    <td align="left" valign="top" class="alignCenter" style="font-family:Arial, sans-serif; font-weight:lighter; font-size:12px; line-height:18px; color:#000; padding:0px 0px 0px 0px;"> <b>Valued up to 150,000 points</b>.</td>
+                                                  </tr>
+                                                  <!-- CTA -->
+                                                  <tr>
+                                                    <td align="left" valign="middle" style="font-family:Arial, sans-serif; font-weight:300; font-size:14px; line-height:18px; letter-spacing:1.0px; color:#1c1c1c; text-transform:uppercase; padding:10px 0px 0px 0px;" class="Swiss-Light alignCenter topPadding20"><a href="[@trackurl LinkID='' LinkName='Boundless_RAB_CTA' LinkTag='1000692863' Tracked='ON' Encode='OFF' LinkType='REDIRECT']https://www.marriott.com/loyalty/offers/chase.mi?SPID=HFG6&amp;CELL=6XFX&amp;COMBO=Y&amp;nck=${Profile.CustomerKey}&amp;ck=${CAMPAIGN_KEY}&amp;lk=1000692863[/@trackurl]" style="color:#1c1c1c; text-decoration:none;" target="_blank"><span style="font-family:Arial, sans-serif; font-weight:300; color:#ff9662; font-size:22px; line-height:23px; vertical-align:-1px;" aria-hidden="true">»</span> Learn more</a> </td>
+                                                  </tr>
+                                                  <!-- end CTA -->
+                                                </tbody></table>
+                                              </td>
+                                            </tr>
+                                          </tbody></table>
+                                          <!-- end copy -->
+                                          <!--[if gte mso 9]></td></tr></table><![endif]-->
+                                        </td>
+                                      </tr>
+                                    </tbody></table>
+                                    <!-- end image left/copy right -->
+                                  </td>
+                                </tr>
+                              </tbody></table>
+                        </div>
+                    </div>
+
+                    <!-- code snippet start  -->
+                    <div class="code-snippet">
+                        <h2>Three card section</h2>
+                        <button class="copy-btn" data-clipboard-target=".code-block">Copy</button>
+        
+                        <div class="code-block">
+                            <table role="presentation" cellpadding="0" cellspacing="0" border="0" width="100%" bgcolor="#ffffff">
+                                <tbody>
+                                  <tr>
+                                    <td align="center" valign="bottom" style="font-family:'Times New Roman', serif; font-weight:lighter;font-style: italic; font-size:24px; line-height:36px; color:#1c1c1c; padding:25px 20px 0px 20px;" class="Aldine-Light-Italic headlineCopy">How Will You Use Your $250 eGiftCard?</td>
+                                  </tr>
+                                  <tr>
+                                    <td align="center" valign="bottom" style="font-family:Arial, sans-serif; font-weight:300; font-size:15px; line-height:22px; color:#1c1c1c; padding:8px 20px 22px 20px;" class="Swiss-Light">
+                                      Of course you can apply it toward your next stay, but did you <br class="hide"> know you could also use the $250 eGiftCard for:
+                                    </td>
+                                  </tr>
+                                
+                                  <tr>
+                                    <td align="center" style="padding:0px 20px 0px 20px;" class="bottomPadding15">
+                                      <table role="presentation" cellpadding="0" cellspacing="0" border="0" width="100%">
+                                        <tbody>
+                                          <tr>
+                                            
+                                            <!-- item  -->
+                                            <td class="responsiveCell" align="center">
+                                            <table role="presentation" cellpadding="0" cellspacing="0" border="0" width="190">
+                                              <tbody>
+                                                <tr>
+                                                  <td>
+                                                    <img src="https://marketofocused.netlify.app/marriott/3417_Chase_Abandon/MBV_AUTO_CC_CHASE_ABANDON_APP_AUTOMATION_ENG/images/MBV_AUTO_CC_CHASE_ABANDON_APP_AUTOMATION_ENG_spa.png" width="190" alt="icon">
+                                                  </td>
+                                                </tr>
+                                                <tr>
+                                                  <td align="center" valign="bottom" style="font-family:'Times New Roman', serif; font-weight:lighter;; font-size:20px; line-height:24px; color:#1c1c1c; padding:22px 20px 0px 20px;" class="Aldine-Light">Spa</td>
+                                                </tr>
+                                                <tr>
+                                                  <td align="center" valign="bottom" style="font-family:Arial, sans-serif; font-weight:300; font-size:15px; line-height:20px; color:#1c1c1c; padding:11px 20px 26px 20px;" class="Swiss-Light">
+                                                    Treat yourself to <br> a spa day
+                                                  </td>
+                                                </tr>
+                                              </tbody>
+                                            </table>  
+                                            </td>
+                              
+                                            <!-- space  -->
+                                            <td class="responsiveCell" align="center">
+                                            <table role="presentation" cellpadding="0" cellspacing="0" border="0" width="15">
+                                              <tbody>
+                                                <tr> 
+                                                  <td height="15" width="15" style="font-size:1px; mso-line-height-rule:exactly;  line-height:15px;">&nbsp;</td> 
+                                              </tr> 
+                                              </tbody>
+                                            </table>  
+                                            </td>
+                              
+                                            <!-- item  -->
+                                            <td class="responsiveCell" align="center">
+                                              <table role="presentation" cellpadding="0" cellspacing="0" border="0" width="190">
+                                                <tbody>
+                                                  <tr>
+                                                    <td>
+                                                      <img src="https://marketofocused.netlify.app/marriott/3417_Chase_Abandon/MBV_AUTO_CC_CHASE_ABANDON_APP_AUTOMATION_ENG/images/MBV_AUTO_CC_CHASE_ABANDON_APP_AUTOMATION_ENG_golf.png" width="190" alt="icon">
+                                                    </td>
+                                                  </tr>
+                                                  <tr>
+                                                    <td align="center" valign="bottom" style="font-family:'Times New Roman', serif; font-weight:lighter;; font-size:20px; line-height:24px; color:#1c1c1c; padding:22px 20px 0px 20px;" class="Aldine-Light">Golf</td>
+                                                  </tr>
+                                                  <tr>
+                                                    <td align="center" valign="bottom" style="font-family:Arial, sans-serif; font-weight:300; font-size:15px; line-height:20px; color:#1c1c1c; padding:11px 20px 26px 20px;" class="Swiss-Light">
+                                                      Play a round <br> of golf
+                                                    </td>
+                                                  </tr>
+                                                </tbody>
+                                              </table>  
+                                            </td>
+                              
+                                            <!-- space  -->
+                                            <td class="responsiveCell" align="center">
+                                              <table role="presentation" cellpadding="0" cellspacing="0" border="0" width="15">
+                                                <tbody>
+                                                  <tr> 
+                                                    <td height="15" width="15" style="font-size:1px; mso-line-height-rule:exactly;  line-height:15px;">&nbsp;</td> 
+                                                </tr> 
+                                                </tbody>
+                                              </table>  
+                                              </td>
+                              
+                                            <!-- item  -->
+                                            <td class="responsiveCell" align="center">
+                                              <table role="presentation" cellpadding="0" cellspacing="0" border="0" width="190">
+                                                <tbody>
+                                                  <tr>
+                                                    <td>
+                                                      <img src="https://marketofocused.netlify.app/marriott/3417_Chase_Abandon/MBV_AUTO_CC_CHASE_ABANDON_APP_AUTOMATION_ENG/images/MBV_AUTO_CC_CHASE_ABANDON_APP_AUTOMATION_ENG_room-service.png" width="190" alt="icon">
+                                                    </td>
+                                                  </tr>
+                                                  <tr>
+                                                    <td align="center" valign="bottom" style="font-family:'Times New Roman', serif; font-weight:lighter;; font-size:20px; line-height:24px; color:#1c1c1c; padding:22px 20px 0px 20px;" class="Aldine-Light">Room Service</td>
+                                                  </tr>
+                                                  <tr>
+                                                    <td align="center" valign="bottom" style="font-family:Arial, sans-serif; font-weight:300; font-size:15px; line-height:20px; color:#1c1c1c; padding:11px 20px 26px 20px;" class="Swiss-Light">
+                                                      Order room <br> service
+                                                    </td>
+                                                  </tr>
+                              
+                                                </tbody>
+                                              </table>  
+                                            </td>
+                                       
+                                          </tr>
+                                        </tbody>
+                                      </table>
+                                    </td>
+                                  </tr>
+                                </tbody>
+                              </table>
+                        </div>
+                    </div>
+
+                    <!-- code snippet start  -->
+                    <div class="code-snippet">
+                        <h2>Point Math section</h2>
+                        <button class="copy-btn" data-clipboard-target=".code-block">Copy</button>
+        
+                        <div class="code-block">
+                            <table role="presentation" width="100%" cellpadding="0" cellspacing="0" bgcolor="#ffffff" border="0">
+                                <!-- copy below image -->
+                              <tbody>
+      
+                                   <!-- CTA -->
+                                   
+                                  <!-- end CTA -->
+                                
+      
+                             <tr>
+                             
+                              <td align="center" class="leftPadding10 rightPadding10">
+                               
+                                  <img src="https://marketofocused.netlify.app/marriott/3494-chase-q3-boundless-lto/202409_MBV_SOLO_CC_US_ACQ_CHASE_BOUNDLESS_125K_Q3_LTO_W1_ENG/images/202409_MBV_SOLO_CC_US_ACQ_CHASE_BOUNDLESS_125K_Q3_LTO_W1_ENG_math-section-label-lg.png" width="520" class="hide" style="display: block; margin: 0 auto;" alt="See how your points add up:">
+        
+                                    <!--[if !mso]><!-->
+                                    <img src="https://marketofocused.netlify.app/marriott/3494-chase-q3-boundless-lto/202409_MBV_SOLO_CC_US_ACQ_CHASE_BOUNDLESS_125K_Q3_LTO_W1_ENG/images/202409_MBV_SOLO_CC_US_ACQ_CHASE_BOUNDLESS_125K_Q3_LTO_W1_ENG_math-section-label-sm.png" class="show" width="479" style="width:100%;max-width:479px;display:none;" alt="See how your points add up:">
+                                    <!--<![endif]-->
+         
+                               
+                              </td>
+                           
+                                    </tr>
+      
+                                <tr>  
+                                  <td style="padding: 0px 0px 0px 0px;">
+                  <table role="presentation" width="100%" bgcolor="#ffffff" border="0" cellspacing="0" cellpadding="0">
+                              <tbody><tr>
+                                <td align="center" style="padding:40px 150px 0px 150px;" class="leftPadding0 topPadding30 rightPadding0">
+                           
+                              <table role="presentation" width="330" cellpadding="0" class="stackTbl" cellspacing="0" border="0" style="width:330px;">
+                                <tbody><tr>
+                          <td align="center" style="padding:0px 0px 0px 0px;" class="">
+                            <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0">
+                                <tbody><tr>
+                                    <td style="padding: 0px 0px 0px 0px;">
+                                        <table role="presentation" width="100%" bgcolor="#ffffff" border="0" cellspacing="0" cellpadding="0">
+                                        <tbody><tr>
+                                            <td align="right" valign="middle" style="" width="200"><table role="presentation" cellpadding="0" cellspacing="0" border="0" width="100%">
+                                              <tbody><tr>
+                                                <td align="right" valign="middle" style="font-family:'Times New Roman', serif; font-weight:300; font-size:26px; line-height:30px; color:#1c1c1c; padding:0px 0px 0px 0px;" class="Aldine-Light"><table role="presentation" cellpadding="0" cellspacing="0" border="0" width="100%">
+                                                  <tbody><tr>
+                                                    <td align="right" valign="middle" style="font-family:'Times New Roman', serif; font-weight:300; font-size:26px; line-height:30px; color:#1c1c1c; padding:0px 10px 0px 0px;" class="Aldine-Light">[XXX,XXX]</td>
+                                                  </tr>
+                                                </tbody></table></td>
+                                              </tr>
+                                            </tbody></table></td>
+                                            <td width="130" align="center" valign="top" style="width:130px;"><table role="presentation" cellpadding="0" cellspacing="0" border="0" width="100%">
+                                          <tbody><tr>
+                                              <td align="left" valign="middle" style="font-family:Arial, sans-serif; font-weight:300; font-size:13px; line-height:16px; color:#1c1c1c; text-transform: uppercase;" class="Swiss-Regular">Current Points</td>
+                                             </tr>
+                             <tr>
+                                        <td align="left" valign="middle" style="font-family:'Times New Roman', serif; font-weight:300; font-style:normal; font-size:12px; line-height:16px; color:#1c1c1c;" class="Aldine-Light">As of [DATE TBD]</td>
+                                         </tr>
+                                        </tbody></table></td>
+                                            </tr>
+                                        </tbody></table>
+                                    </td>
+                                    </tr>
+                              </tbody></table>
+                            </td>
+                                </tr>
+                                 <tr>
+                          <td align="center" style="padding:0px 0px 0px 0px;" class="">
+                            <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0">
+                                <tbody><tr>
+                                    <td style=" padding: 20px 0px 15px 0px;">
+                                        <table role="presentation" width="100%" bgcolor="#ffffff" border="0" cellspacing="0" cellpadding="0">
+                                        <tbody><tr>
+                                            <td align="right" valign="middle" style="" width="200">
+                                                <table role="presentation" cellpadding="0" cellspacing="0" border="0" width="100%">
+                                          <tbody>
+                                            <tr>
+                                                <td align="left" valign="middle" style="font-family:'Times New Roman', serif; font-weight:lighter; font-size:28px; line-height:31px; color:#1c1c1c; padding:0px 0px 0px 20px;" class="Aldine-Light">+</td>
+                                          <td align="right" valign="middle" style="font-family:'Times New Roman', serif; color:#1c1c1c; font-size:28px; line-height:30px; padding:0px 10px 0px 0px;" class="Aldine-Light">
+                                            125,000</td>
+                                             </tr>
+                                         
+                                        </tbody></table>
+                                            </td>
+                                            <td align="left" valign="middle" width="130" style=""><table role="presentation" cellpadding="0" cellspacing="0" border="0" width="100%">
+                                          <tbody><tr>
+                                            <td align="left" valign="middle" style="font-family:Arial, sans-serif; font-weight:300; font-size:13px; line-height:16px; color:#1c1c1c;  text-transform: uppercase;" class="Swiss-Regular">Bonus points</td>
+                                             </tr>
+                                        </tbody></table></td>
+                                            </tr>
+                                        </tbody></table>
+                                    </td>
+                                    </tr>
+                      </tbody></table>
+                          </td>
+                        </tr>
+                                 <tr>
+                          <td align="center" style="padding:0px 0px 0px 0px;" class="">
+                            <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0">
+                                <tbody><tr>
+                                    <td style=" padding: 0px 0px 0px 0px;">
+                                        <table role="presentation" width="100%" bgcolor="#f9f6f4" border="0" cellspacing="0" cellpadding="0">
+                                        <tbody><tr>
+                                            <td align="right" valign="middle" style="" width="200">
+                                                <table role="presentation" cellpadding="0" cellspacing="0" border="0" width="100%">
+                                          <tbody><tr>
+                                               <td align="left" valign="middle" style="font-family:'Times New Roman', serif; font-weight:lighter; font-size:28px; line-height:31px; color:#1c1c1c; padding:8px 0px 10px 18px;" class="Aldine-Light">=</td>
+                                           <td align="right" valign="top" style="font-family:'Times New Roman', serif; color:#1c1c1c; font-size:28px; line-height:30px; padding:8px 8px 10px 0px;" class="Aldine-Light">[XXX,XXX]</td>
+                                             </tr>
+                                        
+                                        </tbody></table>
+                                            </td>
+                                            <td align="left" valign="middle" width="130" style=""><table role="presentation" cellpadding="0" cellspacing="0" border="0" width="100%">
+                                          <tbody><tr>
+                                            <td align="left" valign="middle" style="font-family:Arial, sans-serif; font-weight:300; font-size:13px; line-height:16px; color:#1c1c1c; padding:4px 0px 4px 0px; text-transform: uppercase;" class="Swiss-Regular">Total Points</td>
+                                             </tr>
+                                        </tbody></table></td>
+                                          </tr>
+                                        </tbody></table>
+                                    </td>
+                                    </tr>
+                      </tbody>
+                    </table>
+                          </td>
+                        </tr>
+                        </tbody>
+                      </table>
+                                </td>
+                              </tr>
+                               </tbody></table>
+                                </td>
+                              </tr>
+                       
+                          </tbody></table>
+                        </div>
+                    </div>
+
+                    <!-- code snippet start  -->
+                    <div class="code-snippet">
+                        <h2>Accordion section</h2>
+                        <button class="copy-btn" data-clipboard-target=".code-block">Copy</button>
+        
+                        <div class="code-block">
+                            <style>
+                                @media screen and (-webkit-min-device-pixel-ratio: 0) {
+                                /* 
+                                interactive email content limit interactive code to ios will prevent from running in aol and yahoo - they struggle with a few css properties
+                                */
+                                .x .accordion .bellow {border-bottom: 2px solid #ffffff;}
+                                .x .accordion .bellow .bellow-heading .heading .label {cursor: pointer; display: block; position: relative;}
+                                .x .accordion .bellow .bellow-heading .heading .label:after,
+                                .x .accordion .bellow .bellow-heading .heading .label-open:after {/*content: '\276F';*/ display: inline-block; vertical-align: middle; transition: all 150ms ease-in-out 250ms; position: absolute;}
+                                .x .accordion .bellow .bellow-content {max-height: 0; overflow: hidden; transition: all 1000ms ease-in-out 250ms;}
+                                #input-controller-1:checked ~ .accordion .bellow-1 .bellow-content,
+                                #input-controller-2:checked ~ .accordion .bellow-2 .bellow-content,
+                                #input-controller-3:checked ~ .accordion .bellow-3 .bellow-content,
+                                #input-controller-4:checked ~ .accordion .bellow-4 .bellow-content {max-height: 1500px;}
+
+                                #input-controller-1:checked ~ .accordion .bellow-1 .bellow-heading .heading .label:after,
+                                #input-controller-2:checked ~ .accordion .bellow-2 .bellow-heading .heading .label:after,
+                                #input-controller-3:checked ~ .accordion .bellow-3 .bellow-heading .heading .label:after,
+                                #input-controller-4:checked ~ .accordion .bellow-4 .bellow-heading .heading .label:after {transform: rotate(90deg);}
+
+                                #input-controller-1:checked ~ .accordion .bellow-1 .bellow-heading .heading .label {display: none;}  
+                                #input-controller-1:checked ~ .accordion .bellow-1 .bellow-heading .heading .label-open {display: block !important;}
+                                #input-controller-2:checked ~ .accordion .bellow-2 .bellow-heading .heading .label {display: none;}  
+                                #input-controller-2:checked ~ .accordion .bellow-2 .bellow-heading .heading .label-open {display: block !important;}  
+                                #input-controller-3:checked ~ .accordion .bellow-3 .bellow-heading .heading .label {display: none;}  
+                                #input-controller-3:checked ~ .accordion .bellow-3 .bellow-heading .heading .label-open {display: block !important;}
+                                #input-controller-4:checked ~ .accordion .bellow-4 .bellow-heading .heading .label {display: none;}  
+                                #input-controller-4:checked ~ .accordion .bellow-4 .bellow-heading .heading .label-open {display: block !important;}  
+                                }
+
+                                @media screen and (-webkit-min-device-pixel-ratio: 0) and (max-width: 480px) {
+                                #input-controller-1:checked ~ .accordion .bellow-1 .bellow-content,
+                                #input-controller-2:checked ~ .accordion .bellow-2 .bellow-content,
+                                #input-controller-3:checked ~ .accordion .bellow-3 .bellow-content,
+                                #input-controller-4:checked ~ .accordion .bellow-4 .bellow-content {max-height: 1500px;}
+                                } 
+                            </style>
+                            <table role="presentation" cellpadding="0" cellspacing="0" border="0" width="100%">
+                                <tbody>
+                                    <tr>
+                                        <td>
+ 
+       
+         
+                                        <div class="block-interactive" style="background-color: #fff;">
+                                            <div class="x" style="/* display: none; min-height: none; overflow: hidden; visibility: hidden; */"> 
+                                            <!--[if mso]><p style="display: none;"><![endif]--> 
+                                            <!-- as checkbox  -->
+                                            <input id="input-controller-2" class="input-controller" type="checkbox" name="bellow" style="display:none;" />
+                                            <!-- as radio  --> 
+                            
+                                            <!--[if mso]></p><![endif]-->
+                                            
+                                            <div class="accordion" style="margin: 0 auto;"> 
+                                                <!--[if gte mso 9]>
+                                            <table class="table" width="100%" align="center" border="0" cellpadding="0" cellspacing="0" role="presentation"><tr><td align="center">
+                                            <![endif]-->
+                                                
+                                                <div class="bellow bellow-2">
+                                                <div class="bellow-heading" style="background-color: #fff;"> 
+                                                    <div>
+                                                    <table role="presentation" cellpadding="0" cellspacing="0" border="0" width="100%">
+                                                        <tr>
+                                                        <td align="center" bgcolor="#fff" style="padding: 8px 10px 8px 10px;border-bottom:2px solid #D9D9D9;border-top:2px solid #D9D9D9;background-color: #fff;" class="heading">
+                                                            <table role="presentation" cellpadding="0" cellspacing="0" border="0" width="100%">
+                                                        <tr>
+                                                            <td align="center" valign="middle" style="font-family:Arial, sans-serif; font-weight:300; font-size:22px; line-height:33px; color:#1c1c1c; " class="Aldine-Light">
+                                                            <!--[if mso]>  
+                                                            <table role="presentation" cellpadding="0" cellspacing="0" border="0" width="244" style="width:244px;">
+                                                                <tbody>
+                                                                <tr>
+                                                                    <td style="padding: 0px 8px 0px 0px;" valign="middle">
+                                                                    <img src="https://marketofocused.netlify.app/marriott/3494-chase-q3-boundless-lto/202410_mbv_solo_cc_us_acq_chase_boundless_q3_lto_w2_eng/images/check-mark.png" alt="Free night " style="display: inline;vertical-align:middle;" width="32">  
+                                                                    </td>
+                                                                    <td class="label Aldine-Light" for="input-controller-2" style="font-family:Arial, sans-serif; font-weight:300; font-size:23px;line-height:27px; color:#1c1c1c; margin: 0; mso-ansi-font-size: 20px; mso-line-height-alt: 100%; mso-text-raise: 0;cursor: pointer;">
+                                                                    Exclusive Benefits
+                                                                    </td>
+                                                                    <td style="padding: 0px 0px 0px 16px;" valign="middle">
+                                                                    <img src="https://marketofocused.netlify.app/marriott/3494-chase-q3-boundless-lto/202410_mbv_solo_cc_us_acq_chase_boundless_q3_lto_w2_eng/images/arrow-down.png" width="14"   alt="arrow right" style="display: inline;" />
+                                                                    </td>
+                                                                </tr>
+                                                                </tbody>
+                                                            </table>
+                                                            <![endif]--> 
+                                                            <!--[if !mso 9]><!-->
+                                       
+
+                                                            <label class="label Aldine-Light bodyCopy17" for="input-controller-2" style="font-family:Arial, sans-serif; font-weight:300; font-size:24px; line-height:28px;  color:#1c1c1c; margin: 0; mso-ansi-font-size: 33px; mso-line-height-alt: 100%; mso-text-raise: 0;    cursor: pointer;">
+                                                                <img src="https://marketofocused.netlify.app/marriott/3494-chase-q3-boundless-lto/202410_mbv_solo_cc_us_acq_chase_boundless_q3_lto_w2_eng/images/check-mark.png" alt="Elite Status " style="display: inline;vertical-align:middle;" width="32"> <span style="padding:0px 16px 0px 10px;display: inline-block;">Exclusive Benefits</span>
+                                                                <img src="https://marketofocused.netlify.app/marriott/3494-chase-q3-boundless-lto/202410_mbv_solo_cc_us_acq_chase_boundless_q3_lto_w2_eng/images/arrow-right.png" width="14"   alt="arrow right" style="display: inline;" />
+                                                                </label>
+                                                                
+                                                                
+                                                                    <label class="label-open Aldine-Light bodyCopy17" for="input-controller-2" style="display: none; font-family:Arial, sans-serif; font-weight:300; font-size:24px; line-height:28px; color:#1c1c1c; margin: 0; mso-ansi-font-size: 33px; mso-line-height-alt: 100%; mso-text-raise: 0;   cursor: pointer;">
+                                                                    <img src="https://marketofocused.netlify.app/marriott/3494-chase-q3-boundless-lto/202410_mbv_solo_cc_us_acq_chase_boundless_q3_lto_w2_eng/images/check-mark.png" alt="Elite Status " style="display: inline;vertical-align:middle;" width="32"> <span style="padding:0px 16px 0px 10px;display: inline-block;">Exclusive Benefits</span>
+                                                                    <img src="https://marketofocused.netlify.app/marriott/3494-chase-q3-boundless-lto/202410_mbv_solo_cc_us_acq_chase_boundless_q3_lto_w2_eng/images/arrow-down.png" width="14"   alt="arrow right" style="display: inline-block;" />
+                                                                    </label>
+                                                            <!--<![endif]-->
+                                                        </td>
+                                                            </tr>
+                                                            </table>
+                                                        </td>
+                                                        </tr>
+                                                    </table>
+                                                    </div>
+                                                </div>
+                                                <div class="bellow-content">
+                                                    <table role="presentation" width="100%" border="0" cellspacing="0" cellpadding="0" bgcolor="#ffffff">
+                                                    <tr>
+                                                        <td>
+                                                        <table role="presentation" width="100%" border="0" cellspacing="0" cellpadding="0" bgcolor="#ffffff">
+                                                        <tr>
+                                    <td>
+                                        <table role="presentation" cellpadding="0" cellspacing="0" border="0" width="100%" bgcolor="#ffffff">
+                                        <tr>
+                                        <td style="padding: 24px 10px;border-bottom: 2px solid #D9D9D9;" class="topPadding20 bottomPadding20"><table role="presentation" cellpadding="0" cellspacing="0" border="0" width="100%" bgcolor="#ffffff">
+                                        <tr>
+                                        <td align="center" valign="top" width="290" style="width: 290px; padding: 0px 10px 0px 10px; text-align: left; " class="width50" bgcolor="#ffffff">
+                                            <table role="presentation" width="100%" border="0" cellspacing="0" cellpadding="0">
+                                            <tr>
+                                            <td align="center" valign="middle" style="padding: 0px 10px 0px 0px;" class="rightPadding0 leftPadding0">
+                                        <table role="presentation" align="left" width="100%" cellpadding="0" cellspacing="0" border="0">
+                                        <tr>
+                                        
+                                            <td style="font-family:Arial, sans-serif; font-weight:300; color:#1c1c1c; font-size:15px; line-height:20px; color: #1c1c1c; padding: 0px 10px 0px 0px;" class="Swiss-Light bodyCopy10 rightPadding0" valign="top">
+                                            
+                                                <b class="Swiss-Regular">Free Night Award</b><br> Enjoy a Free Night Award every year (redemption level up to 35,000 points) after your card account anniversary.* Certain hotels have resort fees.
+                                            </td>
+                                        </tr>
+                                        </table>
+                                            </td>
+                                            </tr>
+                                            </table>
+                                        </td>
+                                        <td align="center" valign="top" width="289" style="border-left: 1px solid #D9D9D9; width: 289px; padding: 0px 10px 10px 10px;" class="width50 leftPadding10 rightPadding5 bottomPadding0" bgcolor="#ffffff">
+                                            <table role="presentation" width="100%" border="0" cellspacing="0" cellpadding="0">
+                                            <tr>
+                                            <td align="center" valign="middle" style="padding: 0px 10px 0px 0px;" class="rightPadding0 leftPadding0">
+                                        <table role="presentation" align="left" width="100%" cellpadding="0" cellspacing="0" border="0">
+                                        <tr>
+                                        
+                                            <td style="font-family:Arial, sans-serif; font-weight:300; color:#1c1c1c; font-size:15px; line-height:20px; color: #1c1c1c; padding: 0px 10px 0px 14px;" class="Swiss-Light bodyCopy10 rightPadding0 leftPadding10" valign="top">
+                            
+
+                                                <b class="Swiss-Regular">Travel Now, Pay Later</b><br> Break up qualifying travel purchases into equal, monthly payments separate from your regular payment. Available on purchases of $100-$5,000 made directly with an airline or at hotels participating in Marriott Bonvoy<span class="superscript10" style="font-family: Arial, sans-serif; line-height: 0px; font-size: 9px; vertical-align: 4px;">®</span>. Pay no interest and no fees - just regular monthly payments. Access to Chase Pay Over Time<span class="superscript10" style="font-family: Arial, sans-serif; line-height: 0px; font-size: 9px; vertical-align: 4px;">SM</span> is not guaranteed.**
+                                            </td>
+                                        </tr>
+                                        </table>
+                                            </td>
+                                            </tr>
+                                            </table>
+                                    </td>
+                                        </tr>
+                                        </table>
+                                        </td>
+                                    </tr>
+                                    </table>
+                                    </td>
+                                                        </tr>
+                                
+                                                        </table>
+                                                        </td>
+                                                    </tr>
+                                                    </table>
+                                                </div>
+                                                </div>
+                                                <!--[if gte mso 9]>
+                                            </td></tr></table
+                                            <![endif]--> 
+                                            </div>
+                                            </div>
+                                        </div>
+                                        
+                                        <div class="block-interactive" style="background-color: #fff;">
+                                            <div class="x" style="/* display: none; min-height: none; overflow: hidden; visibility: hidden; */"> 
+                                            <!--[if mso]><p style="display: none;"><![endif]--> 
+                                            <!-- as checkbox  -->
+                                            <input id="input-controller-3" class="input-controller" type="checkbox" name="bellow" style="display:none;" />
+                                            <!-- as radio  --> 
+                                            
+                                            <!--[if mso]></p><![endif]-->
+                                            
+                                            <div class="accordion" style="margin: 0 auto;"> 
+                                                <!--[if gte mso 9]>
+                                            <table class="table" width="100%" align="center" border="0" cellpadding="0" cellspacing="0" role="presentation"><tr><td align="center">
+                                            <![endif]-->
+                                                
+                                                <div class="bellow bellow-3">
+                                                <div class="bellow-heading" style="background-color: #fff;"> 
+                                                    <div>
+                                                    <table role="presentation" cellpadding="0" cellspacing="0" border="0" width="100%">
+                                                        <tr>
+                                                        <td align="center" bgcolor="#fff" style="padding: 8px 10px 8px 10px;border-bottom:2px solid #D9D9D9;background-color: #fff;" class="heading">
+                                                            <table role="presentation" cellpadding="0" cellspacing="0" border="0" width="100%">
+                                                        <tr>
+                                                            <td align="center" valign="middle" style="font-family:Arial, sans-serif; font-weight:300; font-size:22px; line-height:33px; color:#1c1c1c; " class="Aldine-Light">
+
+                                                            <!--[if mso]>  
+                                                            <table role="presentation" cellpadding="0" cellspacing="0" border="0" width="180" style="width:180px;">
+                                                                <tbody>
+                                                                <tr>
+                                                                    <td style="padding: 0px 8px 0px 0px;" valign="middle">
+                                                                    <img src="https://marketofocused.netlify.app/marriott/3494-chase-q3-boundless-lto/202410_mbv_solo_cc_us_acq_chase_boundless_q3_lto_w2_eng/images/elite-status.png" alt="elite status " style="display: inline;vertical-align:middle;" width="32">  
+                                                                    </td>
+                                                                    <td class="label Aldine-Light" for="input-controller-2" style="font-family:Arial, sans-serif; font-weight:300; font-size:23px;line-height:27px; color:#1c1c1c; margin: 0; mso-ansi-font-size: 20px; mso-line-height-alt: 100%; mso-text-raise: 0;cursor: pointer;">
+                                                                    Elite Status
+                                                                    </td>
+                                                                    <td style="padding: 0px 0px 0px 16px;" valign="middle">
+                                                                    <img src="https://marketofocused.netlify.app/marriott/3494-chase-q3-boundless-lto/202410_mbv_solo_cc_us_acq_chase_boundless_q3_lto_w2_eng/images/arrow-down.png" width="14"   alt="arrow right" style="display: inline;" />
+                                                                    </td>
+                                                                </tr>
+                                                                </tbody>
+                                                            </table>
+                                                                <![endif]--> 
+                                                        
+                                                            <!--[if !mso 9]><!-->
+                                                        <label class="label Aldine-Light bodyCopy17" for="input-controller-3" style="font-family:Arial, sans-serif; font-weight:300; font-size:24px; line-height:28px;  color:#1c1c1c; margin: 0; mso-ansi-font-size: 33px; mso-line-height-alt: 100%; mso-text-raise: 0;    cursor: pointer;">
+                                                        <img src="https://marketofocused.netlify.app/marriott/3494-chase-q3-boundless-lto/202410_mbv_solo_cc_us_acq_chase_boundless_q3_lto_w2_eng/images/elite-status.png" alt="Elite Status " style="display: inline;vertical-align:middle;" width="32"> <span style="padding:0px 16px 0px 10px;display: inline-block;">Elite Status</span>
+                                                        <img src="https://marketofocused.netlify.app/marriott/3494-chase-q3-boundless-lto/202410_mbv_solo_cc_us_acq_chase_boundless_q3_lto_w2_eng/images/arrow-right.png" width="14"   alt="arrow right" style="display: inline;" />
+                                                        </label>
+                                                        
+                                                        
+                                                            <label class="label-open Aldine-Light bodyCopy17" for="input-controller-3" style="display: none; font-family:Arial, sans-serif; font-weight:300; font-size:24px; line-height:28px; color:#1c1c1c; margin: 0; mso-ansi-font-size: 33px; mso-line-height-alt: 100%; mso-text-raise: 0;   cursor: pointer;">
+                                                            <img src="https://marketofocused.netlify.app/marriott/3494-chase-q3-boundless-lto/202410_mbv_solo_cc_us_acq_chase_boundless_q3_lto_w2_eng/images/elite-status.png" alt="Elite Status " style="display: inline;vertical-align:middle;" width="32"> <span style="padding:0px 16px 0px 10px;display: inline-block;">Elite Status</span>
+                                                            <img src="https://marketofocused.netlify.app/marriott/3494-chase-q3-boundless-lto/202410_mbv_solo_cc_us_acq_chase_boundless_q3_lto_w2_eng/images/arrow-down.png" width="14"   alt="arrow right" style="display: inline-block;" />
+                                                            </label>
+                                                        <!--<![endif]-->
+                                                        </td>
+                                                            </tr>
+                                                            </table>
+                                                        </td>
+                                                        </tr>
+                                                    </table>
+                                                    </div>
+                                                </div>
+                                                <div class="bellow-content">
+                                                    <table role="presentation" width="100%" border="0" cellspacing="0" cellpadding="0" bgcolor="#ffffff">
+                                                    <tr>
+                                                        <td>
+                                                        <table role="presentation" cellpadding="0" cellspacing="0" border="0" width="100%" bgcolor="#ffffff">
+                                                        <tr>
+                                                        <td style="padding: 24px 10px;border-bottom: 2px solid #D9D9D9;" class="topPadding20 bottomPadding20"><table role="presentation" cellpadding="0" cellspacing="0" border="0" width="100%" bgcolor="#ffffff">
+                                                            <tr>
+                                                            <td align="center" valign="top" width="290" style="width: 290px; padding: 0px 10px 0px 10px; text-align: left; " class="width50" bgcolor="#ffffff">
+                                                            <table role="presentation" width="100%" border="0" cellspacing="0" cellpadding="0">
+                                                            <tr>
+                                                                <td align="center" valign="middle" style="padding: 0px 10px 0px 0px;" class="rightPadding0 leftPadding0">
+                                                                <table role="presentation" align="left" width="100%" cellpadding="0" cellspacing="0" border="0">
+                                                                    <tr>
+                                                                
+                                                                        <td valign="top"> 
+                                                                    <table role="presentation" align="left" width="100%" cellpadding="0" cellspacing="0" border="0">
+                                                                        <tr>
+                                                                        <td style="font-family:Arial, sans-serif; font-weight:300; color:#1c1c1c; font-size:15px; line-height:20px; color: #1c1c1c; padding: 0px 10px 0px 0px;letter-spacing: -0.15px;" class="Swiss-Light bodyCopy10 leftPadding0 " valign="top">
+                                                                            <b class="Swiss-Regular">Enjoy Automatic Silver Elite Status with Marriott Bonvoy<span class="superscript10" style="font-family: Arial, sans-serif; line-height: 0px; font-size: 9px; vertical-align: 4px;">®</span></b> that renews each account anniversary year with benefits like Priority Late Checkout (where available) & 10% More Points on Stays at hotels participating in Marriott Bonvoy.
+
+                                                                        </td>
+                                                                        </tr>
+                                                                        <tr>
+                                                                        <td style="font-family:Arial, sans-serif; font-weight:300; color:#1c1c1c; font-size:15px; line-height:20px; color: #1c1c1c; padding: 16px 0px 0px 0px; " class="Swiss-Light bodyCopy10 leftPadding0 " valign="top">
+                                                                            <b style="font-weight: 600;" class="Swiss-Regular">Earn Gold Elite Status</b> with Marriott Bonvoy when you spend $35,000 on purchases each calendar year.*
+
+                                                                        </td>
+                                                                        </tr>
+                                                                    </table>
+                                                                    
+                                                                    </td>
+                                                                    </tr>
+                                                                </table>
+                                                                        </td>
+                                                            </tr>
+                                                            </table>
+                                                            </td>
+                                                            <td align="center" valign="top" width="289" style="border-left: 1px solid #D9D9D9; width: 289px; padding: 0px 10px 10px 10px;" class="width50 leftPadding10 rightPadding5 bottomPadding0" bgcolor="#ffffff">
+                                                            <table role="presentation" width="100%" border="0" cellspacing="0" cellpadding="0">
+                                                                <tr>
+                                                            
+                                                                <td align="center" valign="middle" style="padding: 0px 10px 0px 0px;" class="rightPadding0 leftPadding0">
+                                                                <table role="presentation" align="left" width="100%" cellpadding="0" cellspacing="0" border="0">
+                                                                    <tr>
+                                                                
+                                                                        <td style="font-family:Arial, sans-serif; font-weight:300; color:#1c1c1c; font-size:15px; line-height:20px; color: #1c1c1c; padding: 0px 5px 0px 14px;letter-spacing: -0.14px;" class="Swiss-Light bodyCopy10 leftPadding10" valign="top"> 
+                                                                        <b class="Swiss-Regular">Enjoy Automatic Silver Elite Status with Marriott Bonvoy<span class="superscript10" style="font-family: Arial, sans-serif; line-height: 0px; font-size: 9px; vertical-align: 4px;">®</span></b> that renews each account anniversary year with benefits like Priority Late Checkout (where available) & 10% More Points on Stays at hotels participating in Marriott Bonvoy.
+
+                                                                        </td>
+                                                                    </tr>
+                                                                </table>
+                                                                        </td>
+                                                                </tr>
+                                                            </table>
+                                                        </td>
+                                                            </tr>
+                                                        </table>
+                                                        </td>
+                                                        </tr>
+                                                        </table>
+                                                        </td>
+                                                                            </tr>
+                                                    </table>
+                                                </div>
+                                                </div>
+                                                <!--[if gte mso 9]>
+                                            </td></tr></table
+                                            <![endif]--> 
+                                            </div>
+                                            </div>
+                                        </div>
+                                        <div class="block-interactive" style="background-color: #fff;">
+                                            <div class="x" style="/* display: none; min-height: none; overflow: hidden; visibility: hidden; */"> 
+                                            <!--[if mso]><p style="display: none;"><![endif]--> 
+                                            <!-- as checkbox  -->
+                                            <input id="input-controller-4" class="input-controller" type="checkbox" name="bellow" style="display:none;" />
+                                            <!-- as radio  --> 
+                                
+                                            <!--[if mso]></p><![endif]-->
+                                            
+                                            <div class="accordion" style="margin: 0 auto;"> 
+                                                <!--[if gte mso 9]>
+                                            <table class="table" width="100%" align="center" border="0" cellpadding="0" cellspacing="0" role="presentation"><tr><td align="center">
+                                            <![endif]-->
+                                                
+                                                <div class="bellow bellow-4">
+                                                <div class="bellow-heading" style="background-color: #fff;"> 
+                                                    <div>
+                                                    <table role="presentation" cellpadding="0" cellspacing="0" border="0" width="100%">
+                                                        <tr>
+                                                        <td align="center" bgcolor="#fff" style="padding: 8px 10px 8px 10px;background-color: #fff;" class="heading">
+                                                            <table role="presentation" cellpadding="0" cellspacing="0" border="0" width="100%">
+                                                        <tr>
+                                                            <td align="center" valign="middle" style="font-family:Arial, sans-serif; font-weight:300; font-size:22px; line-height:33px; color:#1c1c1c; " class="Aldine-Light">
+
+                                                            <!--[if mso]>  
+                                                            <table role="presentation" cellpadding="0" cellspacing="0" border="0" width="244" style="width:244px;">
+                                                                <tbody>
+                                                                <tr>
+                                                                    <td style="padding: 0px 8px 0px 0px;" valign="middle">
+                                                                    <img src="https://marketofocused.netlify.app/marriott/3494-chase-q3-boundless-lto/202410_mbv_solo_cc_us_acq_chase_boundless_q3_lto_w2_eng/images/elite-night-credits.png" alt="elite night " style="display: inline;vertical-align:middle;" width="32">  
+                                                                    </td>
+                                                                    <td class="label Aldine-Light" for="input-controller-2" style="font-family:Arial, sans-serif; font-weight:300; font-size:23px;line-height:27px; color:#1c1c1c; margin: 0; mso-ansi-font-size: 20px; mso-line-height-alt: 100%; mso-text-raise: 0;cursor: pointer;">
+                                                                    Elite Night Credits
+                                                                    </td>
+                                                                    <td style="padding: 0px 0px 0px 16px;" valign="middle">
+                                                                    <img src="https://marketofocused.netlify.app/marriott/3494-chase-q3-boundless-lto/202410_mbv_solo_cc_us_acq_chase_boundless_q3_lto_w2_eng/images/arrow-down.png" width="14"   alt="arrow right" style="display: inline;" />
+                                                                    </td>
+                                                                </tr>
+                                                                </tbody>
+                                                            </table>
+                                                            <![endif]--> 
+
+                                                                <!--[if !mso 9]><!-->
+                                                        <label class="label Aldine-Light bodyCopy17" for="input-controller-4" style="font-family:Arial, sans-serif; font-weight:300; font-size:24px; line-height:28px; color:#1c1c1c; margin: 0; mso-ansi-font-size: 33px; mso-line-height-alt: 100%; mso-text-raise: 0;    cursor: pointer;">
+                                                        <img src="https://marketofocused.netlify.app/marriott/3494-chase-q3-boundless-lto/202410_mbv_solo_cc_us_acq_chase_boundless_q3_lto_w2_eng/images/elite-night-credits.png" alt="Elite Night " style="display: inline-block;vertical-align:middle;" width="32"> <span style="padding:0px 16px 0px 10px;display: inline-block;">Elite Night Credits</span>
+                                                        <img src="https://marketofocused.netlify.app/marriott/3494-chase-q3-boundless-lto/202410_mbv_solo_cc_us_acq_chase_boundless_q3_lto_w2_eng/images/arrow-right.png" width="14"   alt="arrow right" style="display: inline;" />
+                                                        </label>
+                                                        
+                                                    
+                                                            <label class="label-open Aldine-Light bodyCopy17" for="input-controller-4" style="display: none; font-family:Arial, sans-serif; font-weight:300; font-size:24px; line-height:28px; color:#1c1c1c; margin: 0; mso-ansi-font-size: 33px; mso-line-height-alt: 100%; mso-text-raise: 0;   cursor: pointer;">
+                                                            <img src="https://marketofocused.netlify.app/marriott/3494-chase-q3-boundless-lto/202410_mbv_solo_cc_us_acq_chase_boundless_q3_lto_w2_eng/images/elite-night-credits.png" alt="Elite Night " style="display: inline-block;vertical-align:middle;" width="32"> <span style="padding:0px 16px 0px 10px;display: inline-block;">Elite Night Credits</span>
+                                                            <img src="https://marketofocused.netlify.app/marriott/3494-chase-q3-boundless-lto/202410_mbv_solo_cc_us_acq_chase_boundless_q3_lto_w2_eng/images/arrow-down.png" width="14"   alt="arrow right" style="display: inline-block;" />
+                                                            </label>
+                                                            <!--<![endif]--></td>
+                                                            </tr>
+                                                            </table>
+                                                        </td>
+                                                        </tr>
+                                                    </table>
+                                                    </div>
+                                                </div>
+                                                <div class="bellow-content">
+                                                    <table role="presentation" width="100%" border="0" cellspacing="0" cellpadding="0" bgcolor="#ffffff">
+                                        <tr>
+                                    <td><table role="presentation" cellpadding="0" cellspacing="0" border="0" width="100%" bgcolor="#ffffff">
+                                        <tr>
+                                        <td>
+                                            <table role="presentation" cellpadding="0" cellspacing="0" border="0" width="100%" bgcolor="#ffffff">
+                                            <tr>
+                                            <td style="padding: 30px 10px;border-top:2px solid #D9D9D9;" class="topPadding20 bottomPadding20">
+                                            <table role="presentation" cellpadding="0" cellspacing="0" border="0" width="100%" bgcolor="#ffffff">
+                                            <tr>
+                                            <td align="center" valign="top" width="290" style="width: 290px; padding: 0px 10px 0px 10px; text-align: left; " class="width50" bgcolor="#ffffff">
+                                                <table role="presentation" width="100%" border="0" cellspacing="0" cellpadding="0">
+                                                <tr>
+                                                <td align="center" valign="middle" style="padding: 0px 10px 0px 0px;" class="rightPadding0 leftPadding0">
+                                            <table role="presentation" align="left" width="100%" cellpadding="0" cellspacing="0" border="0">
+                                            <tr>
+                                            
+                                                <td style="font-family:Arial, sans-serif; font-weight:300; color:#1c1c1c; font-size:15px; line-height:20px; color: #1c1c1c; padding: 0px 10px 0px 0px;" class="Swiss-Light bodyCopy10 rightPadding0" valign="top"> 
+                                                
+                                                    <b class="Swiss-Regular">Receive 15 Elite Night Credits</b> every
+                                                    calendar year toward the next level of
+                                                    Marriott Bonvoy Elite status. Plus, Earn 1
+                                                    Elite Night Credit for every $5,000 you
+                                                    spend.* There’s no limit on the number of
+                                                    nights you can earn.* Terms apply.
+                                                </td>
+                                            </tr>
+                                            </table>
+                                                </td>
+                                                </tr>
+                                                </table>
+                                            </td>
+                                            <td align="center" valign="top" width="289" style="border-left: 1px solid #D9D9D9; width: 289px; padding: 0px 10px 10px 10px;" class="width50 leftPadding10 rightPadding5 bottomPadding0" bgcolor="#ffffff">
+                                                <table role="presentation" width="100%" border="0" cellspacing="0" cellpadding="0">
+                                                <tr>
+                                                <td align="center" valign="middle" style="padding: 0px 0px 0px 0px;" class="rightPadding0 leftPadding0">
+                                            <table role="presentation" align="left" width="100%" cellpadding="0" cellspacing="0" border="0">
+                                            <tr>
+                                            
+                                                <td style="font-family:Arial, sans-serif; font-weight:300; color:#1c1c1c; font-size:15px; line-height:20px; color: #1c1c1c; padding: 0px 9px 0px 14px;" class="Swiss-Light bodyCopy10 rightPadding0 leftPadding10" valign="top"> 
+                                                    <b class="Swiss-Regular">Receive 5 Elite Night Credits</b> every calendar year toward the next level of Marriott Bonvoy Elite status. Limitations apply per Marriott Bonvoy member account.** Terms apply.
+                                                </td>
+                                            </tr>
+                                            </table>
+                                                </td>
+                                                </tr>
+                                                </table>
+                                        </td>
+                                            </tr>
+                                            </table>
+                                            </td>
+                                        </tr>
+                                        </table>
+                                        </td>
+                                                            </tr>
+                                    </table>
+                                    </td>
+                                    </tr> 
+                                                    </table>
+                                                </div>
+                                                </div>
+                                                <!--[if gte mso 9]>
+                                            </td></tr></table
+                                            <![endif]--> 
+                                            </div>
+                                            </div>
+                                        </div>
+
+                                        </td>
+                                    </tr>
+                                </tbody>
+
+                            </table>
+                        </div>
+                    </div>
+
+                    <!-- code snippet start  -->
+                    <div class="code-snippet">
+                        <h2>Four icon grid section</h2>
+                        <button class="copy-btn" data-clipboard-target=".code-block">Copy</button>
+        
+                        <div class="code-block">
+                            <table role="presentation" cellpadding="0" cellspacing="0" border="0" width="100%" bgcolor="#ffffff">
+                                <tbody>
+                                  <tr>
+                                    <td align="center" style="padding:37px 0px 40px 0px">
+                    
+                                      <!-- start title  -->
+                                      <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" align="center">
+                                      <tbody>
+                                        <tr>
+                                          <td align="center" valign="bottom" style="font-family:'Times New Roman', serif; font-weight:lighter; font-size:27px; line-height:38px; color:#1c1c1c; padding:0px 32px 34px 32px;" class="Aldine-Light headlineCopy bottomPadding15 mobileSidePadding25">Reward Yourself with Premium Benefits</td>
+                                        </tr>
+                                      </tbody>
+                                      </table>
+                                      <!-- end title  -->
+                    
+                        
+                                      <!--   Item row -->
+                                      <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0">
+                                        <tbody><tr>
+                                          <td style="padding:0px 37px 38px 72px;" class="leftPadding20 bottomPadding20 rightPadding20">
+                                            <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0">
+                                              <tbody><tr>
+                                                <td valign="top"> 
+                                                  <!--[if (gte mso 9)|(IE)]>
+                                                        <table cellpadding="0" cellspacing="0" border="0" role="presentation" style="width: 100%;">
+                                                        <tr>
+                                                        <td valign="top" style="width:235px;">
+                                                        <![endif]-->
+                    
+                                                          <!--  Start Gold benefits module -->
+                                                        <div style="display:inline-block;vertical-align:top;" class="stackTbl">
+                                                        <table role="presentation" width="235" align="left" class="stackTbl" cellpadding="0" cellspacing="0" border="0" style="display:inline; width:235px;">
+                                                        <tbody>
+                                                          <tr>
+                                                          <td>
+                                                          <table role="presentation" width="100%" align="left" cellpadding="0" cellspacing="0" border="0">
+                                                            <tbody>
+                                                              <tr>
+                                                                <td align="left" class="topPadding20" style="padding:0px 0px 15px 0px;">
+                                                              <img src="https://marketofocused.netlify.app/marriott/3470-brilliant-bevy/briliant/images/platinum-elite-status-icon.png" width="48" height="48" style="display:block;" alt="Platinum Elite Status Icon">
+                                                                </td>
+                                                              </tr>
+                                                              <tr>
+                                                                <td align="left" valign="bottom" style="font-family:Arial, sans-serif; font-weight:300; font-size:18px; line-height:22px; color:#1c1c1c;" class="Swiss-Regular"><b>Platinum Elite Status</b></td>
+                                                              </tr>
+                                                              <tr>
+                                                                <td align="left" valign="bottom" style="font-family:Arial, sans-serif; font-weight:300;font-size:15px; line-height:22px; color:#000;" class="Swiss-Light">Receive complimentary Marriott Bonvoy Platinum Elite status and benefits, including <b class="Swiss-Regular">50% more points</b> on eligible stays, enhanced room upgrades, and <b class="Swiss-Regular">4 p.m. Late Checkout</b>, when available. </td>
+                                                              </tr>
+                                                              <tr>
+                                                                <td align="left" valign="bottom" style="font-family:Arial, sans-serif;font-style: italic; font-weight:300;font-size:10px; line-height:12px; color:#000;padding: 17px 0px 0px 0px;" class="Swiss-Light">Enhanced Room upgrade is only available at select properties when available. Terms apply. Platinum Elite status benefits are only available for qualifying rates.<span style="font-size:7px;line-height:3px;vertical-align:3px;">2</span></td>
+                                                              </tr>
+                    
+                                                              </tbody>
+                                                              </table>
+                                                              </td>
+                                                              </tr>
+                                                    
+                                                        </tbody>
+                                                      </table>
+                                                      </div>
+                                                     <!--  End Gold benefits module -->
+                    
+                                                      <!--[if (gte mso 9)|(IE)]>
+                                                  </td>
+                                                  
+                                                   <td valign="top" style="width:290px;">
+                                                  <![endif]-->
+                                                  <div style="display:inline-block;vertical-align:top;" class="stackTbl">
+                                                    <table role="presentation" width="290" align="left" class="stackTbl" cellpadding="0" cellspacing="0" border="0" style="display:inline; width:290px;">
+                                                    <tbody>
+                                              
+                                                     <tr>
+                                                      <td style="padding: 0px 0px 0px 47px;" class="leftPadding0 topPadding25">
+                                                        <table role="presentation" width="100%" align="left" cellpadding="0" cellspacing="0" border="0">
+                                                          <tbody>
+                                                            <tr>
+                                                              <td align="left" class="topPadding20" style="padding:0px 0px 15px 0px;">
+                                                            <img src="https://marketofocused.netlify.app/marriott/3470-brilliant-bevy/briliant/images/dining-credit-icon.png" width="48" height="48" style="display:block;" alt="Dining Credit Icon">
+                                                              </td>
+                                                            </tr>
+                                                            <tr>
+                                                              <td align="left" valign="bottom" style="font-family:Arial, sans-serif; font-weight:300; font-size:18px; line-height:22px; color:#1c1c1c;" class="Swiss-Regular"><b>$300 Brilliant Dining Credit</b></td>
+                                                            </tr>
+                                                            <tr>
+                                                              <td align="left" valign="bottom" style="font-family:Arial, sans-serif; font-weight:300;font-size:15px; line-height:22px; color:#000;" class="Swiss-Light">Each calendar year, get up to $300 (up to $25 per month) in statement credits for eligible purchases made on the Marriott Bonvoy Brilliant<span style="font-size: 9px;line-height: 8px;vertical-align: 4px;">®</span> American Express<span style="font-size: 9px;line-height: 8px;vertical-align: 4px;">®</span> Card at restaurants worldwide.<span style="font-size: 9px;line-height: 8px;vertical-align: 4px;">5</span>
+                                                              </td>
+                                                            </tr>
+                    
+                                                          </tbody>
+                                                        </table>
+                                                      </td>
+                                                     </tr>
+                    
+                                                    </tbody>
+                                                  </table>
+                                                </div>
+                                                <!--[if (gte mso 9)|(IE)]>
+                                                    </td>
+                                                    </tr>
+                                                    </table>
+                                                    <![endif]-->
+                                                </td>
+                                          
+                                              </tr>
+                                            </tbody></table>
+                                          </td>
+                                        </tr>
+                                    </tbody></table>
+                                    <!-- end Item row  -->
+                    
+                                         <!--   Item row -->
+                                         <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0">
+                                          <tbody><tr>
+                                            <td style="padding:0px 37px 50px 72px;" class="leftPadding20 bottomPadding30 rightPadding20">
+                                              <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0">
+                                                <tbody><tr>
+                                                  <td valign="top"> 
+                                                    <!--[if (gte mso 9)|(IE)]>
+                                                          <table cellpadding="0" cellspacing="0" border="0" role="presentation" style="width: 100%;">
+                                                          <tr>
+                                                          <td valign="top" style="width:235px;">
+                                                          <![endif]-->
+                                                          <div style="display:inline-block;vertical-align:top;" class="stackTbl">
+                                                          <table role="presentation" width="235" align="left" class="stackTbl" cellpadding="0" cellspacing="0" border="0" style="display:inline; width:235px;">
+                                                          <tbody>
+                                                            <tr>
+                                                            <td>
+                                                            <table role="presentation" width="100%" align="left" cellpadding="0" cellspacing="0" border="0">
+                                                              <tbody>
+                                                                <tr>
+                                                                  <td align="left" class="topPadding20" style="padding:0px 0px 15px 0px;">
+                                                                <img src="https://marketofocused.netlify.app/marriott/3470-brilliant-bevy/briliant/images/free-night-award-icon.png" width="48" height="48" style="display:block;" alt="Free Night Award Icon">
+                                                                  </td>
+                                                                </tr>
+                                                                <tr>
+                                                                  <td align="left" valign="bottom" style="font-family:Arial, sans-serif; font-weight:300; font-size:18px; line-height:22px; color:#1c1c1c;" class="Swiss-Regular"><b>1 Free Night Award</b></td>
+                                                                </tr>
+                                                                <tr>
+                                                                  <td align="left" valign="bottom" style="font-family:Arial, sans-serif; font-weight:300;font-size:15px; line-height:22px; color:#000;" class="Swiss-Light">Receive 1 Free Night Award every year after your Card renewal month. Award can be used for one night (redemption level at or under 85,000 points) at hotels participating in Marriott Bonvoy<span style="font-size: 9px;line-height: 8px;vertical-align: 4px;">®</span>. Certain hotels have resort fees. Terms apply.<span style="font-size: 9px;line-height: 8px;vertical-align: 4px;">6</span>
+                                                                  </td>
+                                                                </tr>
+                      
+                                                                </tbody>
+                                                                </table>
+                                                                </td>
+                                                                </tr>
+                                                      
+                                                          </tbody>
+                                                        </table>
+                                                      </div>
+                                                        <!--[if (gte mso 9)|(IE)]>
+                                                    </td>
+                                                    
+                                                     <td valign="top" style="width:290px;">
+                                                    <![endif]-->
+                                                    <div style="display:inline-block;vertical-align:top;" class="stackTbl">
+                                                      <table role="presentation" width="290" align="left" class="stackTbl" cellpadding="0" cellspacing="0" border="0" style="display:inline; width:290px;">
+                                                      <tbody>
+                                                
+                                                       <tr>
+                                                        <td style="padding: 0px 0px 0px 47px;" class="leftPadding0 topPadding25">
+                                                          <table role="presentation" width="100%" align="left" cellpadding="0" cellspacing="0" border="0">
+                                                            <tbody>
+                                                              <tr>
+                                                                <td align="left" class="topPadding20" style="padding:0px 0px 15px 0px;">
+                                                              <img src="https://marketofocused.netlify.app/marriott/3470-brilliant-bevy/briliant/images/elite-night-credits-icon.png" width="48" height="48" style="display:block;" alt="Elite Night Credits Icon">
+                                                                </td>
+                                                              </tr>
+                                                              <tr>
+                                                                <td align="left" valign="bottom" style="font-family:Arial, sans-serif; font-weight:300; font-size:18px; line-height:22px; color:#1c1c1c;" class="Swiss-Regular"><b>25 Elite Night Credits</b></td>
+                                                              </tr>
+                                                              <tr>
+                                                                <td align="left" valign="bottom" style="font-family:Arial, sans-serif; font-weight:300;font-size:15px; line-height:22px; color:#000;" class="Swiss-Light"> 
+                                                                  Each Calendar year you can receive 25 Elite Night Credits towards the next level of Marriott Bonvoy Elite status. Limitations apply per Marriott Bonvoy member account. Benefit is not exclusive to Cards offered by American Express.<span style="font-size:10px;line-height:10px;vertical-align: 5px;">7</span>
+                                                                </td>
+                                                              </tr>
+                      
+                                                            </tbody>
+                                                          </table>
+                                                        </td>
+                                                       </tr>
+                      
+                                                      </tbody>
+                                                    </table>
+                                                  </div>
+                                                  <!--[if (gte mso 9)|(IE)]>
+                                                      </td>
+                                                      </tr>
+                                                      </table>
+                                                      <![endif]-->
+                                                  </td>
+                                            
+                                                </tr>
+                                              </tbody></table>
+                                            </td>
+                                          </tr>
+                                      </tbody></table>
+                                      <!-- end Item row  -->
+                        
+                                    <!-- CTA  -->
+                                    <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" align="center">
+                                      <tbody>
+                                        <tr>
+                                          <td align="center" valign="top" style="font-family:Arial, sans-serif; font-weight:300; font-size:14px; line-height:18px; letter-spacing:1.0px; color:#1c1c1c; text-transform:uppercase;"><a href="[@trackurl LinkID='' LinkName='Brilliant_Learn More' LinkTag='1000691782' Tracked='ON' Encode='OFF' LinkType='REDIRECT']https://www.americanexpress.com/en-us/credit-cards/details/personal/marriott/marriott-bonvoy-american-express-cards/ep-mar-mic-2029?nck=${Profile.CustomerKey}&amp;ck=${CAMPAIGN_KEY}&amp;lk=1000691782[/@trackurl]" style="color:#1c1c1c; text-decoration:none;" target="_blank"><span style="font-family:Arial, sans-serif; font-weight:300; color:#ff9662; font-size:22px; line-height:23px; vertical-align:-1px;" aria-hidden="true">»</span> LEARN MORE</a> </td>
+                                        </tr>
+                                      </tbody>
+                                    </table>
+                                    <!-- end CTA  -->
+                         
+                        
+                                    </td>
+                                  </tr>
+                                </tbody>
+                              </table>
+                        </div>
+                    </div>
+
+                    <!-- code snippet start  -->
+                    <div class="code-snippet">
+                        <h2>Strike throw line </h2>
+                        <button class="copy-btn" data-clipboard-target=".code-block">Copy</button>
+        
+                        <div class="code-block">
+                            <strike style="color: #FF9662;"><span style="color:#000">95,000</span></strike>
+                        </div>
+                    </div>
+
+            
+
+                    <!-- code snippet start  -->
+                    <div class="code-snippet">
+                        <h2>Gradient bg and middle border line (New outlook image show) section</h2>
+                        <button class="copy-btn" data-clipboard-target=".code-block">Copy</button>
+        
+                        <div class="code-block">
+                            <table role="presentation" cellpadding="0" cellspacing="0" border="0" width="100%" bgcolor="#ffffff">
+                                <tbody><tr>
+                                <td>
+                
+                                  <table role="presentation" cellpadding="0" cellspacing="0" border="0" width="100%">
+                                    <tbody>
+                                      <tr>
+                                        <td style="padding: 30px 5px 0px 30px;" class="leftPadding15 rightPadding15">
+                                          <table role="presentation" cellpadding="0" cellspacing="0" border="0" width="100%" bgcolor="#ffffff">
+                                            <tbody><tr>
+                                             <td align="left" valign="top" width="280" style="width: 280px; padding: 0px 20px 0px 0px; text-align: left;" class="width50 rightPadding10 leftPadding0 bottomPadding0" bgcolor="#ffffff">
+                                              <table role="presentation" width="100%" border="0" cellspacing="0" cellpadding="0">
+                                                <tbody><tr>
+                                                  <td align="center">
+                                                    <table role="presentation" cellpadding="0" cellspacing="0" border="0" width="100%">
+                                                                    
+                                                      <tbody><tr>
+                                                       <td align="center" valign="top" style="font-family:'Times New Roman', serif; color:#000; font-size:23px; line-height:25px; padding:0px 0px 3px 0px;" class="Aldine-Light fontSize15 topPadding5 leftPadding0">
+                                                        Earn <b style="color:#959595;font-weight:bold;">185,000</b><br> Bonus Points
+                                                      </td>
+                                                         </tr>
+                                        
+                                                
+                                                    </tbody></table>
+                                                  </td>
+                                                </tr>
+                           
+                                            </tbody></table>  
+                                          
+                                            </td>
+                                             <td align="center" valign="top" width="280" style="width: 280px; padding: 0px 9px 0px 30px; border-left: 1px solid #FFC5A8;" class="width50 leftPadding10 rightPadding0 bottomPadding0" bgcolor="#ffffff">
+                                              <table role="presentation" width="100%" border="0" cellspacing="0" cellpadding="0">
+                                                <tbody><tr>
+                                                  <td align="center">
+                                                    <table role="presentation" cellpadding="0" cellspacing="0" border="0" width="100%">
+                                                                    
+                                                      <tbody><tr>
+                                                       <td align="center" valign="top" style="font-family:'Times New Roman', serif; color:#000; font-size:23px; line-height:25px; padding:0px 0px 3px 0px;" class="Aldine-Light fontSize15 topPadding5 leftPadding0">
+                                                        Earn <b style="color:#C6A06D;font-weight:bold;">155,000</b><br> Bonus Points
+                                                      </td>
+                                                         </tr>
+                                        
+                                                
+                                                    </tbody></table>
+                                                  </td>
+                                                </tr>
+                             
+                                            </tbody></table>  
+                                            </td>
+                                            </tr>
+                                           </tbody>
+                                          </table>
+                                        </td>
+                                      </tr>
+                                    </tbody>
+                                  </table>
+                
+                
+                
+                                  <table role="presentation" cellpadding="0" cellspacing="0" border="0" width="100%">
+                                    <tbody>
+                                      <tr>
+                                        <td style="padding:0px 5px 0px 30px;background: linear-gradient(90deg, rgba(181, 181, 181, 0.20) 0%, rgba(79, 79, 79, 0.00) 50%, rgba(181, 181, 181, 0.20) 100%); background-size: 100% 74px; background-repeat: no-repeat; background-position: bottom;" class="leftPadding15 rightPadding15">
+                                <table role="presentation" cellpadding="0" cellspacing="0" border="0" width="100%">
+                                  <tbody><tr>
+                                   <td align="left" valign="top" width="280" style="width: 280px; padding: 0px 20px 0px 0px; text-align: left;" class="width50 rightPadding10 leftPadding0 bottomPadding0">
+                                    <table role="presentation" width="100%" border="0" cellspacing="0" cellpadding="0">
+                                      <tbody> 
+                                   <tr>
+                                    <td align="center" valign="bottom" class="topPadding5" style="padding:24px 0px 10px 0px;">
+                                      <a href="[@trackurl LinkID='' LinkName='Brilliant_Learn More' LinkTag='1000695337' Tracked='ON' Encode='OFF' LinkType='REDIRECT']https://www.americanexpress.com/en-us/credit-cards/details/personal/marriott/marriott-bonvoy-american-express-cards/ep-mar-mic-2032?nck=${Profile.CustomerKey}&amp;ck=${CAMPAIGN_KEY}&amp;lk=1000695337[/@trackurl]" target="_blank">
+                                        <!--[if !mso]><!-->
+                                      <img src="https://marketofocused.netlify.app/marriott/3470-brilliant-bevy/3470-waves-3-4/waves-4/images/marriott-bonvoy-brilliant-amex-card.gif" width="209" height="159" alt="Marriott Bonvoy Brilliant Amex Card" class="card" style="display: block;">
+                                      <!--<![endif]-->
+                    
+                                    
+                                      <img src="https://marketofocused.netlify.app/marriott/3470-brilliant-bevy/3470-waves-3-4/waves-4/images/marriott-bonvoy-brilliant-amex-card-fallback.png" width="209" height="161" style="display:none;" class="ecxoutlookcom" alt="Marriott Bonvoy Brilliant Amex Card">
+                                       
+                                    </a>
+                                    </td>
+                                   </tr>
+                                  </tbody></table>  
+                                
+                                  </td>
+                                   <td align="center" valign="top" width="280" style="width: 280px; padding: 0px 9px 0px 30px; border-left: 1px solid #FFC5A8;" class="width50 leftPadding10 rightPadding0 bottomPadding0">
+                                    <table role="presentation" width="100%" border="0" cellspacing="0" cellpadding="0">
+                                      <tbody>
+                        
+                                   <tr>
+                                    <td align="center" valign="bottom" class="topPadding5" style="padding:24px 0px 10px 0px;">
+                                      <a href="[@trackurl LinkID='' LinkName='Bevy_Learn More' LinkTag='1000695355' Tracked='ON' Encode='OFF' LinkType='REDIRECT']https://www.americanexpress.com/en-us/credit-cards/details/personal/marriott/marriott-bonvoy-american-express-cards/ep-mar-mic-1985?nck=${Profile.CustomerKey}&amp;ck=${CAMPAIGN_KEY}&amp;lk=1000695355[/@trackurl]" target="_blank">
+                                           <!--[if !mso]><!-->
+                                      <img src="https://marketofocused.netlify.app/marriott/3470-brilliant-bevy/3470-waves-3-4/waves-4/images/marriott-bonvoy-bevy-amex-card.gif" width="209" height="159" alt="Marriott Bonvoy Bevy Amex Card" class="card" style="display: block;">
+                                      <!--<![endif]-->
+                    
+                                        
+                                      <img src="https://marketofocused.netlify.app/marriott/3470-brilliant-bevy/3470-waves-3-4/waves-4/images/marriott-bonvoy-bevy-amex-card-fallback.png" width="209" height="161" style="display:none;" class="ecxoutlookcom" alt="Marriott Bonvoy Bevy Amex Card">
+                                  
+                                    </a>
+                                    </td>
+                                   </tr>
+                                  </tbody></table>  
+                                  </td>
+                                  </tr>
+                                 </tbody>
+                                </table>
+                
+                                </td>
+                                </tr>
+                                </tbody>
+                                </table>
+                
+                
+                                <table role="presentation" cellpadding="0" cellspacing="0" border="0" width="100%">
+                                  <tbody>
+                                    <tr>
+                                      <td style="padding:0px 5px 40px 30px;background: linear-gradient(90deg, rgba(181, 181, 181, 0.20) 0%, rgba(79, 79, 79, 0.00) 50%, rgba(181, 181, 181, 0.20) 100%); background-size: cover; background-repeat: no-repeat;" class="leftPadding15 rightPadding15 bottomPadding30">
+                                
+                                 <table role="presentation" cellpadding="0" cellspacing="0" border="0" width="100%">
+                                  <tbody><tr>
+                                   <td align="center" valign="top" width="281" style="width: 281px; padding: 5px 20px 0px 0px; text-align: left;" class="width50 rightPadding10 leftPadding0 bottomPadding0">
+                                    <table role="presentation" width="100%" border="0" cellspacing="0" cellpadding="0">
+                                  
+                                      <tbody><tr>
+                                       <td align="center" style="font-family:Arial, sans-serif; font-weight:300; color:#1c1c1c; font-size:15px;letter-spacing: -0.15px; line-height:21px; padding:0px 18px 30px 0px;" class="Swiss-Light bodyCopy12 rightPadding0 bottomPadding20">After spending $6K in purchases on the Card in the first 6 months. Offer Ends 10/2.<span style="font-family: Arial, sans-serif; line-height: 0px; font-size: 9px; vertical-align: 4px;" class="register-body-mo">1</span>  $650 annual fee.&nbsp;
+                    
+                                      </td>
+                                      </tr>
+                                   
+                                  
+                            
+                            
+                                     </tbody></table>  
+                                   
+                                  </td>
+                                   <td align="center" valign="top" width="279" style="width: 279px; padding: 5px 10px 0px 30px; border-left: 1px solid #FFC5A8;" class="width50 leftPadding10 rightPadding0 bottomPadding0">
+                                    <table role="presentation" width="100%" border="0" cellspacing="0" cellpadding="0">
+                                  
+                                      <tbody><tr>
+                                       <td align="center" style="font-family:Arial, sans-serif; font-weight:300; color:#1c1c1c; font-size:15px;letter-spacing: -0.15px; line-height:21px; padding:0px 18px 30px 0px;" class="Swiss-Light bodyCopy12 rightPadding0 bottomPadding20">After spending $5K in purchases on the Card in the first 6 months. Offer Ends 10/2.<span style="font-family: Arial, sans-serif; line-height: 0px; font-size: 9px; vertical-align: 4px;" class="register-body-mo">2</span> $250 annual fee.
+                    
+                                      </td>
+                                      </tr>
+                           
+                     
+                                  
+                            
+                            
+                                     </tbody></table>  
+                                  </td>
+                                  </tr>
+                                 </tbody></table>
+                      
+                                  <table role="presentation" cellpadding="0" cellspacing="0" border="0" width="100%">
+                                  <tbody><tr>
+                                   <td align="center" valign="top" width="281" style="width: 281px; padding: 0px 20px 0px 0px; text-align: center;" class="width50 rightPadding10 leftPadding0  ">
+                                    <table role="presentation" width="100%" border="0" cellspacing="0" cellpadding="0">
+                                      <tbody><tr>
+                                       <td align="center" style="padding:0px 0px 12px 0px;">
+                                         <table role="presentation" border="0" cellpadding="0" cellspacing="0">
+                                         <tbody><tr>
+                                          <td align="center" style="background-color:#FF9662; border-radius:100px;"><a href="[@trackurl LinkID='' LinkName='Brilliant_CTA' LinkTag='1000695333' Tracked='ON' Encode='OFF' LinkType='REDIRECT']https://www.americanexpress.com/us/credit-cards/card-application/apply/partner/personal-card/mar/marriott-bonvoy-brilliant-card/ep-mar-mic-2032?nck=${Profile.CustomerKey}&amp;ck=${CAMPAIGN_KEY}&amp;lk=1000695333[/@trackurl]" target="_blank" role="button" style="font-family:Arial, sans-serif; font-size:15px; letter-spacing:1.0px; color:#1C1C1C; text-align:center; text-decoration:none; text-transform:uppercase; display:block; padding:8px 30px 7px 30px; mso-border-alt:1px solid #FF9662;" class="Swiss-Regular ctaCopy leftPadding20 rightPadding20">Apply now</a> </td>
+                                         </tr>
+                                        </tbody></table>
+                                       </td>
+                                      </tr>
+                          
+                                       <tr>   
+                                     <td align="center" style="font-family:Arial, sans-serif; font-weight:300; color:#1c1c1c; font-size:14px; line-height:16px;" class="Swiss-Light padding0 bodyCopy12">  
+                                      <a href="[@trackurl LinkID='' LinkName='Brilliant_Offer Terms' LinkTag='1000695334' Tracked='ON' Encode='OFF' LinkType='REDIRECT']https://www.americanexpress.com/us/credit-cards/card-application/apply/partner/print/personal-card/mar/marriott-bonvoy-brilliant-card/ep-mar-mic-2032?print=false&amp;nck=${Profile.CustomerKey}&amp;ck=${CAMPAIGN_KEY}&amp;lk=1000695334#offer-terms[/@trackurl]" target="_blank" style="color: #B84C16; text-decoration: none; font-weight:300;" class="Swiss-Light">Offer Terms</a> |  
+                                      <a href="[@trackurl LinkID='' LinkName='Brilliant_Benefit Terms' LinkTag='1000695335' Tracked='ON' Encode='OFF' LinkType='REDIRECT']https://www.americanexpress.com/us/credit-cards/card-application/apply/partner/print/personal-card/mar/marriott-bonvoy-brilliant-card/ep-mar-mic-2032?print=false&amp;nck=${Profile.CustomerKey}&amp;ck=${CAMPAIGN_KEY}&amp;lk=1000695335#benefit-terms[/@trackurl]" target="_blank" style="color: #B84C16; text-decoration: none; font-weight:300;" class="Swiss-Light">Benefit Terms</a> |  
+                                      <a href="[@trackurl LinkID='' LinkName='Brilliant_Rates  Fees' LinkTag='1000695336' Tracked='ON' Encode='OFF' LinkType='REDIRECT']https://www.americanexpress.com/us/credit-cards/card-application/apply/partner/print/personal-card/mar/marriott-bonvoy-brilliant-card/ep-mar-mic-2032?print=false&amp;nck=${Profile.CustomerKey}&amp;ck=${CAMPAIGN_KEY}&amp;lk=1000695336[/@trackurl]" target="_blank" style="color: #B84C16; text-decoration: none; font-weight:300;" class="Swiss-Light">Rates &amp; Fees</a> 
+                                       </td>
+                                      </tr>
+                                     </tbody></table>  
+                                   
+                                  </td>
+                                   <td align="center" valign="top" width="279" style="width: 279px; padding: 0px 10px 0px 30px; border-left: 1px solid #FFC5A8;" class="width50 leftPadding10 rightPadding0  ">
+                                    <table role="presentation" width="100%" border="0" cellspacing="0" cellpadding="0">
+                                      <tbody><tr>
+                                       <td align="center" style="padding:0px 0px 12px 0px;">
+                                         <table role="presentation" border="0" cellpadding="0" cellspacing="0">
+                                         <tbody><tr>
+                                          <td align="center" style="background-color:#FF9662; border-radius:100px;"><a href="[@trackurl LinkID='' LinkName='Bevy_CTA' LinkTag='1000695351' Tracked='ON' Encode='OFF' LinkType='REDIRECT']https://www.americanexpress.com/us/credit-cards/card-application/apply/partner/personal-card/mar/marriott-bonvoy-bevy-card/ep-mar-mic-1985?nck=${Profile.CustomerKey}&amp;ck=${CAMPAIGN_KEY}&amp;lk=1000695351[/@trackurl]" target="_blank" role="button" style="font-family:Arial, sans-serif; font-size:15px; letter-spacing:1.0px; color:#1C1C1C; text-align:center; text-decoration:none; text-transform:uppercase; display:block; padding:8px 30px 7px 30px; mso-border-alt:1px solid #FF9662;" class="Swiss-Regular ctaCopy leftPadding20 rightPadding20">Apply now</a> </td>
+                                         </tr>
+                                        </tbody></table>
+                                       </td>
+                                      </tr>
+                          
+                                       <tr>   
+                                     <td align="center" style="font-family:Arial, sans-serif; font-weight:300; color:#1c1c1c; font-size:14px; line-height:16px;" class="Swiss-Light padding0 bodyCopy12">  
+                                      <a href="[@trackurl LinkID='' LinkName='Bevy_Offer Terms' LinkTag='1000695352' Tracked='ON' Encode='OFF' LinkType='REDIRECT']https://www.americanexpress.com/us/credit-cards/card-application/apply/partner/print/personal-card/mar/marriott-bonvoy-bevy-card/ep-mar-mic-1985?print=false&amp;nck=${Profile.CustomerKey}&amp;ck=${CAMPAIGN_KEY}&amp;lk=1000695352#offer-terms[/@trackurl]" target="_blank" style="color: #B84C16; text-decoration: none; font-weight:300;" class="Swiss-Light">Offer Terms</a> |  
+                                      <a href="[@trackurl LinkID='' LinkName='Bevy_Benefit Terms' LinkTag='1000695353' Tracked='ON' Encode='OFF' LinkType='REDIRECT']https://www.americanexpress.com/us/credit-cards/card-application/apply/partner/print/personal-card/mar/marriott-bonvoy-bevy-card/ep-mar-mic-1985?print=false&amp;nck=${Profile.CustomerKey}&amp;ck=${CAMPAIGN_KEY}&amp;lk=1000695353#benefit-terms[/@trackurl]" target="_blank" style="color: #B84C16; text-decoration: none; font-weight:300;" class="Swiss-Light">Benefit Terms</a> |  
+                                      <a href="[@trackurl LinkID='' LinkName='Bevy_Rates  Fees' LinkTag='1000695354' Tracked='ON' Encode='OFF' LinkType='REDIRECT']https://www.americanexpress.com/us/credit-cards/card-application/apply/partner/print/personal-card/mar/marriott-bonvoy-bevy-card/ep-mar-mic-1985?print=false&amp;nck=${Profile.CustomerKey}&amp;ck=${CAMPAIGN_KEY}&amp;lk=1000695354[/@trackurl]" target="_blank" style="color: #B84C16; text-decoration: none; font-weight:300;" class="Swiss-Light">Rates &amp; Fees</a> 
+                                       </td>
+                                      </tr>
+                                     </tbody></table>  
+                                  </td>
+                                  </tr>
+                                 </tbody></table>
+                
+                                 </td>
+                                 </tr>
+                                 </tbody>
+                                 </table>
+                                </td>
+                               </tr>
+                               </tbody></table>
+                        </div>
+                    </div>
+
+                    <!-- code snippet start  -->
+                 <div class="code-snippet">
+                        <h2>Border bottom </h2>
+                        <button class="copy-btn" data-clipboard-target=".code-block">Copy</button>
+        
+                        <div class="code-block">
+                          <table role="presentation" width="100%" align="center" cellpadding="0" cellspacing="0" border="0">
+                            <tbody>
+                         
+                  
+                  
+                              <tr>
+                                <td align="center">
+                                 <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0">
+                                   <tbody>
+                                     <tr>
+                                       <td align="center" valign="top" style="font-family:'Times New Roman', serif; font-weight:lighter; font-size:35px; line-height:38px;  color:#1c1c1c;border-bottom: 1px solid #FF9662; padding: 0px 0px 10px 0px;" class="Aldine-Light headlineCopy ">Make a great business decision</td>
+                                     </tr>
+                                   </tbody>
+                                 </table>
+                                </td>
+                               </tr>
+                  
+                         
+                            </tbody>
+                          </table>
+                        </div>
+                    </div>         
+                    
+                    
+                    <!-- code snippet start  -->
+                 <div class="code-snippet">
+                        <h2>Responsive Image</h2>
+                        <button class="copy-btn" data-clipboard-target=".code-block">Copy</button>
+        
+                        <div class="code-block">
+                          <table role="presentation" cellpadding="0" cellspacing="0" border="0" width="100%" bgcolor="#ffffff">
+                            <tbody>
+                             <tr>
+                                <td style="padding:34px 20px 0px 20px;" class="padding0 topPadding20">
+                                  <table role="presentation" cellpadding="0" cellspacing="0" border="0" width="100%">
+                                    <tbody><tr>
+                                      <td>
+                                       <a href="[DYNAMIC LINK]">
+                                         
+                                         <img src="file:///Users/md.alamin/Storage/All%20work/Tervor-brooks/marketofocused/marriott/3546-chase-q4-bau-emails/202412_MBV_SOLO_CC_US_ACQ_CHASE_BOUNDLESS_Q4_BAU_W1_ENG_001/images/header-boundless-card-lg.png" class="hide" width="600" style="width:100%;max-width:600px;" alt="THE WESTIN RESORT & SPA UBUD, BALI">
+                                        <!--[if !mso]><!-->
+                                         <img src="file:///Users/md.alamin/Storage/All%20work/Tervor-brooks/marketofocused/marriott/3546-chase-q4-bau-emails/202412_MBV_SOLO_CC_US_ACQ_CHASE_BOUNDLESS_Q4_BAU_W1_ENG_001/images/header-boundless-card-sm.png" class="show" width="479" style="width:100%;max-width:479px;display:none;" alt="THE WESTIN RESORT & SPA UBUD, BALI">
+                                         <!--<![endif]-->
+                                       </a>
+                                      </td>
+                                    </tr>
+                                  </tbody></table>
+                                </td>
+                              </tr>
+      
+                            </tbody>
+                          </table>
+                        </div>
+                    </div> 
+                    
+                    <!-- code snippet start  -->
+                    <!-- <div class="code-snippet">
+                        <h2>Own a business section</h2>
+                        <button class="copy-btn" data-clipboard-target=".code-block">Copy</button>
+        
+                        <div class="code-block">
+
+                        </div>
+                    </div> -->           <!-- code snippet start  -->
+                    <!-- <div class="code-snippet">
+                        <h2>Own a business section</h2>
+                        <button class="copy-btn" data-clipboard-target=".code-block">Copy</button>
+        
+                        <div class="code-block">
+
+                        </div>
+                    </div> -->
+            </div>
+        </div>
+    </div>
+</main>
+
+ 
+<script src="https://cdn.jsdelivr.net/npm/clipboard@2.0.11/dist/clipboard.min.js"></script>
+<script>
+    // Initialize Clipboard.js for buttons with the class "copy-btn"
+    new ClipboardJS('.copy-btn', {
+    text: function(e) {
+        var htmlBlock = e.nextElementSibling;
+        return htmlBlock.innerHTML;
+    }
+});
+</script>
+</body>
+</html>

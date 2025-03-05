@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Customer Dashboard</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+.container {
+    display: flex;
+    height: 100vh;
+}
+
+.sidebar {
+    width: 250px;
+    background-color: #333;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px 0;
+}
+
+.sidebar .logo {
+    font-size: 1.5em;
+    margin-bottom: 20px;
+}
+
+.sidebar nav ul {
+    list-style: none;
+    padding: 0;
+    width: 100%;
+}
+
+.sidebar nav ul li {
+    width: 100%;
+}
+
+.sidebar nav ul li a {
+    display: block;
+    color: white;
+    text-decoration: none;
+    padding: 10px 20px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.sidebar nav ul li a:hover,
+.sidebar nav ul li a.active {
+    background-color: #575757;
+}
+
+main {
+    flex: 1;
+    padding: 20px;
+    overflow-y: auto;
+}
+
+.page {
+    display: none;
+}
+
+.page.active {
+    display: block;
+}
+
+.trade-form form {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+}
+
+.trade-form form label {
+    grid-column: span 1;
+}
+
+.trade-form form select,
+.trade-form form input {
+    padding: 5px;
+    grid-column: span 1;
+}
+
+.trade-form form button {
+    grid-column: span 2;
+    padding: 10px;
+    background-color: #333;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.transactions table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.transactions table th,
+.transactions table td {
+    padding: 10px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+.transactions table th {
+    background-color: #f4f4f4;
+}
+
+.account-manager p {
+    margin: 5px 0;
+}
+
+.chatbox {
+    margin-top: 10px;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #333;
+    color: white;
+}
+
+header .logo {
+    font-size: 1.5em;
+}
+
+header nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+header nav ul li {
+    margin-left: 20px;
+}
+
+header nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+main {
+    padding: 20px;
+}
+
+section {
+    margin-bottom: 20px;
+    background-color: white;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+section h1, section h2 {
+    margin-top: 0;
+}
+
+.trade-form form {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+}
+
+.trade-form form label {
+    grid-column: span 1;
+}
+
+.trade-form form select,
+.trade-form form input {
+    padding: 5px;
+    grid-column: span 1;
+}
+
+.trade-form form button {
+    grid-column: span 2;
+    padding: 10px;
+    background-color: #333;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.transactions table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.transactions table th,
+.transactions table td {
+    padding: 10px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+.transactions table th {
+    background-color: #f4f4f4;
+}
+
+.account-manager p {
+    margin: 5px 0;
+}
+
+.chatbox {
+    margin-top: 10px;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <aside class="sidebar">
+            <div class="logo">Company Logo</div>
+            <nav>
+                <ul>
+                    <li><a href="#home" onclick="showPage('home')">Home</a></li>
+                    <li><a href="#buy-sell" onclick="showPage('buy-sell')">Buy/Sell</a></li>
+                    <li><a href="#transactions" onclick="showPage('transactions')">Transactions</a></li>
+                    <li><a href="#account-manager" onclick="showPage('account-manager')">Account Manager</a></li>
+                    <li><a href="#logout">Logout</a></li>
+                </ul>
+            </nav>
+        </aside>
+
+        <main>
+            <section id="home" class="page active">
+                <h1>Welcome, [Customer Name]!</h1>
+            </section>
+
+            <section id="buy-sell" class="page">
+                <h2>Buy/Sell Trades</h2>
+                <form>
+                    <label for="trade-type">Trade Type:</label>
+                    <select id="trade-type">
+                        <option value="buy">Buy</option>
+                        <option value="sell">Sell</option>
+                    </select>
+
+                    <label for="asset-type">Asset Type:</label>
+                    <select id="asset-type">
+                        <option value="gold">Gold</option>
+                        <option value="silver">Silver</option>
+                        <option value="stocks">Stocks</option>
+                    </select>
+
+                    <label for="quantity">Quantity:</label>
+                    <input type="number" id="quantity">
+
+                    <label for="price">Price:</label>
+                    <input type="number" id="price">
+
+                    <button type="submit">Submit</button>
+                </form>
+            </section>
+
+            <section id="transactions" class="page">
+                <h2>Your Transactions</h2>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Date</th>
+                            <th>Type</th>
+                            <th>Asset</th>
+                            <th>Quantity</th>
+                            <th>Price</th>
+                            <th>Status</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>01/01</td>
+                            <td>Buy</td>
+                            <td>Gold</td>
+                            <td>10</td>
+                            <td>$1500</td>
+                            <td>Completed</td>
+                        </tr>
+                        <!-- More rows as needed -->
+                    </tbody>
+                </table>
+            </section>
+
+            <section id="account-manager" class="page">
+                <h2>Contact Your Account Manager</h2>
+                <p>Name: [Manager Name]</p>
+                <p>Email: <a href="mailto:manager@example.com">manager@example.com</a></p>
+                <p>Phone: [Phone Number]</p>
+                <div class="chatbox">
+                    <h3>Chat with your manager</h3>
+                    <!-- Chatbox interface here -->
+                </div>
+            </section>
+        </main>
+    </div>
+
+    <script>
+        function showPage(pageId) {
+            document.querySelectorAll('.page').forEach(page => {
+                page.classList.remove('active');
+            });
+            document.getElementById(pageId).classList.add('active');
+        }
+    </script>
+</body>
+</html>

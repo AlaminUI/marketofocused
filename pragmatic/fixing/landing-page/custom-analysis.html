@@ -1,0 +1,1616 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SPS BAIN</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/sweetalert/1.1.3/sweetalert.min.css">
+    <style>
+        @font-face {
+            font-family: graphik-regular;
+            src: url(https://go.bain.com/rs/545-OFW-044/images/Graphik-Regular.woff) format('woff');
+            font-weight: 400;
+            font-style: normal
+        }
+
+        @font-face {
+            font-family: graphik-medium;
+            src: url(https://go.bain.com/rs/545-OFW-044/images/Graphik-Medium.woff) format('woff');
+            font-weight: 500;
+            font-style: normal
+        }
+
+        @font-face {
+            font-family: graphik-semibold;
+            src: url(https://go.bain.com/rs/545-OFW-044/images/Graphik-Semibold.woff) format("woff");
+            font-weight: 600;
+            font-style: normal
+        }
+
+        @font-face {
+            font-family: graphik-bold;
+            src: url(https://go.bain.com/rs/545-OFW-044/images/Graphik-Bold.woff) format("woff");
+            font-weight: 700;
+            font-style: normal
+        }
+
+        * {
+            padding: 0;
+            margin: 0;
+            -webkit-box-sizing: border-box;
+            box-sizing: border-box
+        }
+
+        body {
+            font-family: graphik-regular;
+            font-weight: 400;
+            font-style: normal;
+            padding: 0;
+            margin: 0;
+            background-color: #fff;
+            color: #262626;
+            overflow-x: hidden
+        }
+
+        .button,
+        a,
+        button {
+            -webkit-transition: all .3s ease-out 0s;
+            -o-transition: all .3s ease-out 0s;
+            transition: all .3s ease-out 0s
+        }
+
+        a:hover {
+            text-decoration: none
+        }
+
+        a:focus,
+        button:focus,
+        input:focus,
+        textarea:focus {
+            text-decoration: none;
+            outline: 0
+        }
+
+        button {
+            cursor: pointer
+        }
+
+        ol,
+        ul {
+            margin: 0;
+            padding: 0
+        }
+
+        li {
+            list-style: none
+        }
+
+        h1,
+        h2,
+        h3,
+        h4,
+        h5,
+        h6 {
+            font-family: graphik-medium;
+            font-weight: 700;
+            font-style: normal;
+            margin-top: 0
+        }
+
+        h1 {
+            font-size: 38px
+        }
+
+        h2 {
+            font-size: 40px
+        }
+
+        h3 {
+            font-size: 35px
+        }
+
+        h4 {
+            font-size: 18px
+        }
+
+        h5 {
+            font-size: 18px
+        }
+
+        h6 {
+            font-size: 16px
+        }
+
+        .container {
+            max-width: 1260px;
+            padding: 0 15px;
+            margin: 0 auto
+        }
+
+        .logo img {
+            width: 100%;
+            max-width: 200px
+        }
+
+        header {
+            padding-top: 35px;
+            padding-bottom: 24px
+        }
+
+        .banner-wrap {
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: flex;
+            -webkit-box-flex: 1;
+            -ms-flex: 1;
+            flex: 1
+        }
+
+        .left-banner-text {
+            background: #508e67;
+            margin-right: 16px;
+            width: 100%;
+            max-width: 772px;
+            padding: 54px 0;
+            position: relative;
+            padding-right: 16px;
+        }
+        .left-banner-text span {
+    font-size: 28px;
+    color: #fff;
+    line-height: 30px;
+    font-weight: 600;
+    margin-bottom: 16px;
+    display: block;
+}
+        .right-banner-img {
+            width: 100%;
+            max-width: 446px;
+            background: #252525;
+            position: relative
+        }
+
+        section.banner-area {
+            position: relative;
+            overflow-x: hidden;
+            padding-bottom: 55px
+        }
+
+        .right-banner-img img {
+            width: 100%;
+            height: 100%
+        }
+
+        .left-banner-text h1 {
+            font-size: 46px;
+            color: #fff;
+            font-family: graphik-regular;
+            line-height: 56px
+        }
+
+        .border-bottom1 {
+            background: #508e67;
+            height: 46px;
+            position: absolute;
+            bottom: -55px;
+            width: 100%
+        }
+
+        .border-bottom2 {
+            background: #666;
+            height: 46px;
+            position: absolute;
+            bottom: -55px;
+            width: 100%
+        }
+
+        .left-banner-text:after {
+            width: 1000%;
+            content: "";
+            position: absolute;
+            left: -1000%;
+            height: 100%;
+            background: #508e67;
+            top: 0
+        }
+
+        .left-banner-text:before {
+            width: 1000%;
+            content: "";
+            position: absolute;
+            left: -1000%;
+            height: 46px;
+            background: #508e67;
+            bottom: -55px
+        }
+
+        .right-banner-img:after {
+            width: 1000%;
+            content: "";
+            position: absolute;
+            right: -1000%;
+            height: 100%;
+            background: #262626;
+            top: 0;
+            z-index: -1
+        }
+
+        .right-banner-img:before {
+            width: 1000%;
+            content: "";
+            position: absolute;
+            right: -1000%;
+            height: 46px;
+            background: #666;
+            bottom: -55px
+        }
+
+        .section3-wrap {
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: flex;
+            -webkit-box-pack: justify;
+            -ms-flex-pack: justify;
+            justify-content: space-between
+        }
+
+        .section3-left {
+            width: 100%;
+            max-width: 772px;
+            padding-right: 28px
+        }
+
+        .section3-right {
+            max-width: 454px;
+            width: 100%
+        }
+
+        .section3-right img {
+            width: 100%
+        }
+
+        .section3-left h2 {
+            font-size: 29px;
+            font-family: graphik-medium;
+            line-height: 40px;
+            color: #000
+        }
+
+        .section3-left p {
+            font-size: 20px;
+            color: #262626;
+            margin-top: 16px;
+            line-height: 31px
+        }
+        .analysis-form h4 {
+    font-size: 20px;
+    font-family: graphik-medium;
+    line-height: 28px;
+    
+    letter-spacing: 0.5px;
+}
+
+.analysis-form form input {
+    width: 100%;
+    padding: 15px 16px;
+    box-shadow: inset 2px 2px 5px #00000067;
+    border: 2px solid #E6E6E6;
+    margin-bottom: 16px;
+}
+
+.analysis-form form label {
+    font-size: 14px;
+    font-family: 'graphik-regular';
+    line-height: 31px;
+    color: #262626;
+}
+
+ 
+
+.analysis-form form button {
+    background: #F89406;
+    display: block;
+    font-size: 16px;
+    font-family: 'graphik-semibold';
+    border: 0;
+    outline: none;
+    padding: 17px 16px;
+    width: 100%;
+    max-width: 178px;
+    text-align: center;
+    margin-top: 19px;
+    transition: 0.5s;
+}
+
+.analysis-form p {
+    font-size: 14px;
+    line-height: 28px;
+    margin-top: 16px;
+}
+
+.analysis-form form button:hover {
+    background: #f89406b8;
+}
+
+.analysis-form {
+    background: url("images/horizontal-line.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: top left;
+    padding-left: 40px;
+}
+        a.btn-bg {
+            background: #f89406;
+            display: inline-block;
+            padding: 17px 67px;
+            text-decoration: none;
+            font-size: 16px;
+            color: #262626;
+            font-family: graphik-medium;
+            -webkit-transition: .5s;
+            -o-transition: .5s;
+            transition: .5s
+        }
+
+        a.btn-border {
+            display: inline-block;
+            padding: 16px 8px;
+            text-decoration: none;
+            font-size: 16px;
+            color: #262626;
+            font-family: graphik-medium;
+            border: 2px solid #f89406;
+            width: 100%;
+            max-width: 227px;
+            text-align: center;
+            -webkit-transition: .5s;
+            -o-transition: .5s;
+            transition: .5s
+        }
+
+        .button-box .btn-bg {
+            margin-right: 70px
+        }
+
+        .button-box {
+            margin-top: 32px
+        }
+        .summary-char {
+    display: flex;
+    align-items: center;
+    padding-top: 37px;
+}
+
+.summary-chat-img {
+    width: 100%;
+    max-width: 308px;
+}
+
+.summary-chat-img img {
+    width: 100%;
+}
+
+.summary-chart-desc p {
+    font-size: 18px;
+    line-height: 30px;
+    color: #508E67;
+    font-family: graphik-medium;
+    margin: 0;
+}
+
+.summary-chart-desc {
+    padding-left: 30px;
+    width: 100%;
+}
+.summary-char.mobile-show {
+    display: none;
+}
+        section.section3-area {
+            padding-top: 60px;
+            padding-bottom: 66px
+        }
+
+        a.btn-bg:hover {
+            background: #f89406bd
+        }
+
+        a.btn-border:hover {
+            background: #f89406
+        }
+
+        .section4-wrap {
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: flex;
+            -webkit-box-pack: justify;
+            -ms-flex-pack: justify;
+            justify-content: space-between
+        }
+
+        .content-card {
+            max-width: 550px
+        }
+
+        .section-title h2 {
+            font-size: 31px;
+            font-family: graphik-regular
+        }
+
+        .content-card h3 {
+            font-size: 22px;
+            line-height: 32px;
+            margin-bottom: 16px;
+            font-weight: 500
+        }
+
+        .content-card p {
+            font-size: 16px;
+            line-height: 26px;
+            margin-bottom: 16px
+        }
+
+        a.btn-black {
+            display: inline-block;
+            background: #262626;
+            color: #fff;
+            font-size: 12px;
+            line-height: 17px;
+            text-decoration: none;
+            padding: 7px 19px;
+            font-family: graphik-medium;
+            border: 2px solid #262626
+        }
+
+        a.btn-black:hover {
+            background: 0 0;
+            border: 2px solid #262626;
+            color: #262626
+        }
+
+        .section-title h2 {
+            margin-bottom: 24px
+        }
+
+        section.section4-area {
+            padding-top: 32px;
+            padding-bottom: 32px
+        }
+
+        .section5-wrap {
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: flex
+        }
+
+        .section5-left {
+            width: 60%;
+            padding-top: 36px;
+            padding-bottom: 36px;
+            padding-right: 56px;
+            background: #508e67;
+            margin-right: 12px
+        }
+
+        .section5-right {
+            width: 43%;
+            padding-top: 40px;
+            padding-bottom: 40px;
+            padding-left: 46px;
+            background: #f3f3f4
+        }
+
+        section.section5 {
+            position: relative;
+            overflow: hidden
+        }
+
+        .section5-left:after {
+            content: "";
+            position: absolute;
+            left: 0;
+            top: 0;
+            height: 100%;
+            width: 40%;
+            background: #508e67;
+            z-index: -1
+        }
+
+        .section5-right:after {
+            content: "";
+            position: absolute;
+            right: -30px;
+            top: 0;
+            height: 100%;
+            width: 40%;
+            background: #f3f3f4;
+            z-index: -1
+        }
+
+        .section5-left img {
+            width: 100%;
+            max-width: 156px;
+            margin-bottom: 16px
+        }
+
+        .section5-left h3 {
+            color: #fff;
+            font-family: graphik-regular;
+            font-weight: 400;
+            font-size: 31px;
+            line-height: 39px;
+            margin-bottom: 24px
+        }
+
+        a.request-btn {
+            display: inline-block;
+            border: 3px solid #f89406;
+            padding: 14px 27px;
+            color: #262626;
+            text-decoration: none;
+            font-family: graphik-medium;
+            background: #fff
+        }
+
+        .section5-right p {
+            font-size: 20px;
+            line-height: 26px;
+            position: relative
+        }
+
+        .section5-right-bottom {
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: flex;
+            margin-top: 16px;
+            -webkit-box-align: center;
+            -ms-flex-align: center;
+            align-items: center
+        }
+
+        .text-logo h5 {
+            font-size: 18px;
+            line-height: 23px
+        }
+
+        .section5-right-bottom img {
+            max-width: 240px;
+            width: 100%;
+        }
+
+        .text-logo {
+            max-width: 203px;
+            margin-right: 32px;
+        }
+
+        .section5-right p:after {
+            content: "“";
+            position: absolute;
+            top: 8px;
+            left: -21px;
+            font-size: 40px;
+            color: #a0a0a0
+        }
+
+        .section6-wrap {
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: flex;
+            -webkit-box-align: baseline;
+            -ms-flex-align: baseline;
+            align-items: baseline;
+            margin: 0 -10px
+        }
+
+        a.request-btn:hover {
+            background: #f89410;
+            color: #fff
+        }
+
+        .single-counting h5 {
+            color: #f89406;
+            font-size: 24px;
+            margin-bottom: 8px
+        }
+
+        .single-counting {
+            text-align: center;
+            padding: 20px 10px
+        }
+
+        .single-counting p {
+            font-size: 12px;
+            line-height: 17px
+        }
+
+        .left-banner-text a {
+            display: none
+        }
+
+        .button-box .btn-bg {
+            padding: 17px 16px;
+            max-width: 227px;
+            width: 100%;
+            text-align: center
+        }
+
+        .single-counting:last-child {
+            width: 100%;
+            max-width: 256px
+        }
+
+        .single-counting:nth-child(3) {
+            width: 100%;
+            max-width: 148px
+        }
+
+        section.section6-area {
+            padding-top: 16px;
+            text-align: center
+        }
+
+        footer {
+            padding: 31px 16px;
+            background: #262626;
+            margin-top: 48px
+        }
+
+        footer p {
+            color: #fff;
+            text-align: center;
+            font-size: 12px;
+            line-height: 18px
+        }
+
+        @media (min-width:1200px) and (max-width:1500px) {
+            .left-banner-text h1 {
+                font-size: 41px;
+                line-height: 1.3;
+                letter-spacing: 2px
+            }
+
+            .bottom-line:before {
+                width: 36%
+            }
+
+            .right-banner-img {
+                background: #252525
+            }
+
+            .left-banner-text {
+                max-width: 62%
+            }
+        }
+
+        @media (min-width:992px) and (max-width:1200px) {
+            .container {
+                max-width: 992px
+            }
+            .left-banner-text span {
+    font-size: 18px;
+    line-height: 18px;
+    margin-bottom: 15px;
+}
+
+            .section5-right {
+                padding-left: 40px;
+                width: 45%
+            }
+
+            .section5-right-bottom img {
+                max-width: 170px;
+                width: 100%
+            }
+
+            .right-banner-img img {
+                width: 100%;
+                height: 100%
+            }
+
+            .left-banner-text h1 {
+                font-size: 35px;
+                line-height: 1.3;
+                letter-spacing: 1px
+            }
+
+            .bottom-line:before {
+                width: 36%
+            }
+
+            .section3-left h2 {
+                font-size: 24px;
+                line-height: 1.5
+            }
+
+            .section3-left p {
+                font-size: 18px;
+                margin-top: 8px;
+                line-height: 1.5
+            }
+
+            .section-title h2 {
+                font-size: 28px
+            }
+            .summary-chart-desc p {
+    font-size: 16px;
+    line-height: 24px;
+   
+}
+.summary-chat-img {
+ 
+    max-width: 178px;
+}
+            .content-card h3 {
+                font-size: 19px;
+                line-height: 28px;
+                margin-bottom: 8px
+            }
+
+            .content-card {
+                max-width: 47%
+            }
+
+            .section5-left h3 {
+                font-size: 25px;
+                line-height: 1.4;
+                margin-bottom: 24px
+            }
+
+            .section5-left {
+                padding-top: 32px;
+                padding-bottom: 32px;
+                padding-right: 48px;
+                width: 55%
+            }
+
+            .single-counting h5 {
+                font-size: 18px;
+                margin-bottom: 8px
+            }
+
+            .single-counting:last-child {
+                width: 100%;
+                max-width: 198px
+            }
+        }
+
+        @media (min-width:768px) and (max-width:991px) {
+            .container {
+                max-width: 768px
+            }
+
+            .right-banner-img {
+                max-width: 248px
+            }
+
+            .left-banner-text h1 {
+                font-size: 26px;
+                line-height: 1.3;
+                letter-spacing: 1px
+            }
+
+            .left-banner-text {
+                padding: 40px 0;
+                max-width: 65%
+            }
+
+            .bottom-line:before {
+                width: 35.4%
+            }
+
+            .section3-left h2 {
+                font-size: 20px;
+                line-height: 1.3
+            }
+
+            .section3-left p {
+                font-size: 15px;
+                margin-top: 8px;
+                line-height: 1.4
+            }
+
+            .section3-right {
+                max-width: 35%;
+                width: 100%
+            }
+            .analysis-form h4 {
+    font-size: 16px;
+    
+    line-height: 23px;
+     
+}
+.analysis-form {
+ 
+    padding-left: 24px;
+}
+.analysis-form form input {
+    width: 100%;
+    padding: 8px 16px;
+  
+    margin-bottom: 12px;
+}
+.analysis-form form label {
+    font-size: 13px;
+ 
+    line-height: 18px;
+   
+}
+.analysis-form form button {
+ 
+    padding: 12px 16px;
+ 
+    max-width: 140px;
+ 
+    margin-top: 8px;
+     
+}
+.analysis-form p {
+    font-size: 12px;
+    line-height: 18px;
+     
+}
+            .section3-left {
+                width: 100%;
+                max-width: 65%;
+                padding-right: 24px
+            }
+
+            a.btn-border {
+                max-width: 200px
+            }
+
+            a.btn-bg {
+                padding: 17px 53px
+            }
+
+            .button-box .btn-bg {
+                margin-right: 16px
+            }
+
+            .section-title h2 {
+                font-size: 22px
+            }
+
+            .content-card h3 {
+                font-size: 16px;
+                line-height: 32px;
+                margin-bottom: 8px
+            }
+
+            .content-card p {
+                font-size: 14px;
+                line-height: 1.5;
+                margin-bottom: 16px
+            }
+
+            .content-card {
+                max-width: 47%
+            }
+
+            .section5-left h3 {
+                font-size: 22px;
+                line-height: 1.4;
+                margin-bottom: 16px
+            }
+
+            .section5-left {
+                padding-top: 32px;
+                padding-bottom: 32px;
+                padding-right: 40px;
+                width: 55%
+            }
+
+            .section5-right p {
+                font-size: 16px;
+                line-height: 1.4
+            }
+
+            .section5-right p:after {
+                top: -7px
+            }
+
+            .section5-right:after {
+                right: -65px
+            }
+
+            .section5-right {
+                padding-top: 32px;
+                padding-bottom: 32px;
+                padding-left: 31px;
+                width: 45%
+            }
+
+            .text-logo h5 {
+                font-size: 15px;
+                line-height: 22px
+            }
+
+            .section5-right-bottom img {
+                max-width: 100px;
+                width: 100%
+            }
+
+            .text-logo {
+    max-width: 160px;
+}
+.left-banner-text span {
+    font-size: 16px;
+    
+    line-height: 20px;
+     
+    margin-bottom: 5px;
+     
+}
+            .single-counting {
+                text-align: center;
+                padding: 10px 10px;
+                width: 33%
+            }
+
+            .section6-wrap {
+                padding-bottom: 20px;
+                -ms-flex-wrap: wrap;
+                flex-wrap: wrap;
+                -webkit-box-pack: center;
+                -ms-flex-pack: center;
+                justify-content: center
+            }
+        }
+
+        @media (max-width:767px) {
+            .right-banner-img {
+                position: static;
+                right: 0;
+                max-width: 100%;
+                width: 100%;
+                border-left: 0;
+                height: 100%
+            }
+            .left-banner-text span {
+    font-size: 18px;
+     
+    line-height: 24px;
+ 
+    margin-bottom: 12px;
+    
+}
+            .left-banner-text a {
+                display: inline-block;
+                max-width: 227px;
+                padding: 17px 16px;
+                text-align: center;
+                margin-top: 20px
+            }
+
+            .right-banner-img img {
+                width: 100%;
+                height: 100%
+            }
+
+            section.banner-area {
+                overflow: hidden
+            }
+
+            .border-bottom1 {
+                display: none
+            }
+
+            .border-bottom2 {
+                display: none
+            }
+
+            .left-banner-text:before {
+                width: 0;
+                height: 0
+            }
+
+            .right-banner-img:after {
+             width: 100%;
+   
+             right: 0;
+  
+             z-index: -1;
+            }
+
+            section.banner-area {
+                padding-bottom: 0
+            }
+
+            section.section3-area {
+                padding-bottom: 40px
+            }
+
+            .left-banner-text {
+                background: #508e67;
+                margin-right: 0;
+                width: 100%;
+                max-width: 100%;
+                padding: 32px 0px;
+                margin-top: 16px;
+            }
+
+            .banner-wrap {
+                display: -webkit-box;
+                display: -ms-flexbox;
+                display: flex;
+                -webkit-box-flex: unset;
+                -ms-flex: unset;
+                flex: unset;
+                -webkit-box-orient: vertical;
+                -webkit-box-direction: reverse;
+                -ms-flex-direction: column-reverse;
+                flex-direction: column-reverse
+            }
+
+            .bottom-line {
+                display: none
+            }
+
+            section.banner-area:after {
+                background: #fff
+            }
+
+            .left-banner-text h1 {
+                font-size: 32px;
+                line-height: 1.4;
+                letter-spacing: 0
+            }
+
+            .section3-wrap {
+                -webkit-box-orient: vertical;
+                -webkit-box-direction: normal;
+                -ms-flex-direction: column;
+                flex-direction: column
+            }
+
+            .section3-right {
+                max-width: 100%;
+                width: 100%;
+                margin-top: 40px;
+            }
+
+            .section5-left h3 {
+                letter-spacing: -2px
+            }
+
+            .section3-left {
+                width: 100%;
+                max-width: 100%;
+                padding-top: 0;
+                padding-right: 0
+            }
+
+            .section3-left h2 {
+                font-size: 22px;
+                line-height: 1.4
+            }
+
+            .section4-wrap {
+                -webkit-box-orient: vertical;
+                -webkit-box-direction: normal;
+                -ms-flex-direction: column;
+                flex-direction: column
+            }
+
+            .content-card {
+                max-width: 100%;
+                padding-bottom: 32px
+            }
+
+            .section-title h2 {
+                font-size: 24px;
+                line-height: 1.4
+            }
+
+            .section5-wrap {
+                display: block
+            }
+
+            .section5-left {
+                width: 100%;
+                padding-top: 32px;
+                padding-bottom: 32px
+            }
+
+            .content-card h3 {
+                font-size: 18px;
+                line-height: 32px;
+                margin-bottom: 8px
+            }
+
+            .section5-left {
+                width: 100%;
+                background: #508d67;
+                padding: 32px 0px;
+            }
+            .summary-char {
+    flex-direction: column;
+    background: url(images/horizontal-line.png);
+    background-size: 12px 100%;
+    background-repeat: no-repeat;
+    background-position: top left;
+    padding-left: 32px;
+    padding-top: 0;
+    margin-top: 40px;
+}
+.summary-char.mobile-hide {
+    display: none;
+}
+.summary-char.mobile-show {
+    display: block;
+}
+.summary-chat-img {
+    max-width: 100%;
+    margin-bottom: 24px;
+}
+
+.summary-chart-desc {
+    padding-left: 0px;
+}
+
+.summary-chat-img img {
+    max-width: 95%;
+}
+
+.analysis-form {
+    background: none;
+    padding-left: 0;
+}
+            .section5-right-bottom {
+                -webkit-box-orient: vertical;
+                -webkit-box-direction: normal;
+                -ms-flex-direction: column;
+                flex-direction: column;
+                -webkit-box-align: self-start;
+                -ms-flex-align: self-start;
+                align-items: self-start
+            }
+
+            .section.section5 {
+                overflow-x: hidden
+            }
+
+            .text-logo {
+                margin-right: 0;
+                margin-bottom: 8px
+            }
+
+            .section5-left {
+                position: relative
+            }
+
+            .section5-left:after {
+                width: 130%;
+                left: -30px
+            }
+
+            .section5-right {
+                position: relative
+            }
+
+            .section5-right:after {
+                width: 130%;
+                left: -30px
+            }
+
+            .left-banner-text {
+                z-index: 99;
+                position: relative
+            }
+
+            .left-banner-text:after {
+                background: #508e67;
+                position: absolute;
+                left: -40px;
+                width: 130%;
+                height: 100%;
+                content: "";
+                top: 0;
+                z-index: -1
+            }
+
+            .section5-right {
+                width: 100%;
+                padding: 32px;
+                background: #f3f3f5;
+                margin-top: 12px
+            }
+
+            .section6-wrap {
+                display: block;
+                margin: 0;
+                padding-bottom: 24px
+            }
+
+            .single-counting {
+                text-align: center;
+                padding: 12px 10px;
+                max-width: 320px;
+                margin: 0 auto
+            }
+
+            .button-box {
+                display: -webkit-box;
+                display: -ms-flexbox;
+                display: flex;
+                -webkit-box-orient: vertical;
+                -webkit-box-direction: normal;
+                -ms-flex-direction: column;
+                flex-direction: column
+            }
+
+            .button-box .btn-bg {
+                margin-right: 0;
+                max-width: 227px;
+                padding: 16px 16px;
+                text-align: center;
+                margin-bottom: 30px
+            }
+
+            section.section3-area {
+                padding-top: 30px
+            }
+
+            .section3-left p {
+                font-size: 18px;
+                line-height: 25px
+            }
+        }
+ 
+.mktoForm input[type=text], .mktoForm input[type=url], .mktoForm input[type=email], .mktoForm input[type=tel], .mktoForm input[type=number], .mktoForm input[type=date], .mktoForm textarea.mktoField, .mktoForm select.mktoField {
+    width: 100% !important;
+    padding: 12px 16px;
+}
+
+   
+    </style>
+
+<style> 
+
+    form {
+        width: 100% !important;
+    }
+    .mktoFieldWrap {
+        width: 100% !important;
+    }
+    
+    .mktoFormCol {
+        width: 100% !important;
+    }
+    
+    .mktoHtmlText.mktoHasWidth {
+      
+        width: 100% !important;
+        font-size: 20px !important;
+       
+         
+    }
+  
+    .mktoModalContent {
+        padding: 0 !important;
+    }
+    .mktoOffset.mktoHasWidth {
+        display: none !important;
+    }
+    .mktoModalMain {
+        width: 100% !important;
+    }
+    
+    .mktoModalContent {
+        width: 100% !important;
+        max-width: 700px !important;
+        margin: 0 auto;
+        left: 50% !important;
+        transform: translateX(-50%) !important;
+    }
+    
+    form#mktoForm_1186 {
+        width: 100% !important;
+    }
+    
+    .mktoFieldDescriptor.mktoFormCol {
+        width: 100% !important;
+        height: 100% !important;
+        margin: 0 !important;
+    }
+    
+    .mktoFieldWrap {
+        width: 100% !important;
+    }
+    
+    
+    .mktoForm .mktoButtonWrap.mktoSimple .mktoButton {
+ 
+        border: 3px solid #f89406 !important;
+        padding: 17px 16px !important;
+        text-decoration: none;
+        transition: 0.5s;
+        color: #000000 !important;
+    background: #F89406 !important;
+    display: block;
+    font-size: 16px !important;
+    font-family: 'graphik-semibold';
+    border: 0;
+    outline: none;
+  
+    width: 100%;
+    max-width: 178px !important;
+    text-align: center;
+    margin-top: 19px;
+ 
+
+    }
+
+    .mktoForm .mktoRequiredField label.mktoLabel {
+    font-weight: bold;
+    width: 100% !important;
+}
+    span.mktoButtonWrap.mktoSimple {
+        margin-left: 24px !important;
+        margin-top: 24px !important;
+        margin-bottom: 20px !important;
+    }
+    
+    .mktoButtonRow {
+    width: 100% !important;
+}
+    
+    .mktoForm .mktoButtonWrap.mktoSimple .mktoButton:hover {
+        background: #f7ab40 !important;
+        color:#000!important;
+        border: 3px solid #f7ab40 !important;
+    }
+    
+    .mktoModal .mktoModalClose {
+        z-index: 9999;
+        right: 24px !important;
+        top: 20px !important;
+        font-size: 24px !important;
+        background: transparent !important;
+        border: none !important;
+    }
+    .mktoForm input[type=text], .mktoForm input[type=url], .mktoForm input[type=email], .mktoForm input[type=tel], .mktoForm input[type=number], .mktoForm input[type=date], .mktoForm textarea.mktoField, .mktoForm select.mktoField {
+        width: 100%!important;
+    padding: 15px 16px !important;
+    box-shadow: inset 2px 2px 5px #00000067 !important;
+    border: 2px solid #E6E6E6!important;
+ 
+    }
+    .mktoForm input::placeholder {
+    
+        color: #5c5a5a59 !important;
+    }
+    .mktoForm input[type=text]:focus, .mktoForm input[type=url]:focus, .mktoForm input[type=email]:focus, .mktoForm input[type=tel]:focus, .mktoForm input[type=number]:focus, .mktoForm input[type=date]:focus, .mktoForm select.mktoField:focus, .mktoForm textarea.mktoField:focus {
+        border-color: #f89406 !important;
+    }
+    .mktoForm textarea::placeholder {
+    
+        color: #5c5a5a59 !important;
+    }
+    .analysis-form h4 {
+ 
+    padding-left: 0 !important;
+}
+    @media (max-width:768px){
+        .mktoHtmlText.mktoHasWidth {
+    font-size: 18px !important;
+    
+    margin-bottom: 24px !important;
+}
+    .mktoForm, .mktoForm * {
+        padding: 0 !important;
+    }
+    .mktoForm input[type=text], .mktoForm input[type=url], .mktoForm input[type=email], .mktoForm input[type=tel], .mktoForm input[type=number], .mktoForm input[type=date], .mktoForm textarea.mktoField, .mktoForm select.mktoField {
+      
+        margin-bottom: 18px !important;
+        padding:20px 16px !important;
+    }
+    .mktoForm textarea::placeholder {
+    
+    font-size:12px !important;
+    }
+    .mktoForm input::placeholder {
+    
+    font-size:12px !important;
+    }
+    .mktoButtonRow {
+        padding-bottom: 20px !important;
+        padding-top: 10px !important;
+    }
+    textarea#customField1 {
+        min-height: 50px !important;
+    }
+    .mktoForm .mktoButtonWrap.mktoSimple .mktoButton{
+        margin-top:0px!important;
+    }
+    }
+           </style>
+</head>
+
+<body>
+    <!-- top header  -->
+    <header>
+        <div class="container">
+            <div class="logo">
+                <img src="https://go.bain.com/rs/545-OFW-044/images/SPSlogo.png" alt="logo image">
+            </div>
+        </div>
+    </header>
+    <!-- banner area  -->
+    <section class="banner-area">
+        <div class="container">
+            <div class="banner-wrap">
+                <div class="mktoText left-banner-text" id="leftbanner" mktoName="leftbanner">
+                    <span>Request a custom review of your deal sourcing strategy</span>
+                    <h1>See where you stand<br> compared to peers</h1>
+                   
+                    <div class="border-bottom1"></div>
+                </div>
+                <div class="right-banner-img">
+                    <img src="https://go.bain.com/rs/545-OFW-044/images/spscustom-analysis-top.png" alt="image here">
+                    <div class="border-bottom2"></div>
+
+                </div>
+            </div>
+        </div>
+        <div class="bottom-line"></div>
+    </section>
+    <!-- section 3  -->
+    <section class="section3-area">
+        <div class="container">
+            <div class="section3-wrap">
+                <div class="mktoText section3-left" id="section3" mktoName="section3">
+                    <h2>Find the deals you’ve missed and improve your deal sourcing efficiency </h2>
+                    <p>Most PE firms see only 15.8% of their target market deal flow. How do you compare?
+
+                    </p>
+                    <p>Provide details about your firm’s target market deal flow and an SPS representative will contact you with a free custom review of your deal sourcing strategy tailored to your investment criteria.
+
+                    </p>
+                    <p>With your custom review, you can gauge your performance directly to peers and gain a clear view of effective deal sourcing strategies among your competition.
+                    </p>
+                   <div class="summary-char mobile-hide">
+                       <div class="summary-chat-img">
+                           <img src="https://go.bain.com/rs/545-OFW-044/images/spssummary-chart.png" alt="summary chart">
+                       </div>
+                       <div class="summary-chart-desc">
+                           <p>The 2021 Deal Origination Benchmark Report (DOBR) includes results from 157 qualified PE firms, segmented into 8 peer groups, and sorted by deal size and industry. </p>
+                       </div>
+                   </div>
+                </div>
+                <div class="section3-right">
+                    <div class="mktoText analysis-form"  id="analysisform" mktoName="analysisform">
+                         
+                        <!-- <form class="mktoForm" data-formId="1383" data-formInstance="one"></form> -->
+
+                        <form id="mktoForm_1383"></form>
+                        
+                        <p>Please allow a week for delivery of your custom review.</p>
+                    </div>
+
+                    <div class="summary-char mobile-show">
+                        <div class="summary-chat-img">
+                            <img src="https://go.bain.com/rs/545-OFW-044/images/spssummary-chart.png" alt="summary chart">
+                        </div>
+                        <div class="mktoText summary-chart-desc" id="chartdesc" mktoName="chartdesc">
+                            <p>The 2021 Deal Origination Benchmark Report (DOBR) includes results from 157 qualified PE firms, segmented into 8 peer groups, and sorted by deal size and industry. </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- section 5   -->
+    <section class="section5">
+        <div class="container">
+            <div class="section5-wrap">
+                <div class="section5-left">
+                    <img src="https://go.bain.com/rs/545-OFW-044/images/spsWhite_Logo.png" alt="logo img">
+                    <h3>See who you need to know to source and secure your next deal with SPS</h3>
+                    <a href="#" class="pop-out request-btn">Request an SPS Demo</a>
+                </div>
+                <div class="section5-right">
+                    <p>As a sector-focused fund, deal sourcing is ingrained in our DNA and critical to our success. SPS provides us cutting edge tools and analytics to stay ahead of our competition.”
+                    </p>
+                    <div class="section5-right-bottom">
+                        <div class="mktoText text-logo" id="textlogo" mktoName="textlogo">
+                            <h5>Matthew Thompson<br>
+                                Managing Partner,<br>
+                                Enhanced Healthcare<br>
+                                Partners
+                                </h5>
+                        </div>
+                        <img src="https://go.bain.com/rs/545-OFW-044/images/spsenhanced-logo.png" alt="enhanced-logo">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- section 6  -->
+    <section class="section6-area">
+        <div class="container">
+            <div class="mktoText section6-wrap" id="section6" mktoName="section6">
+                <!-- single card  -->
+                <div class="single-counting">
+                    <h5>65K+ </h5>
+                    <p>deals, including private equity, growth equity, and corporate M&A, from 4K+ funds</p>
+                </div>
+                <!-- single card  -->
+                <div class="single-counting">
+                    <h5>~100 </h5>
+                    <p>sector categorizations and keyword search allow you to find deals relevant to you</p>
+                </div>
+                <!-- single card  -->
+                <div class="single-counting">
+                    <h5>~9k+ </h5>
+                    <p>intermediary contacts from 2K+ firms</p>
+                </div>
+                <!-- single card  -->
+                <div class="single-counting">
+                    <h5>Deal size </h5>
+                    <p>ranges estimated for every deal so you can filter for transactions of the right size</p>
+                </div>
+                <!-- single card  -->
+                <div class="single-counting">
+                    <h5>Proprietary fields </h5>
+                    <p>including deal type (e.g., carve-out, distress), process competitiveness, platform vs. add-on,
+                        control vs. minority</p>
+                </div>
+                <!-- single card  -->
+                <div class="single-counting">
+                    <h5>Full CRM integration</h5>
+                    <p>to automatically align with your internal data on firms, professionals, and deals </p>
+                </div>
+            </div>
+            <a href="#" class="pop-out request-btn">Request an SPS Demo</a>
+        </div>
+    </section>
+    <footer>
+        <p>© 2022 Sutton Place Strategies, by Bain & Co.</p>
+    </footer>
+    
+ 
+    
+ <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/sweetalert/1.1.3/sweetalert.min.js"></script>
+        <script src="//go.bain.com/js/forms2/js/forms2.min.js"></script>
+       
+<script>MktoForms2.loadForm("//go.bain.com", "545-OFW-044", 1383);</script>
+<script>
+
+
+  for(var i=0; i<document.querySelectorAll(".pop-out").length; i++){
+    document.querySelectorAll(".pop-out")[i].addEventListener("click", function(e) {
+                e.preventDefault();
+     
+        
+                MktoForms2.loadForm("//go.bain.com", "545-OFW-044", 1186, function (form){MktoForms2.lightbox(form).show();
+                
+                    form.onSuccess(function() {
+                        swal("Thank you ", "for reaching out to Sutton Place Strategies, an expert will contact you shortly.","success")
+return false;
+});
+                });
+
+                
+});
+
+}
+
+
+ 
+  
+  </script>
+
+
+
+
+ 
+
+ 
+</body>
+
+</html>

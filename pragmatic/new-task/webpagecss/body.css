@@ -1,0 +1,414 @@
+.sf_cols.banner-area {
+    background: url(https://pulsepowertexas.com/images/default-source/page-content/lonestarenergytx/lonestar-banner.jpg);
+    position: relative;
+    padding-top: 50px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    padding-bottom: 50px;
+}
+
+.sf_cols.banner-area .sf_2cols_1_33 {
+    width: 34%;
+    position: relative;
+    z-index: 1;
+    padding-right: 40px;
+}
+
+.sf_cols.banner-area:after {
+    position: absolute;
+    left: 0;
+    width: calc(50% - 175px);
+    background: rgba(255,255,255,0.80);
+    content: "";
+    height: 100%;
+    top: 0;
+    z-index: 0;
+}
+
+
+.sf_cols.banner-area h1 {
+    font-size: 46px;
+    font-weight: 700;
+    color: #BB6125;
+    line-height: 1.1;
+    letter-spacing: -0.5px;
+    padding-bottom: 8px;
+}
+
+  
+
+.sf_cols.banner-area label {
+    display: none;
+}
+
+.sf_cols.banner-area input {
+    display: block;
+    width: 100%;
+    max-width: 260px;
+    border: 1px solid #CBC3BB;
+    padding: 9px 16px;
+    margin-bottom: 11px;
+      text-align: center;
+}
+
+.sf_cols.banner-area input::placeholder {
+    font-size: 17px;
+    font-family: Arial,sans-serif;
+    color: #CBC3BB;
+}
+
+.sf_cols.banner-area button {
+    background: #9E3223;
+    width: 100%;
+    display: block;
+    max-width: 260px;
+    color: #fff;
+    font-family: 'urw-din',sans-serif;
+    font-weight: 700;
+    font-size: 18px;
+    padding: 7px 8px;
+    transition: 0.5s;
+    cursor: pointer;
+    border: 2px solid #9E3223;
+}
+
+.sf_cols.banner-area button:hover {
+    background: transparent;
+    color: #E75525;
+}
+.content-section1{
+    padding-top: 50px;
+    text-align: center;
+    padding-bottom: 160px;
+}
+
+.content-section1 h2 {
+    font-family: 'urw-din',sans-serif;
+    font-size: 30px;
+    font-weight: 700;
+    color: #BB6125;
+    padding-bottom: 14px;
+}
+
+.content-section1 p {
+    font-size: 17px;
+    color: #0D0D0D;
+    margin-bottom: 10px;
+}
+
+a.shop-btn {
+    background: #9E3223;
+    width: 100%;
+    display: block;
+    max-width: 260px;
+    color: #fff;
+    font-family: 'urw-din',sans-serif;
+    font-weight: 700;
+    font-size: 18px;
+    padding: 7px 8px;
+    transition: 0.5s;
+    cursor: pointer;
+    border: 2px solid #9E3223;
+    margin: 0 auto;
+    margin-top: 32px;
+}
+
+a.shop-btn:hover {
+    text-decoration: none;
+    color: #E75525;
+    background: transparent;
+}
+.section-card {
+    background: #fff;
+    box-shadow: 10px 10px 15px rgba(0,0,0,0.16);
+    margin: 0 !important;
+}
+
+img.card-header-image {
+    width: 100%;
+}
+
+img.card-icon {
+    width: 100%;
+    max-width: 80px;
+    margin: 0 auto;
+    display: block;
+    margin-top: -34px;
+}
+
+.section-card h3 {
+    padding: 0px 30px;
+    text-align: center;
+    font-size: 25px;
+    font-weight: 700;
+    color: #372822;
+}
+
+.section-card p {
+    padding: 0px 30px;
+    text-align: center;
+    margin: 0;
+    font-size: 16px;
+    color: #0D0D0D;
+    margin-bottom: 15px;
+}
+
+.section-card a {
+    display: block;
+    background: #9E3223;
+    text-align: center;
+    color: #fff;
+    font-size: 18px;
+    font-weight: 700;
+    padding: 9px 8px;
+    transition: 0.5s;
+  border: 2px solid #9E3223;
+}
+
+.section-card a:hover {
+    text-decoration: none;
+    color: #E75525;
+    background: transparent;
+
+}
+.card-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 55px;
+    margin-top: -97px;
+    padding-bottom: 60px;
+}
+
+.sf_cols.card-area-wrapper .sf_cols:after {
+    display: none;
+}
+
+.sf_cols.card-area-wrapper .sf_cols:before {
+    display: none;
+}
+
+.card-container .sf_colsOut {
+    width: 100%;
+}
+
+.sf_cols.card-area-wrapper {
+    background: #CBC3BB;
+}
+
+ .cta-inner-container {
+    max-width: 620px;
+    margin: 0 auto;
+    background: rgba(255,255,255,0.75);
+    padding: 38px 35px;
+}
+
+.sf_cols.cta-wrap {
+    background: url(https://pulsepowertexas.com/images/default-source/page-content/lonestarenergytx/lonestar-cta-bg.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: top center;
+    padding: 68px 0px;
+}
+
+.cta-inner-container h3 {
+    font-size: 27px;
+    color: #BB6125;
+    font-weight: 700;
+    line-height: 1.1;
+}
+
+.cta-inner-container p {
+    color: #0D0D0D;
+    font-size: 16px;
+    margin: 0;
+    line-height: 1.4;
+}
+.cta-inner-container label {
+    display: none;
+}
+
+.cta-inner-container input {
+    display: block;
+    width: 100%;
+    max-width: 250px;
+    border: 1px solid #CBC3BB;
+    padding: 9px 16px;
+    margin-bottom: 11px;
+      text-align: center;
+}
+
+.cta-inner-container input::placeholder {
+    font-size: 17px;
+    font-family: Arial,sans-serif;
+    color: #CBC3BB;
+}
+
+.cta-inner-container button {
+    background: #9E3223;
+    width: 100%;
+    display: block;
+    max-width: 250px;
+    color: #fff;
+    font-family: 'urw-din',sans-serif;
+    font-weight: 700;
+    font-size: 18px;
+    padding: 7px 8px;
+    transition: 0.5s;
+    cursor: pointer;
+    border: 2px solid #9E3223;
+}
+
+.cta-inner-container button:hover {
+    background: transparent;
+    color: #E75525;
+}
+ 
+ .section-card {
+     
+    height: 100%;
+    position: relative;
+    padding-bottom: 50px;
+} 
+  .section-card a {
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+}
+
+
+@media (min-width:992px) and (max-width:1199px){
+ .sf_cols.banner-area .sf_2cols_1_33 {
+    width: 40%;
+    
+} 
+  .sf_cols.banner-area:after {
+      width: calc(50% - 140px);
+  }
+  .section-card h3 {
+    padding: 0px 15px;
+    
+    font-size: 23px;
+     
+}
+  .card-container {
+    
+    gap: 20px;
+  }
+  
+  
+}
+
+@media (min-width:769px) and (max-width:991px){
+  .sf_cols.banner-area .sf_2cols_1_33 {
+    width: 60%;
+    
+}
+  .sf_cols.banner-area:after {
+    
+    width: calc(54% - 0px);
+     
+}
+  .card-container {
+    gap: 15px;
+}
+
+.section-card h3 {
+    font-size: 18px;
+    padding: 0px 15px;
+}
+
+.section-card p {
+    font-size: 15px;
+    padding: 0px 15px;
+}
+}
+
+@media (max-width:767px){
+  
+  
+
+.sf_cols.banner-area {
+    background: #FCF6E6;
+    padding: 40px 0px;
+}
+
+.sf_cols.banner-area:after {
+    display: none;
+}
+
+.sf_cols.banner-area .sf_2cols_1_33 {
+    width: 100%;
+    margin: 0 auto !important;
+    padding-right: 0 !important;
+    float: none !important;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+.sf_cols.banner-area .sf_2cols_2-67 {
+    display: none;
+}
+
+.sf_cols.banner-area h1 {
+    font-size: 40px;
+}
+
+.sf_cols.banner-area input {
+    margin: 0 auto;
+    margin-bottom: 12px;
+}
+
+.sf_cols.banner-area button {
+    margin: 0 auto;
+}
+
+.card-container {
+    grid-template-columns: 1fr;
+   gap: 24px;
+}
+
+.section-card {
+    max-width: 320px;
+    margin: 0 auto !important;
+    margin-bottom: 16px !important;
+    height: auto;
+}
+
+.sf_cols.cta-wrap {
+    background: #FCF6E6;
+    padding: 40px 0px;
+}
+
+.cta-inner-container .sf_cols {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background: transparent;
+    text-align: center;
+}
+
+.cta-inner-container .sf_cols .sf_colsOut {
+    width: 100%;
+}
+
+.cta-inner-container p {
+    margin-bottom: 24px;
+}
+
+.cta-inner-container {
+    background: transparent;
+    padding: 0px 20px;
+    max-width: 400px;
+}
+
+.cta-inner-container input {
+    margin: 0 auto;
+    margin-bottom: 12px;
+}
+
+.cta-inner-container button {
+    margin: 0 auto;
+} 
+}

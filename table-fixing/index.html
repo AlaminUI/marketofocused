@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <style>
+
+        .custom-table-container{
+            
+            max-width: 1170px;
+    margin: 0 auto;
+        }
+.custom-table {
+    display: grid;
+    grid-gap: 8px;
+    grid-template-columns: 1fr 1fr;
+   
+}
+.single-row {
+    background: #f1f1f1;
+    padding: 8px;
+    margin-top: 8px;
+    text-align: center;
+}
+.custom-table ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.left-column ul {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 8px;
+}
+
+.left-column ul li {
+    border:1px solid red;
+}
+
+.right-column ul {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 8px;
+}
+
+.custom-table ul li {
+    background: #f1f1f1;
+    padding: 8px;
+}
+
+@media (max-width:767px) {
+    .custom-table {
+    
+    grid-template-columns: 1fr;
+} 
+}
+    </style>
+</head>
+
+<body>
+
+ 
+ 
+ 
+
+<div class="custom-table-container">
+
+<div class="custom-table">
+    <div class="left-column">
+        <ul>
+            <li> Name</li>
+            <li>Value</li>
+            <li> Name</li>
+            <li>Value</li>
+        </ul>
+    </div>
+    <div class="right-column">
+        <ul>
+            <li> Name</li>
+            <li>Value</li>
+            <li> Name</li>
+            <li>Value</li>
+        </ul>
+    </div>
+
+  
+</div>
+<div class="single-row">
+    single line
+</div>
+</div>
+</body>
+
+</html>

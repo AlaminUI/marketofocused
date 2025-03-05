@@ -1,0 +1,450 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+        <meta charset="utf-8">
+        
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>SPS BAIN</title><link rel="stylesheet" type="text/css" media="all" href="/css/mktLPSupportCompat.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/sweetalert/1.1.3/sweetalert.min.css">
+        <style>
+       @font-face{font-family:graphik-regular;src:url(https://s3.amazonaws.com/assets.knak.io/custom-fonts/Graphik/Graphik-Regular.woff) format("woff");font-weight:400;font-style:normal}
+    @font-face{font-family:graphik-medium;src:url(https://s3.amazonaws.com/assets.knak.io/custom-fonts/Graphik/Graphik-Medium.woff) format("woff");font-weight:500;font-style:normal}
+    @font-face{font-family:graphik-semibold;src:url(https://lp.bain.com/rs/378-NYU-220/images/Graphik-Semibold.woff) format("woff");font-weight:600;font-style:normal}
+    @font-face{font-family:graphik-bold;src:url(https://lp.bain.com/rs/378-NYU-220/images/Graphik-Bold.woff) format("woff");font-weight:700;font-style:normal}
+    *{padding:0;margin:0;-webkit-box-sizing:border-box;box-sizing:border-box}
+    body{font-family:graphik-regular;font-weight:400;font-style:normal;padding:0;margin:0;background-color:#fff;color:#262626}
+    .button,a,button{-webkit-transition:all .3s ease-out 0;-o-transition:all .3s ease-out 0;transition:all .3s ease-out 0}
+    a:hover{text-decoration:none}
+    a:focus,button:focus,input:focus,textarea:focus{text-decoration:none;outline:0}
+    button{cursor:pointer}
+    ol,ul{margin:0;padding:0}
+    li{list-style:none}
+    h1,h2,h3,h4,h5,h6{font-family:graphik-medium;font-weight:700;font-style:normal;margin-top:0}
+    h1{font-size:38px}
+    h2{font-size:40px}
+    h3{font-size:35px}
+    h4{font-size:18px}
+    h5{font-size:18px}
+    h6{font-size:16px}
+    .container{max-width:1230px;padding:0 15px;margin:0 auto}
+    .logo img{width:100%;max-width:200px}
+    header{padding-top:40px;padding-bottom:24px}
+    .banner-wrap{display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-flex:1;-ms-flex:1;flex:1}
+    .left-banner-text{background:#508e67;margin-right:16px;width:100%;max-width: 61%;padding:50px 0}
+    section.banner-area{position:relative}
+    .right-banner-img{position:absolute;right:0;max-width:40%;width:100%;border-left:12px solid #fff;height:100%}
+    .right-banner-img img{width:auto;height:100%}
+    .left-banner-text h1{font-size: 44px;color:#fff;font-family:graphik-regular;line-height: 54px;letter-spacing:0;font-weight: 400;}
+    section.banner-area:after{position:absolute;left:0;top:0;background:#508e67;content:"";width:100%;height:100%;z-index:-1}
+    .bottom-line{width:100%;margin-top:22px;position:relative}
+    .bottom-line:after{content:"";width:60%;height:46px;position:absolute;left:0;bottom:0;background:#508e67;top:-10px}
+    .bottom-line:before{content:"";width:39.4%;height:46px;position:absolute;bottom:0;background:#666;top:-10px;right:0}
+    .section3-wrap{display:-webkit-box;display:-ms-flexbox;display:flex}
+    .section3-left{width:100%;max-width:800px;padding-right:24px}
+    .section3-right{max-width:400px;width:100%}
+    .section3-right img{width:100%}
+    .section3-left h2{font-size:28px;font-family:graphik-regular;line-height:43px;color:#000}
+    .section3-left p{font-size:20px;color:#262626;margin-top:16px;line-height:31px}
+a.btn-bg {
+    background: #f89406;
+    display: inline-block;
+    padding: 17px 30px;
+    text-decoration: none;
+    font-size: 16px;
+    color: #262626;
+    font-family: graphik-medium;
+    -webkit-transition: .5s;
+    -o-transition: .5s;
+    transition: .5s;
+    width: 100%;
+    max-width: 228px;
+    text-align: center;
+}    a.btn-border{display:inline-block;padding:16px 8px;text-decoration:none;font-size:16px;color:#262626;font-family:graphik-medium;border:2px solid #f89406;width:100%;max-width:228px;text-align:center;-webkit-transition:.5s;-o-transition:.5s;transition:.5s}
+    .button-box .btn-bg{margin-right:32px}
+    .button-box{margin-top:24px}
+    section.section3-area{padding-top:77px;padding-bottom:24px}
+    a.btn-bg:hover{background:#f89406bd}
+    a.btn-border:hover{background:#f89406}
+    .section4-wrap{display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-pack:justify;-ms-flex-pack:justify;justify-content:space-between}
+    .content-card{max-width:550px}
+    .section-title h2{font-size:31px;font-family:'graphik-regular'}
+    .content-card h3{font-size:22px;line-height:32px;margin-bottom:16px;font-weight:500}
+    .content-card p{font-size:16px;line-height:26px;margin-bottom:16px}
+    a.btn-black{display:inline-block;background:#262626;color:#fff;font-size:12px;line-height:17px;text-decoration:none;padding:7px 19px;font-family:graphik-medium;border:2px solid #262626}
+    a.btn-black:hover{background:0 0;border:2px solid #262626;color:#262626}
+    .section-title h2{margin-bottom:24px}
+    section.section4-area{padding-top:32px;padding-bottom:32px}
+    .section5-wrap {
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: flex
+        }
+
+        .section5-left {
+            width: 54%;
+            padding-top: 36px;
+            padding-bottom: 36px;
+            padding-right: 25px;
+            background: #508e67;
+            margin-right: 12px
+        }
+
+        .section5-right {
+            width: 46%;
+            padding-top: 40px;
+            padding-bottom: 40px;
+            padding-left: 46px;
+            background: #f3f3f4
+        }
+
+        section.section5 {
+            position: relative;
+            overflow: hidden
+        }
+
+        .section5-left:after {
+            content: "";
+            position: absolute;
+            left: 0;
+            top: 0;
+            height: 100%;
+            width: 40%;
+            background: #508e67;
+            z-index: -1
+        }
+
+        .section5-right:after {
+            content: "";
+            position: absolute;
+            right: -30px;
+            top: 0;
+            height: 100%;
+            width: 40%;
+            background: #f3f3f4;
+            z-index: -1
+        }
+
+    .section5-left img{width:100%;max-width:156px;margin-bottom:16px}
+    .section5-left h3{color:#fff;font-family:graphik-regular;font-weight:400;font-size:31px;line-height:39px;margin-bottom:24px}
+    a.request-btn{display:inline-block;border:3px solid #f89406;padding:14px 27px;color:#262626;text-decoration:none;font-family:graphik-medium;background:#fff}
+    .section5-right p{font-size:20px;line-height:26px;position:relative;letter-spacing: -0.2px;}
+    .section5-right-bottom{display:-webkit-box;display:-ms-flexbox;display:flex;margin-top:16px;-webkit-box-align:center;-ms-flex-align:center;align-items:center;gap: 150px;}
+    .text-logo h5{font-size:18px;line-height:23px}
+    .section5-right-bottom img{max-width: 100px;width:100%;margin-top: -30px;}
+    .text-logo{max-width:180px}
+    .section5-right p:after{content:"“";position:absolute;top:8px;left:-21px;font-size:40px;color:#a0a0a0}
+    .section6-wrap{display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-align:baseline;-ms-flex-align:baseline;align-items:baseline;margin:0 -10px}
+    a.request-btn:hover{background:#f89410;color:#fff}
+    .single-counting h5{color:#f89406;font-size:24px;margin-bottom:8px}
+    .single-counting{text-align:center;padding:20px 10px}
+    .single-counting p{font-size:12px;line-height:17px}
+    .single-counting:last-child{width:100%;max-width:256px}
+    .single-counting:nth-child(3){width:100%;max-width:148px}
+    section.section6-area{padding-top:16px;text-align:center}
+    footer{padding:31px 16px;background:#262626;margin-top:48px}
+    footer p{color:#fff;text-align:center;font-size:12px;line-height:18px}
+    @media (min-width: 1921px) and (max-width:2200px) {
+    .left-banner-text{padding:72px 0;max-width: 64%;}
+    .left-banner-text h1{font-size:46px;line-height:62px;font-weight:500}
+    }
+    @media (min-width: 1200px) and (max-width:1500px) {
+    .container{max-width:1200px}
+    .left-banner-text h1{font-size:41px;line-height:1.3;letter-spacing:0}
+    .bottom-line:before{width:39%}
+    .section3-left{max-width:716px}
+    }
+    @media (min-width: 992px) and (max-width:1200px) {
+    .container{max-width:992px}
+    .section5-right{padding-left:0}
+    .left-banner-text h1{font-size:32px;line-height:1.3;letter-spacing:0}
+    .bottom-line:before{width:39%}
+    .section3-left h2{font-size:24px;line-height:1.5}
+    .section3-left p{font-size:18px;margin-top:8px;line-height:1.5}
+    .section-title h2{font-size:28px}
+    .content-card h3{font-size:19px;line-height:28px;margin-bottom:8px}
+    .content-card{max-width:47%}
+    .section5-left h3{font-size:25px;line-height:1.4;margin-bottom:24px}
+    .section5-left{padding-top:32px;padding-bottom:32px;padding-right:48px}
+    .single-counting h5{font-size:18px;margin-bottom:8px}
+    .single-counting:last-child{width:100%;max-width:198px}
+    }
+    @media (min-width: 768px) and (max-width:991px) {
+    .container{max-width:768px}
+    .bottom-line:after{height:32px}
+    .left-banner-text h1{font-size:25px;line-height:1.3;letter-spacing:0}
+    .left-banner-text{padding:40px 0}
+    .bottom-line:before{width:38.4%;height:32px}
+    .section3-left h2{font-size:20px;line-height:1.3}
+    .section3-left p{font-size:15px;margin-top:8px;line-height:1.4}
+    .section3-right{max-width:35%;width:100%}
+    .section3-left{width:100%;max-width:65%;padding-right:24px}
+    a.btn-border{max-width:200px}
+    a.btn-bg{padding:17px}
+    .button-box .btn-bg{margin-right:16px}
+    .section-title h2{font-size:22px}
+    .content-card h3{font-size:16px;line-height:32px;margin-bottom:8px}
+    .content-card p{font-size:14px;line-height:1.5;margin-bottom:16px}
+    .content-card{max-width:47%}
+    .section5-left h3{font-size:22px;line-height:1.4;margin-bottom:16px}
+    .section5-left{padding-top:32px;padding-bottom:32px;padding-right:40px}
+    .section5-right p{font-size:16px;line-height:1.4}
+    .section5-right p:after{top:-7px}
+    .section5-right{padding-top:32px;padding-bottom:32px;padding-left:16px}
+    .text-logo h5{font-size:15px;line-height:22px}
+    .section5-right-bottom img{max-width:130px;width:100%}
+    .text-logo{max-width:140px}
+    .single-counting{text-align:center;padding:10px;width:33%}
+    .section6-wrap{padding-bottom:20px;-ms-flex-wrap:wrap;flex-wrap:wrap;-webkit-box-pack:center;-ms-flex-pack:center;justify-content:center}
+    }
+    @media (max-width: 767px) {
+        .right-banner-img img {
+    display: none;
+}
+    .right-banner-img{position:static;right:0;max-width:100%;width:100%;border-left:0;height:100%}
+    .left-banner-text{background:#508e67;margin-right:0;width:100%;max-width:100%;padding:32px 16px;margin-top:16px}
+    .banner-wrap{display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-flex:unset;-ms-flex:unset;flex:unset;-webkit-box-orient:vertical;-webkit-box-direction:reverse;-ms-flex-direction:column-reverse;flex-direction:column-reverse}
+    .bottom-line{display:none}
+    section.banner-area:after{background:#fff}
+    .left-banner-text h1{font-size:32px;line-height:1.4;letter-spacing:0}
+    .section3-wrap{-webkit-box-orient:vertical;-webkit-box-direction:reverse;-ms-flex-direction:column-reverse;flex-direction:column-reverse}
+    .section3-right{max-width:100%;width:100%}
+    .section3-left{width:100%;max-width:100%;padding-top:32px;padding-right:0}
+    .section3-left h2{font-size:22px;line-height:1.4}
+    .section4-wrap{-webkit-box-orient:vertical;-webkit-box-direction:normal;-ms-flex-direction:column;flex-direction:column}
+    .content-card{max-width:100%;padding-bottom:32px}
+    .section-title h2{font-size:24px;line-height:1.4}
+    .section5-wrap{display:block}
+    .section5-left{width:100%;padding-top:32px;padding-bottom:32px}
+    .content-card h3{font-size:18px;line-height:32px;margin-bottom:8px}
+    .section5-left{width:100%;background:#508d67;padding:32px 24px}
+    section.section5:before{content:"";background:0 0;width:0;height:0}
+    section.section5:after{content:"";background:0 0;width:0;height:0}
+
+    .section5-left:after {
+    display: none;
+}
+    .section5-right{width:100%;padding:32px;background:#f3f3f5;margin-top:12px}
+    .section6-wrap{display:block;margin:0;padding-bottom:24px}
+    .single-counting{text-align:center;padding:12px 10px;max-width:320px;margin:0 auto}
+    .button-box{display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-orient:vertical;-webkit-box-direction:normal;-ms-flex-direction:column;flex-direction:column}
+    .button-box .btn-bg{margin-right:0;max-width:227px;padding:16px;text-align:center;margin-bottom:24px}
+    section.section3-area{padding-top:40px}
+    }
+    .sweet-alert h2{margin:8px 0!important}
+    .sweet-alert p{font-size:16px;font-weight:400!important;line-height:1.5!important;margin:0 auto!important;width:90%!important}
+    .sweet-alert button{background-color:#31543e!important;border:1px solid #31543e!important;transition:.5s}
+    .sweet-alert button:hover{border:1px solid #31543e!important;background-color:transparent!important;color:#31543e!important}
+    
+    .footer-wrap {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.footer-right ul {
+    display: flex;
+    align-items: center;
+}
+
+.footer-right ul li a {
+    color: #fff;
+    text-decoration: none;
+    padding: 0px 12px;
+    font-size: 13px;
+    transition: 0.3s;
+}
+
+.footer-right ul li a:hover {
+    color: #f89406;
+}
+  
+ 
+.lpeCElement {
+  position:absolute;
+}
+.imageSpan img{
+  width:100%; height:auto;
+}
+@media (max-width:575px) {
+    .section5-right-bottom {
+    gap: 10px;
+}
+
+.section5-right-bottom img {
+    max-width: 85px;
+    margin-top: -8px;
+} 
+}
+          
+        </style>
+    </head>
+    <body>
+        <!-- top header  -->
+        <header>
+            <div class="container">
+                <div class="logo"><a href="https://suttonplacestrategies.com">
+                    <img src="https://lp.bain.com/rs/baincompany/images/logo_one_1.jpg" alt="logo image"></a>
+                </div>
+            </div>
+        </header>
+        <!-- banner area  -->
+        <section class="banner-area">
+            <div class="container">
+                <div class="banner-wrap">
+                    <div class="left-banner-text">
+                        <h1>Discover opportunities you’ve missed and source more effectively going forward with SPS</h1>
+                    </div>
+                    <div class="right-banner-img">
+                        <img src="https://lp.bain.com/rs/baincompany/images/computer_sps1.jpg" alt="Computer Image">
+                    </div>
+                </div>
+            </div>
+            <div class="bottom-line"></div>
+        </section>
+        <!-- section 3  -->
+        <section class="section3-area">
+            <div class="container">
+                <div class="section3-wrap">
+                    <div class="section3-left">
+                        <h2>Download the 2021 SPS League Table</h2>
+                        <p>Tailor how you see deal information and professional contact information to be consistent with your firm’s investment strategy. SPS takes a rigorous, data-driven approach to a relationship-based process to help you identify and follow-up directly with only the most relevant sector and deal-type intermediaries. </p>
+                        <div class="button-box">
+                            <a href="https://lp.bain.com/rs/378-NYU-220/images/League_Table_2022.pdf" class="btn-bg" target="_blank">Download the PDF</a>
+                            <a href="#" class="btn-border pop-out">Request an SPS Demo</a>
+                        </div>
+                    </div>
+                    <div class="section3-right">
+                        <img src="https://lp.bain.com/rs/baincompany/images/LeagueTable_Desktop_LP_Image1.jpg" alt="League table">
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- section 4  -->
+        <section class="section4-area">
+            <div class="container">
+                <div class="section-title">
+                    <h2>Build your deal sourcing capabilities with these additional resources</h2>
+                </div>
+                <div class="section4-wrap">
+                    <!-- single card  -->
+                    <div class="content-card">
+                        <h3>DOWNLOAD  |  The SPS 2021 DOBR </h3>
+                        <p>The 2020 North American Deal Origination Benchmark Report (DOBR) provides an overview of effective deal sourcing strategies amongst peer groups. It also helps our clients gauge their individual success and how they performed relative to industry averages. See how your firm’s deal origination compared amongst 151 qualified PE firms segmented into 8 different peer groups and sorted by deal size and industry.</p>
+                        <a href="https://lp.bain.com/rs/378-NYU-220/images/1980_DOBR_Report_FINAL.pdf" class="btn-black" target="_blank">DOWNLOAD PDF</a>
+                    </div>
+                    <!-- single card  -->
+                    <div class="content-card">
+                        <h3>ARTICLE | “Six Deal Sourcing Best Practices”</h3>
+                        <p>These best practices come from the most successful BD professionals. Follow them and you’ll make more short lists and win more deals. Discover prime areas where you should focus your effort to maximize your success and develop new ideas and angles for sourcing deals.</p>
+                        <a href="https://lp.bain.com/rs/378-NYU-220/images/SixWaysToImplementDealSourcingBestPractices_2022.pdf" class="btn-black" target="_blank">DOWNLOAD PDF</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- section 5   -->
+        <section class="section5">
+            <div class="container">
+                <div class="section5-wrap">
+                    <div class="section5-left">
+                        <img src="https://lp.bain.com/rs/baincompany/images/white_logo_one.jpg" alt="White logo img">
+                        <h3>See who you need to know to source and secure your next deal with SPS</h3>
+                        <a href="#" class="request-btn pop-out">Request an SPS Demo</a>
+                    </div>
+                    <div class="section5-right">
+                        <p>SPS is a powerful tool for Avance to identify the investment bankers active in the sectors in which we want to invest. Their client service is responsive, strategic, and so helpful in my function. I consider our relationship manager an extension of Avance’s business development efforts.”</p>
+                        <div class="section5-right-bottom">
+                            <div class="text-logo">
+                                <h5>Gretchen Perkins
+                                    Partner</h5>
+                            </div>
+                            <img src="https://lp.bain.com/rs/378-NYU-220/images/Avance-logo.png" alt="Avance logo">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- section 6  -->
+        <section class="section6-area">
+            <div class="container">
+                <div class="section6-wrap">
+                    <!-- single card  -->
+                    <div class="single-counting">
+                        <h5>90K+ </h5>
+                        <p>deals, including private equity, growth equity, and corporate M &amp; , from 4K+ funds</p>
+                    </div>
+                    <!-- single card  -->
+                    <div class="single-counting">
+                        <h5>~100 
+</h5>
+                        <p>sector categorizations and keyword search allow you to find deals relevant to you</p>
+                    </div>
+                    <!-- single card  -->
+                    <div class="single-counting">
+                        <h5>~11k+ 
+</h5>
+                        <p>intermediary contacts from 2K+ firms</p>
+                    </div>
+                    <!-- single card  -->
+                    <div class="single-counting">
+                        <h5>Deal size  </h5>
+                        <p>ranges estimated for every deal so you can filter for transactions of the right size</p>
+                    </div>
+                    <!-- single card  -->
+                    <div class="single-counting">
+                        <h5>Proprietary fields  </h5>
+                        <p>including deal type (e.g., carve-out, distress), process competitiveness, platform vs. add-on, control vs. minority</p>
+                    </div>
+                    <!-- single card  -->
+                    <div class="single-counting">
+                        <h5>Full CRM integration</h5>
+                        <p>to automatically align with your internal data on firms, professionals, and deals</p>
+                    </div>
+                </div>
+                <a href="#" class="request-btn pop-out">Request an SPS Demo</a>
+            </div>
+          
+        </section>
+        <footer>
+            <p>© 2022 Sutton Place Strategies, by Bain & Co.</p>
+        </footer>
+
+
+  <div class="mktoContent"></div>
+      
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/sweetalert/1.1.3/sweetalert.min.js"></script>
+
+      
+      <script src="//lp.bain.com/js/forms2/js/forms2.min.js"></script>
+      
+ 
+                                                                                         
+                                                                                         
+<script>
+    for(var i=0; i<document.querySelectorAll(".pop-out").length; i++){
+        document.querySelectorAll(".pop-out")[i].addEventListener("click", function(e) {
+                    e.preventDefault();
+                    MktoForms2.loadForm("//lp.bain.com", "378-NYU-220", 1155, function (form){MktoForms2.lightbox(form).show();
+                
+                form.onSuccess(function() {
+                    swal("Thank you ", "for reaching out to Sutton Place Strategies, an expert will contact you shortly.","success")
+return false;
+});
+  
+});
+                    
+    });
+    
+    }
+            </script>
+  <script type="text/javascript" src="//munchkin.marketo.net//munchkin.js"></script><script>Munchkin.init('378-NYU-220', {customName: 'The-SPS-2020-DOBR', wsInfo: 'j1RR'});</script>
+
+
+        
+  <script type="text/javascript" src="/js/stripmkttok.js"></script><!-- Code injected by live-server -->
+
+  
+  
+ 
+
+</body>
+</html>

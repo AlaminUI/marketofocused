@@ -1,0 +1,591 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" style="width: 100%;">
+  <head> 
+    <!-- Marketo Variable Definitions --> 
+    <meta class="mktoColor" id="spacerBackgroundColor" mktoname="Background Color" default="#ffffff" /> 
+    <meta class="mktoNumber" id="spacerSpacer" mktoname="Height" default="40" min="1" max="300" units="px" step="1" /> 
+    <meta class="mktoColor" id="freeImageBackgroundColor" mktoname="Background Color" default="#ffffff" /> 
+    <meta class="mktoColor" id="freeTextBackgroundColor" mktoname="Background Color" default="#ffffff" /> 
+    <meta class="mktoNumber" id="freeTextSpacer" mktoname="Space Before Text" default="40" min="1" max="300" units="px" step="1" /> 
+    <meta class="mktoNumber" id="freeTextSpacer2" mktoname="Space After Text" default="40" min="1" max="300" units="px" step="1" /> 
+    <meta class="mktoColor" id="footerBackgroundColor" mktoname="Background Color" default="#ffffff" /> 
+    <meta class="mktoNumber" id="footerSpacer" mktoname="Space Before Text" default="10" min="1" max="300" units="px" step="1" /> 
+    <meta class="mktoNumber" id="footerSpacer2" mktoname="Space After Text" default="20" min="1" max="300" units="px" step="1" /> 
+    <meta class="mktoColor" id="ctaBackgroundColor" mktoname="Background Color" default="#ffffff" /> 
+    <meta class="mktoColor" id="ctaButtonBackgroundColor" mktoname="Button Background Color" default="#333333" /> 
+    <meta class="mktoColor" id="ctaBorderColor" mktoname="Button Border Color" default="#333" /> 
+    <meta class="mktoNumber" id="ctaBorderSize" mktoname="Button Border Size" default="1" min="0" max="20" units="px" step="1" /> 
+    <meta class="mktoNumber" id="ctaSpacer" mktoname="Space Before Button" default="20" min="1" max="300" units="px" step="1" /> 
+    <meta class="mktoNumber" id="ctaSpacer2" mktoname="Space After Button" default="20" min="1" max="300" units="px" step="1" /> 
+    <meta class="mktoString" id="ctaLink" mktoname="Button Link" default="#" /> 
+    <meta class="mktoString" id="ctaLinkText" mktoname="Button Label" default="CALL TO ACTION" /> 
+    <meta class="mktoColor" id="hrBackgroundColor" mktoname="Background" default="#ffffff" /> 
+    <meta class="mktoColor" id="hrBorderColor" mktoname="Border Color" default="" /> 
+    <meta class="mktoNumber" id="hrBorderSize" mktoname="Border Size" default="1" min="0" max="20" units="px" step="1" /> 
+    <meta class="mktoColor" id="twoArticlesBackgroundColor" mktoname="Background Color" default="#ffffff" /> 
+    <meta class="mktoColor" id="twoArticlesButtonBackgroundColor" mktoname="Left Column Button Background Color" default="#333" /> 
+    <meta class="mktoColor" id="twoArticlesButtonBackgroundColor2" mktoname="Right Column Button Background Color" default="#333" /> 
+    <meta class="mktoColor" id="twoArticlesBorderColor" mktoname="Left Column Button Border Color" default="#333" /> 
+    <meta class="mktoNumber" id="twoArticlesBorderSize" mktoname="Left Column Button Border Size" default="1" min="0" max="20" units="px" step="1" /> 
+    <meta class="mktoColor" id="twoArticlesBorderColor2" mktoname="Right Column Button Border Color" default="#333" /> 
+    <meta class="mktoNumber" id="twoArticlesBorderSize2" mktoname="Right Column Button Border Size" default="1" min="0" max="20" units="px" step="1" /> 
+    <meta class="mktoNumber" id="twoArticlesSpacer" mktoname="Space Over Columns" default="40" min="1" max="300" units="px" step="1" /> 
+    <meta class="mktoNumber" id="twoArticlesSpacer2" mktoname="Left Column Space Below Image" default="20" min="1" max="300" units="px" step="1" /> 
+    <meta class="mktoNumber" id="twoArticlesSpacer3" mktoname="Left Column Space Below Title" default="15" min="1" max="300" units="px" step="1" /> 
+    <meta class="mktoNumber" id="twoArticlesSpacer4" mktoname="Left Column Space Below Text" default="20" min="1" max="300" units="px" step="1" /> 
+    <meta class="mktoNumber" id="twoArticlesSpacer5" mktoname="Right Column Space Below Image" default="20" min="1" max="300" units="px" step="1" /> 
+    <meta class="mktoNumber" id="twoArticlesSpacer6" mktoname="Right Column Space Below Title" default="15" min="1" max="300" units="px" step="1" /> 
+    <meta class="mktoNumber" id="twoArticlesSpacer7" mktoname="Right Column Space Below Text" default="20" min="1" max="300" units="px" step="1" /> 
+    <meta class="mktoNumber" id="twoArticlesSpacer8" mktoname="Space Below Columns" default="40" min="1" max="300" units="px" step="1" /> 
+    <meta class="mktoString" id="twoArticlesLink" mktoname="Left Button Link" default="#" /> 
+    <meta class="mktoString" id="twoArticlesLinkText" mktoname="Left Button Label" default="CALL TO ACTION" /> 
+    <meta class="mktoString" id="twoArticlesLink2" mktoname="Right Button Link" default="#" /> 
+    <meta class="mktoString" id="twoArticlesLinkText2" mktoname="Right Button Label" default="CALL TO ACTION" /> 
+    <!-- Other Meta Tags --> 
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" /> 
+    <meta name="viewport" content="width=device-width, initial-scale=1" /> 
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" /> 
+    <link rel="shortcut icon" href="https://ua-template.netlify.app/new-template/images/favicon.png" type="image/x-icon" /> 
+    <title>Email Template</title> 
+    <link rel="preconnect" href="https://fonts.gstatic.com" /> 
+    <link href="https://fonts.googleapis.com/css2?family=Graphik:wght@400;500;600;700&amp;display=swap" rel="stylesheet" /> 
+    <style type="text/css">
+    /* CLIENT-SPECIFIC STYLES */
+
+    body,table,td,a{-webkit-text-size-adjust:100%;-ms-text-size-adjust:100%}
+table,td{mso-table-lspace:0;mso-table-rspace:0}
+img{-ms-interpolation-mode:bicubic;border:0;outline:none;text-decoration:none}
+table{border-collapse:collapse!important}
+body{margin:0!important;padding:0!important;width:100%!important;font-family:'Graphik',sans-serif}
+a[x-apple-data-detectors]{color:inherit!important;text-decoration:none!important;font-size:inherit!important;font-family:inherit!important;font-weight:inherit!important;line-height:inherit!important}
+div[style*="margin: 16px 0;"]{margin:0!important}
+
+    /* MEDIA QUERIES */
+    @media screen {
+      @font-face {
+        font-family: Graphik;
+        src: url(https://s3.amazonaws.com/assets.knak.io/custom-fonts/Graphik/Graphik-Regular.woff);
+        font-weight: 400;
+      }
+      @font-face {
+        font-family: Graphik;
+        src: url(https://s3.amazonaws.com/assets.knak.io/custom-fonts/Graphik/Graphik-Medium.woff);
+        font-weight: 600;
+      }
+      @font-face {
+        font-family: Tiempos;
+        src: url(https://s3.amazonaws.com/assets.knak.io/custom-fonts/tiempos/TiemposHeadline-Regular.woff);
+        font-weight: 400;
+      }
+    }
+    @media all and (max-width:639px) {
+.wrapper{max-width:350px!important;padding:0!important;width:100%}
+.container{width:100%;max-width:340px!important;padding:0 15px!important;display:block}
+.container2{width:100%;  display:block}
+.mobile{width:100%!important;display:block!important;padding:0!important}
+.img{width:100%!important;height:auto!important}
+[class="mobileOff"]{width:0!important;display:none!important}
+[class*="mobileOn"]{display:block!important;max-height:none!important}
+.pt-16{padding:16px 0 0}
+.w-100{width:100%!important;display:block!important}
+.p-0{padding:0!important}
+.w-70{width:70px!important}
+.d-none{display:none!important}
+.font-22{font-size:22px!important;line-height:28px!important}
+.font-25{font-size:25px!important}
+.m-0{margin:0 !important;}
+}
+  </style> 
+  </head> 
+  <body style="margin:0; padding:0; background-color:#fff;"> 
+    <center> 
+      <table width="600" style="margin:0 auto;" border="0" cellpadding="0" cellspacing="0" bgcolor="#fff" class="wrapper"> 
+        <tbody> 
+          <tr> 
+            <td class="mktoContainer" id="template-wrapper" align="center" valign="top">
+              <table class="mktoModule wrapper" id="logo" mktoname="logo" width="600" cellpadding="0" cellspacing="0" border="0" bgcolor="#fff"> 
+                <tbody> 
+                  <tr> 
+                    <td align="left" style="padding:5px 0px;" valign="top"> 
+                      <table width="600" cellpadding="0" cellspacing="0" border="0" class="container"> 
+                        <tbody> 
+                          <tr> 
+                            <td align="left" valign="top" class="p-0" style="padding:0px 24px"> 
+                              <div class="mktoImg" id="logo_img" mktoname="logo_img" mktolockimgsize="true">
+                                <a href="https://suttonplacestrategies.com?utm_source=listicle&amp;utm_medium=email&amp;utm_campaign=logo1" target="_blank"> <img width="140" src="https://lp.bain.com/rs/baincompany/images/1838_SPS-Lead-Nurture_LP-Dsk-logo_release_2.jpg" alt="Logo Image" style="" /> </a>
+                              </div> </td> 
+                          </tr> 
+                        </tbody> 
+                      </table> </td> 
+                  </tr> 
+                  
+                </tbody> 
+              </table>
+              <table class="mktoModule wrapper" id="download_report" mktoname="download_report" width="600" cellpadding="0" cellspacing="0" border="0" bgcolor="#508E67"> 
+                <tbody> 
+                  <tr> 
+                    <td align="center" valign="top"> 
+                      <table width="600" cellpadding="0" cellspacing="0" border="0" class="container2"> 
+                        <tbody> 
+                          <tr> 
+                            <td align="left" class="mobile" valign="top"> 
+                              <!-- left information  --> 
+                              <table width="342" align="left" class="w-100 p-0" cellpadding="0" cellspacing="0" border="0" style=" display: inline-block;"> 
+                                <tbody   style="margin:0px 10px 0px 24px; display:block"> 
+                                  <!-- space  start --> 
+                                  <tr> 
+                                    <td height="40" style="font-size:1px; line-height:40px;">&nbsp;</td> 
+                                  </tr> 
+                                  <!-- space  end--> 
+                                  <tr> 
+                                    <td align="left" valign="top" style="text-align:left;font-size:16px;font-family: 'Graphik',Helvetica, sans-serif; font-weight: 600; color:#FFFFFF; line-height:18px;"> 
+                                      <div class="mktoText" mktoname="download_report_txt_one" id="download_report_txt_one">
+                                        <div>
+                                           Six tips for maximizing your BD efforts 
+                                        </div>
+                                      </div> </td> 
+                                  </tr> 
+                                  <!-- space  start --> 
+                                  <tr> 
+                                    <td height="10" style="font-size:1px; line-height:10px;">&nbsp;</td> 
+                                  </tr> 
+                                  <!-- space  end--> 
+                                  <tr> 
+                                    <td align="left" valign="top" class="font-25" style="text-align:left;font-size:29px;font-family: 'Graphik',Helvetica, sans-serif; color:#FFFFFF; line-height:32px;"> 
+                                      <div class="mktoText" mktoname="download_report_txt_two" id="download_report_txt_two">
+                                        <div> 
+                                          <span style="font-size: 26px;">Gain unique insight into deals and the people making them happen</span> 
+                                        </div>
+                                      </div> </td> 
+                                  </tr> 
+                                  <!-- space  start --> 
+                                  <tr> 
+                                    <td height="10" style="font-size:1px; line-height:10px;">&nbsp;</td> 
+                                  </tr> 
+                                  <!-- space  end--> 
+                                  <!-- space  start --> 
+                                  <tr> 
+                                    <td height="10" style="font-size:1px; line-height:10px;">&nbsp;</td> 
+                                  </tr> 
+                                  <!-- space  end--> 
+                                  <tr> 
+                                    <td align="left" valign="top"> 
+                                      <table cellpadding="0" cellspacing="0" border="0" bgcolor="#F89406"> 
+                                        <tbody> 
+                                          <tr> 
+                                            <td align="center" height="42" width="180" valign="middle" style="font-family: 'Graphik',Helvetica, sans-serif; font-size:14px; font-weight:bold; "> 
+                                              <div class="mktoText" mktoname="download_report_link_one" id="download_report_link_one">
+                                                <div>
+                                                  <a href="https://lp.bain.com/Six-Ways-to-Implement-Deal-Sourcing-Best-Practices-2022.html?utm_source=listicle&amp;utm_medium=email&amp;utm_campaign=button1" style="padding: 12px; display: inline-block; font-family: 'Graphik',Helvetica, sans-serif; color: #262626; text-decoration: none; line-height: 18px; font-weight: bold; text-transform: capitalize; font-size: 14px;" target="_blank">Read Article</a>
+                                                </div>
+                                              </div> </td> 
+                                          </tr> 
+                                        </tbody> 
+                                      </table> </td> 
+                                  </tr> 
+                                  <!-- space  start --> 
+                                  <tr> 
+                                    <td height="20" style="font-size:1px; line-height:20px;">&nbsp;</td> 
+                                  </tr> 
+                                  <!-- space  end--> 
+                                </tbody> 
+                              </table> </td> 
+                            <td align="left" class="mobile" valign="top"> 
+                              <!-- right image  --> 
+                              <table width="258" class="w-100" align="right" cellpadding="0" cellspacing="0" border="0"> 
+                                <tbody> 
+                                  <tr> 
+                                    <td align="left" valign="top"> 
+                                      <div class="mktoImg" id="download_report_link_img" mktoname="download_report_link_img">
+                                        <img width="258" class="w-100" src="https://lp.bain.com/rs/baincompany/images/1838_SPS-Lead-Nurture_Em3-Listicle-Dsk-Headers_release.gif" alt="SPS Report" />
+                                      </div> </td> 
+                                  </tr> 
+                                </tbody> 
+                              </table> </td> 
+                          </tr> 
+                        </tbody> 
+                      </table> 
+                      <!-- =============== Download Reaport End here  ================= --> 
+                      <!-- space  start --> </td> 
+                  </tr> 
+                  <!-- space  end--> 
+                  <!-- =============== Download Reaport 2 start here  ================= --> 
+                </tbody> 
+              </table>
+              <table class="mktoModule wrapper" id="article_read" mktoname="article_read" width="600" cellpadding="0" cellspacing="0" border="0" bgcolor="#fff"> 
+                <tbody> 
+                  <tr> 
+                    <td align="center" valign="top"> 
+                      <table width="600" cellpadding="0" cellspacing="0" border="0" class="container"> 
+                        <tbody> 
+                          <tr> 
+                            <td align="center" valign="top"> 
+                              <table cellpadding="0" cellspacing="0" border="0"> 
+                                <tbody class="m-0" style="margin:0px 24px 0px 24px; display:block"> 
+                                  <!-- space  start --> 
+                                  <tr> 
+                                    <td height="24" style="font-size:1px; line-height:24px;">&nbsp;</td> 
+                                  </tr> 
+                                  <!-- space  end--> 
+                                  <tr> 
+                                    <td align="left" valign="top" class="p-0" style="font-weight: 600; text-align:left;font-size:18px;font-family: 'Graphik',Helvetica, sans-serif; color:#262626; line-height:22px;"> 
+                                      <div class="mktoText" mktoname="article_read_txt_one" id="article_read_txt_one">
+                                        Learn best practices from successful business development professionals
+                                      </div> </td> 
+                                  </tr> 
+                                  <!-- space  start --> 
+                                  <tr> 
+                                    <td height="16" style="font-size:1px; line-height:16px;">&nbsp;</td> 
+                                  </tr> 
+                                  <!-- space  end--> 
+                                  <tr> 
+                                    <td align="left" valign="top" class="p-0" style="font-weight: 600; text-align:left;font-size:14px;font-family: 'Graphik',Helvetica, sans-serif; color:#262626; line-height:20px;"> 
+                                      <div class="mktoText" mktoname="article_read_txt_two" id="article_read_txt_two">
+                                        Follow these six tips, make more short lists, and win more deals.
+                                      </div> </td> 
+                                  </tr> 
+                                  <!-- space  start --> 
+                                  <tr> 
+                                    <td height="24" style="font-size:1px; line-height:24px;">&nbsp;</td> 
+                                  </tr> 
+                                  <!-- space  end--> 
+                                  <tr> 
+                                    <td align="left" valign="top" class="p-0"> 
+                                      <table cellpadding="0" cellspacing="0" border="0"> 
+                                        <tbody> 
+                                          <tr> 
+                                            <td width="30" class="d-none"></td> 
+                                            <td align="left" valign="top" style="font-weight: 600; font-size: 14px; color: #F89406;line-height: 20px; width: 16px;border-right: 1px solid #7d7b7b;"> 
+                                              <div class="mktoText" mktoname="article_number_one" id="article_number_one">
+                                                1
+                                              </div> </td> 
+                                            <td align="left" valign="top" style="padding:0px 8px; text-align:left;font-size:14px;font-family: 'Graphik',Helvetica, sans-serif; color:#262626; line-height:19px;"> 
+                                              <div class="mktoText" mktoname="article_read_txt_three" id="article_read_txt_three">
+                                                <b>Gain firm-level competitive deal intelligence</b> that includes full advisor, lender, and sponsor professional details.
+                                              </div> </td> 
+                                          </tr> 
+                                        </tbody> 
+                                      </table> </td> 
+                                  </tr> 
+                                  <!-- space  start --> 
+                                  <tr> 
+                                    <td height="16" style="font-size:1px; line-height:16px;">&nbsp;</td> 
+                                  </tr> 
+                                  <!-- space  end--> 
+                                  <tr> 
+                                    <td align="left" valign="top" class="p-0"> 
+                                      <table cellpadding="0" cellspacing="0" border="0"> 
+                                        <tbody> 
+                                          <tr> 
+                                            <td width="30" class="d-none"></td> 
+                                            <td align="left" valign="top" style="font-weight: 600; font-size: 14px; color: #F89406;line-height: 20px; width: 16px;border-right: 1px solid #7d7b7b;"> 
+                                              <div class="mktoText" mktoname="article_number_two" id="article_number_two">
+                                                2
+                                              </div> </td> 
+                                            <td align="left" valign="top" style="padding:0px 8px; text-align:left;font-size:14px;font-family: 'Graphik',Helvetica, sans-serif; color:#262626; line-height:19px;"> 
+                                              <div class="mktoText" mktoname="article_read_txt_four" id="article_read_txt_four">
+                                                <b>Locate opportunities that are stalled or broken</b> and sort them to simplify circling back on previously sourced opportunities.
+                                              </div> </td> 
+                                          </tr> 
+                                        </tbody> 
+                                      </table> </td> 
+                                  </tr> 
+                                  <!-- space  start --> 
+                                  <tr> 
+                                    <td height="16" style="font-size:1px; line-height:16px;">&nbsp;</td> 
+                                  </tr> 
+                                  <!-- space  end--> 
+                                  <tr> 
+                                    <td align="left" valign="top" class="p-0"> 
+                                      <table cellpadding="0" cellspacing="0" border="0"> 
+                                        <tbody> 
+                                          <tr> 
+                                            <td width="30" class="d-none"></td> 
+                                            <td align="left" valign="top" style="font-weight: 600; font-size: 14px; color: #F89406;line-height: 20px; width: 16px;border-right: 1px solid #7d7b7b;"> 
+                                              <div class="mktoText" mktoname="article_number_three" id="article_number_three">
+                                                3
+                                              </div> </td> 
+                                            <td align="left" valign="top" style="padding:0px 8px; text-align:left;font-size:14px;font-family: 'Graphik',Helvetica, sans-serif; color:#262626; line-height:19px;"> 
+                                              <div class="mktoText" mktoname="article_read_txt_five" id="article_read_txt_five">
+                                                <b>Minimize the time prepping for conferences </b> and prioritize those that align with your firm’s strategy.
+                                              </div> </td> 
+                                          </tr> 
+                                        </tbody> 
+                                      </table> </td> 
+                                  </tr> 
+                                  <!-- space  start --> 
+                                  <tr> 
+                                    <td height="20" style="font-size:1px; line-height:20px;">&nbsp;</td> 
+                                  </tr> 
+                                  <!-- space  end--> 
+                                  <tr> 
+                                    <td align="left" valign="top" class="p-0"> 
+                                      <table cellpadding="0" align="center" cellspacing="0" border="0" style="background: url(https://dummyimage.com/600x1/262626/262626);
+                                    background-size: contain;
+                                    background-repeat: no-repeat;
+                                    background-position: center;
+                                    width: 100%;"> 
+                                        <tbody> 
+                                          <tr> 
+                                            <td align="center" valign="top" style="padding:0px 8px; text-align:center;font-size:14px;font-family: 'Graphik',Helvetica, sans-serif; color:#262626; line-height:19px;"> 
+                                              <div class="mktoText" mktoname="article_read_txt_six" id="article_read_txt_six">
+                                                <span style="background: #fff; padding: 0px 8px;font-weight: 400;"> <a href="https://lp.suttonplacestrategies.com/Six-Ways-to-Implement-Deal-Sourcing-Best-Practices.html" style="text-decoration: none;color:#262626;">See full list</a> </span>
+                                              </div> </td> 
+                                          </tr> 
+                                        </tbody> 
+                                      </table> </td> 
+                                  </tr> 
+                                  <!-- space  start --> 
+                                  <tr> 
+                                    <td height="12" style="font-size:1px; line-height:12px;">&nbsp;</td> 
+                                  </tr> 
+                                  <!-- space  end--> 
+                                  <tr> 
+                                    <td align="left" valign="top" class="p-0"> 
+                                      <table cellpadding="0" cellspacing="0" border="0" bgcolor="#F89406"> 
+                                        <tbody> 
+                                          <tr> 
+                                            <td align="center" width="180" height="42" valign="middle" style="font-family: 'Graphik',Helvetica, sans-serif; font-size:14px; font-weight:bold; "> 
+                                              <div class="mktoText" mktoname="article_read_link_one" id="article_read_link_one">
+                                                <div>
+                                                  <a href="https://lp.bain.com/Six-Ways-to-Implement-Deal-Sourcing-Best-Practices-2022.html?utm_source=listicle&amp;utm_medium=email&amp;utm_campaign=button2" style="padding: 12px 32px; display: inline-block; font-family: 'Graphik',Helvetica, sans-serif; color: #262626; text-decoration: none; line-height: 18px; font-weight: bold; text-transform: capitalize; font-size: 14px;" target="_blank"> Read Article </a>
+                                                </div>
+                                              </div> </td> 
+                                          </tr> 
+                                        </tbody> 
+                                      </table> </td> 
+                                  </tr> 
+                                  <!-- space  start --> 
+                                  <tr> 
+                                    <td height="24" style="font-size:1px; line-height:24px;">&nbsp;</td> 
+                                  </tr> 
+                                  <!-- space  end--> 
+                                </tbody> 
+                              </table> </td> 
+                          </tr> 
+                        </tbody> 
+                      </table> </td> 
+                  </tr> 
+                </tbody> 
+              </table>
+              <table class="mktoModule wrapper" id="new_deal" mktoname="new_deal" width="600" cellpadding="0" cellspacing="0" border="0" bgcolor="#F3F3F4"> 
+                <tbody> 
+                  <tr> 
+                    <td align="center" valign="top"> 
+                      <table width="600" cellpadding="0" cellspacing="0" border="0" class="container"> 
+                        <tbody> 
+                          <!-- space  start --> 
+                          <tr> 
+                            <td height="48" style="font-size:1px; line-height:48px;">&nbsp;</td> 
+                          </tr> 
+                          <!-- space  end--> 
+                          <tr> 
+                            <td align="center" valign="top"> 
+                              <table cellpadding="0" cellspacing="0" border="0"> 
+                                <tbody> 
+                                  <tr> 
+                                    <td align="left" valign="top" class="p-0" style="padding:0px 24px;font-weight: 600; text-align:left;font-size:18px;font-family: 'Graphik',Helvetica, sans-serif; color:#262626; line-height:19px;"> 
+                                      <div class="mktoText" mktoname="new_deal_text_one" id="new_deal_text_one">
+                                        Transform how you source new deals with SPS
+                                      </div> </td> 
+                                  </tr> 
+                                  <!-- space  start --> 
+                                  <tr> 
+                                    <td height="10" style="font-size:1px; line-height:10px;">&nbsp;</td> 
+                                  </tr> 
+                                  <!-- space  end--> 
+                                  <tr> 
+                                    <td align="left" valign="top" class="p-0" style="padding:0px 24px; text-align:left;font-size:14px;font-family: 'Graphik',Helvetica, sans-serif; color:#262626; line-height:19px;"> 
+                                      <div class="mktoText" mktoname="new_deal_text_two" id="new_deal_text_two">
+                                        <b>Most investment professionals see only 10% to 30% of deals</b> within their target universe. SPS enables you to see more relevant deals and also identifies the advisors, sponsors, lenders, and law firms involved in the deal so you can leverage your contacts and add these new connections to your network.
+                                      </div> </td> 
+                                  </tr> 
+                                  <!-- space  start --> 
+                                  <tr> 
+                                    <td height="8" style="font-size:1px; line-height:8px;">&nbsp;</td> 
+                                  </tr> 
+                                  <!-- space  end--> 
+                                  <tr> 
+                                    <td align="left" valign="top" class="p-0" style="padding:0px 24px; text-align:left;font-size:14px;font-family: 'Graphik',Helvetica, sans-serif; color:#262626; line-height:19px;"> 
+                                      <div class="mktoText" mktoname="new_deal_text_three" id="new_deal_text_three">
+                                        Streamline business development with deal intelligence to better:
+                                      </div> </td> 
+                                  </tr> 
+                                  <!-- space  start --> 
+                                  <tr> 
+                                    <td height="12" style="font-size:1px; line-height:12px;">&nbsp;</td> 
+                                  </tr> 
+                                  <!-- space  end--> 
+                                </tbody> 
+                              </table> </td> 
+                          </tr> 
+                          <tr> 
+                            <td align="center" valign="top"> 
+                              <table cellpadding="0" cellspacing="0" border="0"> 
+                                <tbody> 
+                                  <tr> 
+                                    <td align="left" valign="top" class="mobile"> 
+                                      <!-- left information  --> 
+                                      <table width="300" class="w-100" align="left" cellpadding="0" cellspacing="0" border="0" style=" display: inline-block;"> 
+                                        <tbody> 
+                                          <tr> 
+                                            <td align="left" valign="top" class="p-0" style="padding:0px 24px;text-align:left;font-size:14px;font-family: 'Graphik',Helvetica, sans-serif;  color:#262626; line-height:19px;"> 
+                                              <ul style="padding: 0;margin:0px 0px 0px 16px;"> 
+                                                <li style="padding:4px 0px;"><b>Measure and analyze your market coverage</b> of deals in your investment criteria and identify which intermediary relationships to strengthen </li> 
+                                                <li style="padding:4px 0px;"> <b>Reveal potential broken deals</b> in your pipeline and <b>relevant PE holdings that may be ready to exit</b> </li> 
+                                                <li style="padding:4px 0px;"><b> Identify centers of influence</b> in different sectors and geographies, and warm intros with contacts of interest</li> 
+                                              </ul> </td> 
+                                          </tr> 
+                                          <!-- space  start --> 
+                                          <tr> 
+                                            <td height="22" style="font-size:1px; line-height:20px;">&nbsp;</td> 
+                                          </tr> 
+                                          <!-- space  end--> 
+                                        </tbody> 
+                                      </table> </td> 
+                                    <td align="left" valign="top" class="mobile"> 
+                                      <!-- right image  --> 
+                                      <table width="290" align="right" class="w-100" cellpadding="0" cellspacing="0" border="0"> 
+                                        <tbody> 
+                                          <tr> 
+                                            <td align="left" valign="top"> <img width="290" class="w-100" src="https://lp.bain.com/rs/baincompany/images/Target_Image1.jpg" alt="computer Image" /> </td> 
+                                          </tr> 
+                                        </tbody> 
+                                      </table> </td> 
+                                  </tr> 
+                                </tbody> 
+                              </table> </td> 
+                          </tr> 
+                        </tbody> 
+                      </table> </td> 
+                  </tr> 
+                </tbody> 
+              </table>
+              <table class="mktoModule wrapper" id="cta_area" mktoname="cta_area" width="600" cellpadding="0" cellspacing="0" border="0" bgcolor="#508E67"> 
+                <tbody> 
+                  <tr> 
+                    <td align="center" valign="top"> 
+                      <table width="600" cellpadding="0" cellspacing="0" border="0" class="container"> 
+                        <tbody> 
+                          <tr> 
+                            <td align="center" valign="top"> 
+                              <table cellpadding="0" cellspacing="0" border="0"> 
+                                <tbody> 
+                                  <!-- space  start --> 
+                                  <tr> 
+                                    <td height="24" style="font-size:1px; line-height:24px;">&nbsp;</td> 
+                                  </tr> 
+                                  <!-- space  end--> 
+                                  <tr> 
+                                    <td align="center" valign="top" class="w-100 p-0 font-22" style="display: block;margin:0 auto; width:76%;
+                             padding:0 24px;font-weight: 600;
+                              text-align:center;font-size:24px;
+                              font-family: 'Graphik',Helvetica, sans-serif;
+                               color:#fff; line-height:32px;"> 
+                                      <div class="mktoText" mktoname="cta_area_text_one" id="cta_area_text_one">
+                                        See who you need to know to source and secure your next deal
+                                      </div> </td> 
+                                  </tr> 
+                                  <!-- space  start --> 
+                                  <tr> 
+                                    <td height="16" style="font-size:1px; line-height:16px;">&nbsp;</td> 
+                                  </tr> 
+                                  <!-- space  end--> 
+                                  <!-- request button   --> 
+                                  <tr> 
+                                    <td align="center" valign="top"> 
+                                      <table cellpadding="0" cellspacing="0" border="0"> 
+                                        <tbody> 
+                                          <tr> 
+                                            <td align="center" width="195" height="44" valign="middle" style="font-family: 'Graphik',Helvetica, sans-serif; font-size:16px; font-weight:bold; background-color: #fff;
+                                              border: 3px solid #F89406; "> <a href="https://lp.suttonplacestrategies.com/E2M-SPS-2021-07-06_SPS-page.html?utm_source=listicle&amp;utm_medium=email&amp;utm_campaign=demobutton
+" style="padding: 11px; display:block; font-family: 'Graphik',Helvetica, sans-serif; color: #262626; text-decoration: none; line-height: 18px; font-weight: bold; font-size: 16px;" target="_blank"> Request an SPS Demo </a> </td> 
+                                          </tr> 
+                                        </tbody> 
+                                      </table> </td> 
+                                  </tr> 
+                                  <!-- space  start --> 
+                                  <tr> 
+                                    <td height="26" style="font-size:1px; line-height:26px;">&nbsp;</td> 
+                                  </tr> 
+                                  <!-- space  end--> 
+                                </tbody> 
+                              </table> </td> 
+                          </tr> 
+                        </tbody> 
+                      </table> </td> 
+                  </tr> 
+                </tbody> 
+              </table>
+              <table class="mktoModule wrapper" id="footer_area0929c12c-28cc-4dcd-bb95-05933f79229a" mktoname="footer_area-1" width="600" cellpadding="0" cellspacing="0" border="0" bgcolor="#262626"> 
+                <tbody> 
+                  <tr> 
+                    <td align="center" valign="middle"> 
+                      <table width="600" cellpadding="0" cellspacing="0" border="0" class="container"> 
+                        <tbody> 
+                          <tr> 
+                            <td align="center" valign="top"> 
+                              <table width="100%" cellpadding="25" cellspacing="0" border="0"> 
+                                <tbody> 
+                                  <tr> 
+                                    <td align="left" valign="middle" style=" text-align:left;font-size:12px;font-family: 'Graphik', sans-serif; color:rgb(226, 223, 223); line-height:18px;"> 
+                                      <div class="mktoText" mktoname="footer_text_one" id="footer_text_one1" align="left"> 
+                                        <p>*SPS, by Bain &amp; Co. (SPS) analysis and reports have been prepared for informational and marketing purposes only and are not intended to be used as a complete source of information on any particular company or trend in the industry. SPS accepts no liability in contract, negligence or otherwise for any error or omission in the information, data, or analysis provided by SPS. SPS does not make any representations, warranties or covenants of any kind, express or implied, and shall have no responsibility or liability for the business or other decisions based upon the use of SPS’ reports or the results obtained from the use of information and reports provided by SPS, or the analysis or interpretation of content or data used in connection with, resulting from or derived from the use of information or reports provided by SPS. <br /><br /> All materials in this presentation remain the intellectual property of SPS. SPS grants a limited, personal, non-exclusive, non-transferable, revocable license to access, display, and use such reports and downloadable content for non-commercial purposes only. Any republication of SPS’ reports or downloadable content must include proper citation to SPS or be explicitly approved in writing by SPS’ authorized personnel prior to republication. All rights not specifically granted herein shall be reserved to SPS. <br /><br />Sutton Place Strategies  757 Third Ave, 20th Floor, New York, NY 10017<br /><br /> <a style="text-decoration: none; color: #e2dfdf;" href="https://lp.suttonplacestrategies.com/SPS_unsubscribe_page.html?utm_source=listicle&amp;utm_medium=email&amp;utm_campaign=footer" target="_blank">Unsubscribe from SPS communications</a> <br /><br /> <a style="text-decoration: none; color: 
+#e2dfdf;" href="https://lp.bain.com/unsubscribe.html?utm_source=listicle&amp;utm_medium=email&amp;utm_campaign=footer" target="_blank">Unsubscribe from all Bain communications</a> <br /><br /><a style="text-decoration: none; color: #e2dfdf;" href="https://suttonplacestrategies.com/privacy-policy/?utm_source=listicle&amp;utm_medium=email&amp;utm_campaign=footer" target="_blank">Privacy Policy</a></p> 
+                                      </div> </td> 
+                                  </tr> 
+                                </tbody> 
+                              </table> </td> 
+                          </tr> 
+                        </tbody> 
+                      </table> </td> 
+                  </tr> 
+                </tbody> 
+              </table>
+              <table class="mktoModule wrapper" id="footer_area" mktoname="footer_area" width="600" cellpadding="0" cellspacing="0" border="0" bgcolor="#262626"> 
+                <tbody> 
+                  <tr> 
+                    <td align="center" valign="middle"> 
+                      <table width="600" cellpadding="0" cellspacing="0" border="0" class="container"> 
+                        <tbody> 
+                          <tr> 
+                            <td align="left" valign="top"> 
+                              <table cellpadding="0" cellspacing="0" border="0"> 
+                                <tbody> 
+                                  <!-- space  start --> 
+                                  <tr> 
+                                    <td height="8" style="font-size:1px; line-height:8px;">&nbsp;</td> 
+                                  </tr> 
+                                  <!-- space  end--> 
+                                  <tr> 
+                                    <td align="left" valign="top" style="padding:0px 24px;"> 
+                                      <div class="mktoImg" id="footer_report_link_img_one" mktoname="footer_report_link_img_one" mktolockimgsize="true">
+                                        <a href="https://suttonplacestrategies.com?utm_source=listicle&amp;utm_medium=email&amp;utm_campaign=logo2" target="_blank"><img src="https://lp.bain.com/rs/baincompany/images/Logo_White.jpg" width="103" alt="white logo" style="" /></a>
+                                      </div> </td> 
+                                    <td align="left" valign="middle" style=" text-align:left;font-size:12px;font-family: 'Graphik',Helvetica, sans-serif; color:rgb(226, 223, 223); line-height:18px;"> 
+                                      <div class="mktoText" mktoname="footer_text_one" id="footer_text_one">
+                                        <div>
+                                           © 2022 Sutton Place Strategies, by Bain &amp; Co. 
+                                        </div> 
+                                        <p style="background:#F2F4F7;display:none!important;font-size:0px; mso-hide:all;overflow:hidden;height:0px;"><a href="https://support.bain.com/spam-filters" style="display: none!important; color: #F2F4F7!important; text-decoration: none!important;font-size:0px!important;mso-hide:all">Honeypot</a></p>
+                                      </div></td> 
+                                  </tr> 
+                                  <!-- space  start --> 
+                                  <tr> 
+                                    <td height="26" style="font-size:1px; line-height:26px;">&nbsp;</td> 
+                                  </tr> 
+                                  <!-- space  end--> 
+                                </tbody> 
+                              </table> </td> 
+                          </tr> 
+                        </tbody> 
+                      </table> </td> 
+                  </tr> 
+                </tbody> 
+              </table></td> 
+          </tr> 
+        </tbody> 
+      </table> 
+    </center>  
+  </body>
+</html>

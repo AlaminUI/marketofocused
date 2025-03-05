@@ -1,0 +1,21 @@
+.custom-language-selector {
+    position: absolute;
+    right: 0;
+    top: 41px;
+    width: 98px;
+}
+
+.custom-language-selector ul li a {
+    color: #11294c !important;
+    font-size: 17px;
+}
+
+.custom-language-selector ul li a:hover {
+    color: #4b9cd3 !important;
+    text-decoration: none;
+}
+
+.sf_cols.banner-wrap .sf_colsOut.sf_2cols_2_50 {
+    background-size: cover;
+   
+}

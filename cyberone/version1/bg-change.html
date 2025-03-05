@@ -1,0 +1,585 @@
+<!--
+    templateType: email
+    isAvailableForNewContent: true
+-->
+<!doctype html>
+<html>
+  <head>
+    <title>{% if content.html_title and content.html_title != '' %}{{ content.html_title }}{% else %}{{ content.body.subject }}{% endif %}</title>
+    {% if content.meta_description %}<meta name="description" content="{{ content.meta_description }}"/>{% endif %}
+    <style type="text/css" id="hs-inline-css">
+      /*<![CDATA[*/
+      /* everything in this style tag will be inlined onto matching elements */
+      .sample-rule {
+      }
+      /*]]>*/
+    </style>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+
+    <style type="text/css">
+      /* CLIENT-SPECIFIC STYLES */
+  
+      body,table,td,a{-webkit-text-size-adjust:100%;-ms-text-size-adjust:100%}
+  table,td{mso-table-lspace:0;mso-table-rspace:0}
+  img{-ms-interpolation-mode:bicubic;border:0;outline:none;text-decoration:none}
+  table{border-collapse:collapse!important}
+  body{margin:0!important;padding:0!important;width:100%!important;font-family:'Roboto',sans-serif}
+  a[x-apple-data-detectors]{color:inherit!important;text-decoration:none!important;font-size:inherit!important;font-family:inherit!important;font-weight:inherit!important;line-height:inherit!important}
+  div[style*="margin: 16px 0;"]{margin:0!important}
+      p{margin:0px!important;}
+      /* MEDIA QUERIES */
+ 
+      @media all and (max-width:639px) {
+  .wrapper{max-width:350px!important;padding:0!important;width:100%}
+  .container{width:100%;max-width:340px!important;padding:0 15px!important;display:block}
+  .container2{width:100%;  display:block}
+  .mobile{width:100%!important;display:block!important;padding:0!important}
+  .img{width:100%!important;height:auto!important}
+  [class="mobileOff"]{width:0!important;display:none!important}
+  [class*="mobileOn"]{display:block!important;max-height:none!important}
+  .pt-16{padding:16px 0 0}
+  .w-100{width:100%!important;display:block!important}
+  .p-0{padding:0!important}
+  .w-70{width:70px!important}
+  .d-none{display:none!important}
+  .font-22{font-size:22px!important;line-height:28px!important}
+  .font-25{font-size:25px!important}
+  .m-0{margin:0 !important;}
+  .w-0{width:0px!important;height:0px!important;}
+  }
+    </style> 
+  </head>
+  <body style="margin:0; padding:0; background-color:#E4E4E4;">
+    <!-- Preview text (text which appears right after subject in certain email clients) -->
+    <div id="preview_text" style="display:none!important">{% text "preview_text" label="Preview Text <span class=help-text>This will be used as the preview text that displays in some email clients</span>", value="", no_wrapper=True %}</div>
+    <!-- View as webpage link -->
+    {% if content.create_page %}
+    <div>
+      Not rendering correctly? View this email as a web page <a class="hubspot-mergetag" data-viewaswebpage="true" href="{{ view_as_page_url }}">here</a>.
+    </div>
+    {% endif %}
+    <center> 
+     <table width="600" style="margin:0 auto;background-color:#fff;" border="0" cellpadding="0" cellspacing="0"   bgcolor="#fff" class="w-100"> 
+        <tbody> 
+          <tr> 
+            <td  align="center" valign="top">
+    
+      <!-- logo area  -->
+           <table     width="100%" cellpadding="0" cellspacing="0" border="0" style="background-color:#fff;" bgcolor="#fff"> 
+            <tbody> 
+              <tr> 
+                <td align="center" valign="top"> 
+                  <table width="100%" cellpadding="0" cellspacing="0" border="0"  > 
+                    <tbody> 
+                      <tr> 
+                        <td align="center" valign="top"> 
+                          <table cellpadding="0" cellspacing="0" border="0"> 
+                            <tbody class="m-0" > 
+                                  <!-- space  start --> 
+                                  <tr> 
+                                    <td height="24" style="font-size:1px; line-height:24px;">&nbsp;</td> 
+                                  </tr> 
+                                  <!-- space  end--> 
+                              <tr> 
+                                <td class="mobile" align="center" valign="top"> 
+                                   {% module "email_template_logo" path="module/logo" label="Logo" %}
+                                </td> 
+                               
+                              </tr> 
+                                <!-- space  start --> 
+                                <tr> 
+                                    <td height="12" style="font-size:1px; line-height:12px;">&nbsp;</td> 
+                                  </tr> 
+                                  <!-- space  end--> 
+                              <tr> 
+                                <td class="mobile" align="center" valign="top"> 
+                                  
+                                        <img src="https://4027460.fs1.hubspotusercontent-na1.net/hubfs/4027460/header-shadow.png" class="img"   width="100%" alt="shadow">
+                                   
+                                </td> 
+                               
+                              </tr> 
+                            </tbody> 
+                          </table> </td> 
+                      </tr> 
+                    </tbody> 
+                  </table> </td> 
+              </tr> 
+
+            </tbody> 
+          </table>
+        <!-- logo area end -->
+              
+            <!-- Banner area end -->
+    <!-- banner area event heading  -->
+                <table class="wrapper"   width="600" cellpadding="0" cellspacing="0" border="0" style="background-color:#fff;" bgcolor="#fff"> 
+                    <tbody> 
+                      <tr> 
+                        <td align="center" valign="top"> 
+                          <table width="600" cellpadding="0" cellspacing="0" border="0" class="container"> 
+                            <tbody> 
+                              <tr> 
+                                <td align="center" valign="top"> 
+                                  <table cellpadding="0" cellspacing="0" border="0"> 
+                                    <tbody class="m-0" style="margin:0px 24px;display:block;"> 
+                                          <!-- space  start --> 
+                                          <tr> 
+                                            <td height="32" style="font-size:1px; line-height:32px;">&nbsp;</td> 
+                                          </tr> 
+                                          <!-- space  end--> 
+                                      <tr> 
+                                        <td  style="color:#1BA1ED; font-family: 'Roboto',sans-serif;font-size:23px;line-height:44px;font-weight: 700;" align="center" valign="top"> 
+                                            
+                                      {% module "module_166359379054733" path="/Event-invite-templates/module/event type", label="event type" %}
+                                        </td> 
+                                       
+                                      </tr> 
+              
+                                           <!-- space  start --> 
+                                           <tr> 
+                                            <td height="16" style="font-size:1px; line-height:16px;">&nbsp;</td> 
+                                          </tr> 
+                                          <!-- space  end--> 
+                                      <tr> 
+                                        <td  style="color:#0A5697; font-family: 'Roboto',sans-serif;font-size:46px;line-height:55px;font-weight: 700;" align="center" valign="top"> 
+{% module "module_166359230458420" path="/Event-invite-templates/module/heading", label="heading" %}
+                                        </td> 
+                                       
+                                      </tr> 
+                                        <!-- space  start --> 
+                                        <tr> 
+                                            <td height="48" style="font-size:1px; line-height:48px;">&nbsp;</td> 
+                                          </tr> 
+                                          <!-- space  end--> 
+
+                                          {% module "module_166359273772726" path="/Event-invite-templates/module/Button", label="Button" %}
+                              
+                                    </tbody> 
+                                  </table> </td> 
+                              </tr> 
+                            </tbody> 
+                          </table> </td> 
+                      </tr> 
+                      <!-- space  start --> 
+                      <tr> 
+                        <td height="60" style="font-size:1px; line-height:60px;">&nbsp;</td> 
+                      </tr> 
+                      <!-- space  end--> 
+                    </tbody> 
+                  </table>
+                <!-- banner area event heading end -->
+                  
+                <!-- full image   -->
+                <table class="w-100"   width="600" cellpadding="0" cellspacing="0" border="0" style="background-color:#fff;" bgcolor="#fff"> 
+                    <tbody> 
+                      <tr> 
+                        <td align="center" valign="top"> 
+                          <table width="600" cellpadding="0" cellspacing="0" border="0" class="w-100"> 
+                            <tbody> 
+                              <tr> 
+                                <td align="center" valign="top"> 
+                                  <table cellpadding="0" cellspacing="0" border="0"> 
+                                    <tbody class="m-0" > 
+                                      
+                                      <tr> 
+                                        <td    align="center" valign="top"> 
+                                            {% module "module_166359397371237" path="/Event-invite-templates/module/full image", label="full image" %}
+                                        </td> 
+                              
+                                       
+                                      </tr> 
+                                      
+                              
+                                    </tbody> 
+                                  </table> </td> 
+                              </tr> 
+                            </tbody> 
+                          </table> </td> 
+                      </tr> 
+                    
+                    </tbody> 
+                  </table>
+                <!-- full image  end -->
+              
+              
+               <!-- full text area  -->
+                <table class="wrapper"   width="600" cellpadding="0" cellspacing="0" border="0" style="background-color:#fff;" bgcolor="#fff"> 
+                    <tbody> 
+                      <tr> 
+                        <td align="center" valign="top"> 
+                          <table width="600" cellpadding="0" cellspacing="0" border="0" class="container"> 
+                            <tbody> 
+                                                    <!-- space  start --> 
+                      <tr> 
+                        <td height="40" style="font-size:1px; line-height:40px;">&nbsp;</td> 
+                      </tr> 
+                      <!-- space  end--> 
+                              <tr> 
+                                <td align="left" valign="top"> 
+                                  <table cellpadding="0" cellspacing="0" border="0"> 
+                                    <tbody class="m-0" style="margin:0px 24px;display:block;"> 
+                                        
+                                      <tr> 
+                                        <td  style="color:#6F7175; font-family: 'Roboto',sans-serif;font-size:16px;line-height:26px;font-weight: 400;" align="left" valign="top"> 
+                                            {% module "module_166359443028241" path="/Event-invite-templates/module/Full text", label="Full text" %}
+                                        </td> 
+                                       
+                                      </tr> 
+              
+                                    </tbody> 
+                                  </table>
+                                 </td> 
+                              </tr> 
+                                
+                     
+                            </tbody> 
+                          </table> </td> 
+                      </tr> 
+                   
+                    </tbody> 
+                  </table>
+                <!-- full text area end -->
+              
+               <!-- devier left area  -->
+                <table class="w-100"   width="600" cellpadding="0" cellspacing="0" border="0" style="background-color:#fff;" bgcolor="#fff"> 
+                    <tbody> 
+                      <tr> 
+                        <td align="center" valign="top"> 
+                          <table width="600" cellpadding="0" cellspacing="0" border="0" class="w-100"> 
+                            <tbody> 
+                              <tr> 
+                                <td align="left" valign="top"> 
+                                  <table cellpadding="0" cellspacing="0" border="0"> 
+                                    <tbody class="m-0"> 
+                                
+                      
+                              <tr> 
+                                <td class="mobile" align="center" valign="top"> 
+                                  
+                                        <img src="https://4027460.fs1.hubspotusercontent-na1.net/hubfs/4027460/divider-right.png" class="img"   width="600" alt="shadow">
+                                   
+                                </td> 
+                               
+                              </tr> 
+     
+                                    </tbody> 
+                                  </table>
+                                 </td> 
+                              </tr> 
+                   
+                            </tbody> 
+                          </table> </td> 
+                      </tr> 
+                   
+                    </tbody> 
+                  </table>
+                <!-- devier left area end -->
+              
+                 <!-- presentor area  -->
+              <table class="wrapper"   width="600" cellpadding="0" cellspacing="0" border="0" style="background-color:#fff;" bgcolor="#fff"> 
+                <tbody> 
+                  <tr align="center"> 
+                    <td align="center" valign="top"> 
+                      <table width="600" cellpadding="0" align="center" cellspacing="0" border="0" class="container"> 
+                        <tbody align="center" style="display:block;"> 
+                             <!-- space  start --> 
+                             <tr> 
+                                <td height="32" style="font-size:1px; line-height:32px;">&nbsp;</td> 
+                            </tr> 
+                            <!-- space  end-->
+                            <tr>
+                                <td align="center" valign="top" style="text-align:center;font-size:30px;font-family: 'Roboto',  sans-serif; color:#1BA1ED; line-height:40px;font-weight: 700;">
+                                    Event Speakers
+                                </td>
+                            </tr>
+                             <!-- space  start --> 
+                             <tr> 
+                                <td height="32" style="font-size:1px; line-height:32px;">&nbsp;</td> 
+                            </tr> 
+                            <!-- space  end-->
+                          <tr> 
+                            <td align="center" valign="top"> 
+                              <table cellpadding="0" cellspacing="0" border="0"> 
+                                <tbody class="m-0" style="margin: 0px 24px;  display:block"> 
+                                {% module "module_166359554207760" path="/Event-invite-templates/module/Event Speakers", label="Event Speakers" %}
+                                </tbody> 
+                              </table> </td> 
+                          </tr> 
+                        </tbody> 
+                      </table> </td> 
+                  </tr> 
+                  <!-- space  start --> 
+                  <tr> 
+                    <td height="26" style="font-size:1px; line-height:26px;">&nbsp;</td> 
+                  </tr> 
+                  <!-- space  end--> 
+                </tbody> 
+              </table>
+                <!-- presentor area end -->
+              
+              
+               <!-- full text with button area  -->
+              <table class="wrapper"   width="600" cellpadding="0" cellspacing="0" border="0" style="background-color:#fff;" bgcolor="#fff"> 
+                <tbody> 
+                  <tr> 
+                    <td align="center" valign="top"> 
+                      <table width="600" cellpadding="0" cellspacing="0" border="0" class="container"> 
+                        <tbody> 
+                          <tr> 
+                            <td align="center" valign="top"> 
+                              <table cellpadding="0" cellspacing="0" border="0"> 
+                                <tbody class="m-0" style="margin:0px 24px;display:block;"> 
+                                    
+                                  <tr> 
+                                    <td  style="color:#6F7175; font-family: 'Roboto',sans-serif;font-size:16px;line-height:26px;font-weight: 400;" align="center" valign="top"> 
+{% module "module_166359830005465" path="/Event-invite-templates/module/Full text with button", label="Full text with button" %}                                    </td> 
+                                   
+                                  </tr> 
+        
+                                </tbody> 
+                              </table>
+                             </td> 
+                          </tr> 
+                              <!-- space  start --> 
+                  <tr> 
+                    <td height="32" style="font-size:1px; line-height:32px;">&nbsp;</td> 
+                  </tr> 
+                  <!-- space  end--> 
+{% module "module_166359861572970" path="/Event-invite-templates/module/Event details", label="Event details" %}
+                 
+                        </tbody> 
+                      </table> </td> 
+                  </tr> 
+               
+                </tbody> 
+              </table>
+            <!-- full text area end -->
+              
+                      <!-- devier left area  -->
+                <table class="w-100"   width="600" cellpadding="0" cellspacing="0" border="0" style="background-color:#fff;" bgcolor="#fff"> 
+                    <tbody> 
+                      <tr> 
+                        <td align="center" valign="top"> 
+                          <table width="600" cellpadding="0" cellspacing="0" border="0" class="w-100"> 
+                            <tbody> 
+                              <tr> 
+                                <td align="left" valign="top"> 
+                                  <table cellpadding="0" cellspacing="0" border="0"> 
+                                    <tbody class="m-0"> 
+                                
+                      
+                              <tr> 
+                                <td class="mobile" align="center" valign="top"> 
+                                  
+                                        <img src="https://4027460.fs1.hubspotusercontent-na1.net/hubfs/4027460/divider-left.png" class="img"   width="600" alt="shadow">
+                                   
+                                </td> 
+                               
+                              </tr> 
+     
+                                    </tbody> 
+                                  </table>
+                                 </td> 
+                              </tr> 
+                   
+                            </tbody> 
+                          </table> </td> 
+                      </tr> 
+                   
+                    </tbody> 
+                  </table>
+                <!-- devier left area end -->
+              
+              
+               <!-- Event Sponsors area  -->
+              <table class="wrapper"   width="600" cellpadding="0" cellspacing="0" border="0" style="background-color:#fff;" bgcolor="#fff"> 
+                <tbody> 
+                  <tr> 
+                    <td align="center" valign="top"> 
+                      <table width="600" cellpadding="0" cellspacing="0" border="0" class="container"> 
+                        <tbody align="center" style="display:block ;"> 
+                            <!-- space  start --> 
+                            <tr> 
+                              <td height="30" style="font-size:1px; line-height:30px;">&nbsp;</td> 
+                          </tr> 
+                          <!-- space  end-->
+                          <tr>
+                            <td align="center" valign="top" style="text-align:center;font-size:30px;font-family: 'Roboto',  sans-serif; color:#1BA1ED; line-height:40px;font-weight: 700;">
+                              Event Sponsors
+                              </td>
+                          </tr>
+                              <!-- space  start --> 
+                              <tr> 
+                                <td height="16" style="font-size:1px; line-height:16px;">&nbsp;</td> 
+                            </tr> 
+                            <!-- space  end-->
+                          <tr> 
+                            <td align="center" valign="top"> 
+                              <table cellpadding="0" width="100%" cellspacing="0" border="0"> 
+                                <tbody class="m-0" align="center" style="margin:0px 24px;display:block;"> 
+                                    
+                                  <tr> 
+                                 {% module "module_166359951577877" path="/Event-invite-templates/module/Event Sponsors", label="Event Sponsors" %}
+                                  </tr> 
+        
+                                </tbody> 
+                              </table>
+                             </td> 
+                          </tr> 
+                              <!-- space  start --> 
+                  <tr> 
+                    <td height="40" style="font-size:1px; line-height:40px;">&nbsp;</td> 
+                  </tr> 
+                  <!-- space  end--> 
+        
+                       
+                        </tbody> 
+                      </table> </td> 
+                  </tr> 
+               
+                </tbody> 
+              </table>
+            <!-- Event Sponsors area end -->
+              
+              
+               <!-- footer area  -->
+              <table class="w-100"   width="600" cellpadding="0" cellspacing="0" border="0" bgcolor="#2D2D2D"> 
+                <tbody align="center" style="display:block ;"> 
+                  <tr> 
+                    <td align="center" valign="top"> 
+                      <table width="600" cellpadding="0"  cellspacing="0" border="0" class="container"> 
+                        <tbody> 
+                            <!-- space  start --> 
+                            <tr> 
+                              <td height="40" style="font-size:1px; line-height:40px;">&nbsp;</td> 
+                          </tr> 
+                          <!-- space  end-->
+                     
+                          <tr> 
+                            <td align="center" valign="middle"> 
+                                <img src="https://4027460.fs1.hubspotusercontent-na1.net/hubfs/4027460/logo-white.png" width="150" alt="logo">
+                            </td> 
+                          </tr> 
+                            <!-- space  start --> 
+                            <tr> 
+                              <td height="8" style="font-size:1px; line-height:8px;">&nbsp;</td> 
+                          </tr> 
+                          <!-- space  end-->
+                          <tr> 
+                            <td  style="color:#fff; font-family: 'Roboto',sans-serif;font-size:16px;line-height:32px;font-weight: 400;" align="center" valign="top"> 
+                             
+      {{ site_settings.company_street_address_1 }} 
+      {{ site_settings.company_street_address_2 }}
+      {{ site_settings.company_city }}
+      {{ site_settings.company_state }} 
+      {{ site_settings.company_zip }}
+      {{ site_settings.company_country }}
+                            </td> 
+                           
+                          </tr> 
+                          <!-- space  start --> 
+                            <tr> 
+                              <td height="8" style="font-size:1px; line-height:8px;">&nbsp;</td> 
+                          </tr> 
+                          <!-- space  end-->
+                       <tr>
+                            <td align="center" valign="middle">
+                        
+                              <p>
+                                <a href="https://www.facebook.com/profile.php?id=100062870424058"><img src="https://4027460.fs1.hubspotusercontent-na1.net/hubfs/4027460/facebook.png" width="14" alt="facebook"></a>&nbsp;
+                                <a href="https://twitter.com/c1security"><img src="https://4027460.fs1.hubspotusercontent-na1.net/hubfs/4027460/twitter.png" width="24" alt="twitter"></a>&nbsp;
+                                <a href="https://www.linkedin.com/company/cyberonesecurity/"><img src="https://4027460.fs1.hubspotusercontent-na1.net/hubfs/4027460/linked-in.png" width="24" alt="linkedin"></a> </p>
+
+                            </td>
+                          </tr>
+                   <!-- space  start --> 
+                            <tr> 
+                              <td height="24" style="font-size:1px; line-height:24px;">&nbsp;</td> 
+                          </tr> 
+                          <!-- space  end-->
+        
+                       
+                        </tbody> 
+                      </table> </td> 
+                  </tr> 
+               
+                </tbody> 
+              </table>
+            <!-- footer area end -->
+
+            <!-- navigate area  -->
+            <table class="w-100"   width="600" cellpadding="0" cellspacing="0" border="0" bgcolor="#EE6C26"> 
+              <tbody align="center" style="display:block ;"> 
+                <tr> 
+                  <td align="center" valign="top"> 
+                    <table width="600" cellpadding="0" cellspacing="0" border="0" class="container"> 
+                      <tbody> 
+                        <tr> 
+                          <td align="center" valign="top"> 
+                            <table cellpadding="0" cellspacing="0" border="0"> 
+                              <tbody class="m-0" style="margin:0px 24px;display:block;"> 
+                            <!-- space  start --> 
+                              <tr> 
+                                <td height="18" style="font-size:1px; line-height:18px;">&nbsp;</td> 
+                              </tr> 
+                              <!-- space  end--> 
+                                <tr> 
+                                  <td  style="color:#fff; font-family: 'Roboto',sans-serif;font-size:22px;line-height:32px;font-weight: 500;" align="center" valign="top"> 
+                                    ** Use the left / right keys to **
+
+                                  </td> 
+                                 
+                                </tr> 
+                                <tr> 
+                                  <td  style="color:#fff; font-family: 'Roboto',sans-serif;font-size:22px;line-height:32px;font-weight: 500;" align="center" valign="top"> 
+                                    navigate to the next page
+
+                                  </td> 
+                                 
+                                </tr> 
+                                  
+                             
+                                                   <!-- space  start --> 
+                <tr> 
+                  <td height="18" style="font-size:1px; line-height:18px;">&nbsp;</td> 
+                </tr> 
+                <!-- space  end--> 
+                             
+                                
+                        
+                              </tbody> 
+                            </table>
+                           </td> 
+                        </tr> 
+          
+              
+                      </tbody> 
+                    </table> </td> 
+                </tr> 
+             
+              </tbody> 
+            </table>
+          <!-- navigate area end -->
+              
+              
+             
+ 
+      </td> 
+          </tr> 
+        </tbody> 
+      </table> 
+    </center>  
+    
+        <p id="footer" style="font-size:0px;display:none;overflow:hidden;width:0px;">
+      
+      <br/>
+      You received this email because you are subscribed to {{ subscription_name }} from {{ site_settings.company_name }}.
+      <br/>
+      Update your <a class="hubspot-mergetag" data-unsubscribe="true" href="{{ unsubscribe_link }}">email preferences</a> to choose the types of emails you receive.
+      <br/>
+      <a class="hubspot-mergetag" data-unsubscribe="true" href="{{ unsubscribe_link_all }}">Unsubscribe from all future emails</a>
+    </p>
+  </body>
+</html>

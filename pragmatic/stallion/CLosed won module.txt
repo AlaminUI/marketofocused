@@ -1,0 +1,317 @@
+<!-- banner area start  -->
+   <table class="w-full banner-wrap" width="600" cellpadding="0" cellspacing="0" border="0" style="background-color:#FB471F;" bgcolor="#FB471F"> 
+    <tbody> 
+      <tr align="center"> 
+        <td align="center" valign="middle"> 
+          <table width="100%" cellpadding="0" align="center" cellspacing="0" border="0" class="container"> 
+            <tbody align="center" style="display:block;"> 
+        
+              <tr> 
+               
+                <td align="center" class="pl-30" valign="middle" style="padding-left: 40px;"> 
+                  <table cellpadding="0" width="100%" cellspacing="0" border="0"> 
+                    <tbody class="m-0" style=" display:block"> 
+                      <tr> 
+                  <td> 
+                    
+                    <table width="280" align="left" class="w-100" cellpadding="0" cellspacing="0" border="0"> 
+                      <tbody> 
+                   <!-- only for outlook -->
+                              <!--[if mso | IE]>
+                                         <tr> 
+                          <td height="20" style="font-size:1px; mso-line-height-rule:exactly;  line-height:20px;">&nbsp;</td> 
+                      </tr> 
+                        <![endif]-->
+                            <!-- space  start --> 
+                            <tr> 
+                              <td height="25" style="font-size:1px; mso-line-height-rule:exactly;  line-height:25px;">&nbsp;</td> 
+                          </tr> 
+          
+                      <!-- space  end-->
+                        <tr> 
+                          <td align="left" valign="top"> 
+                            <h1 class="p-0 font-30 font-sm-22" style="text-align:left;font-size:38px;font-family: 'Montserrat','Arial',  sans-serif; color:#fff; mso-line-height-rule:exactly; letter-spacing: -1.25px; line-height:45px;font-weight: bold; padding-right:12px;display:block;margin:0px;">Welcome to the Stallion family! </h1>
+                          </td> 
+                        </tr> 
+               
+                             <!-- space  start --> 
+                             <tr> 
+                              <td height="28" style="font-size:1px; mso-line-height-rule:exactly;height:28px;  line-height:28px;">&nbsp;</td> 
+                          </tr> 
+  
+  
+                          <!-- space  end-->
+  
+                        </tbody> 
+                    </table> 
+                  </td>
+  
+                   <td>
+                    <table width="280" align="center" cellpadding="0" style="background: #fff;" bgcolor="#fff" class="w-118 m-0 dark-bg" cellspacing="0" border="0"> 
+                      <tbody> 
+                        <tr> 
+                          <td align="center" valign="top"> 
+                              <img src="https://22325245.fs1.hubspotusercontent-na1.net/hubfs/22325245/SandS-emails/phase2-banner-4.png" class="mobile-none" width="280" style="display:block;" alt="banner image">
+                              <!--[if !mso]><!-->
+                              <img src="https://22325245.fs1.hubspotusercontent-na1.net/hubfs/22325245/SandS-emails/phase2-banner-4-mobile.png" class="mobile-block" width="118" style="display:none;" alt="banner image">
+                              <!--<![endif]-->
+  
+                          </td> 
+                        </tr> 
+  
+                      </tbody> 
+                    </table> 
+                      </td>
+                      </tr> 
+                    </tbody> 
+                  </table> </td> 
+              </tr> 
+         
+            </tbody> 
+          </table> </td> 
+      </tr> 
+  
+    </tbody> 
+  </table>
+
+   <!-- full text area  -->
+   <table class="wrapper full-text"   width="600" cellpadding="0" cellspacing="0" border="0" style="background-color:#fff;" bgcolor="#fff"> 
+    <tbody> 
+      <tr> 
+        <td align="center" valign="top"> 
+          <table width="100%" cellpadding="0" cellspacing="0" border="0" class="container"> 
+            <tbody> 
+              <tr> 
+               
+                <td align="left" valign="top" class="px-30" style="padding:0px 40px 0px;"> 
+                  <table cellpadding="0" width="100%" cellspacing="0" border="0"> 
+                    <tbody> 
+                         <!-- extra space  --> 
+                         <tr> 
+                          <td height="38" style="font-size:38px; mso-line-height-rule:exactly;  line-height:38px;">&nbsp;</td> 
+                        </tr> 
+                      <tr> 
+                        <td  style="color:#272727; font-family: 'Montserrat','Arial',sans-serif;font-size:16px;mso-line-height-rule:exactly;  line-height:24px;font-weight: 400;letter-spacing:0px;" align="left" valign="top"> 
+                        Hi  {{ contact.firstname }},
+
+                        </td> 
+                       
+                      </tr> 
+                             <!-- space  start --> 
+                      <tr> 
+                        <td height="11" style="font-size:1px; mso-line-height-rule:exactly;  line-height:11px;">&nbsp;</td> 
+                    </tr> 
+                    <tr> 
+                      <td  style="color:#272727; font-family: 'Montserrat','Arial',sans-serif;font-size:16px;mso-line-height-rule:exactly;  line-height:24px;font-weight: 400;letter-spacing: 0px; " align="left" valign="top"> 
+                        I’m thrilled that you chose to partner with us! Our trained technicians will be on-site to set everything up. 
+                          If you have any questions or need anything else before then, let me know. 
+
+                      </td> 
+                    </tr> 
+              
+          
+ 
+                    </tbody> 
+                  </table>
+                 </td> 
+                 
+              </tr> 
+    
+
+     
+            </tbody> 
+          </table> </td> 
+      </tr> 
+ 
+    </tbody> 
+  </table>
+<!-- full text area end -->
+
+<table class="wrapper full-text w-100" width="600" cellpadding="0" cellspacing="0" border="0" style="background-color:#fff;" bgcolor="#fff"> 
+  <tbody> 
+    <tr> 
+      <td align="center" valign="top"> 
+        <table width="100%" cellpadding="0" cellspacing="0" border="0" class="container"> 
+          <tbody> 
+                <!-- extra space  --> 
+                <tr> 
+                  <td height="20" style="font-size:20px; mso-line-height-rule:exactly;  line-height:20px;">&nbsp;</td> 
+                </tr> 
+            <tr> 
+              
+              <td align="left" valign="top" class="px-30" style="padding:0px 40px 0px;"> 
+                
+                <table cellpadding="0" width="100%" cellspacing="0" border="0"> 
+                  <tbody> 
+
+                    <tr>
+                     <td>
+                      <table cellpadding="0" width="100%" class="w-100" cellspacing="0" border="0">
+                        <tbody>
+                    
+                      <tr> 
+                        <td style="color:#FB471F; font-family: 'Montserrat','Arial',sans-serif;font-size:16px;mso-line-height-rule:exactly;  line-height:24px;font-weight: bold;letter-spacing:0;" align="left" valign="top"> 
+                          All our solutions
+                        </td> 
+                        
+                      </tr> 
+                         <!-- space  start --> 
+              <tr> 
+                <td height="4" style="font-size:1px; mso-line-height-rule:exactly;  line-height:4px;">&nbsp;</td> 
+            </tr> 
+            <tr> 
+              <td  style="color:#272727; font-family: 'Montserrat','Arial',sans-serif;font-size:16px;mso-line-height-rule:exactly;  line-height:24px;font-weight: 400;letter-spacing: 0px; " align="left" valign="top"> 
+                Stallion is so much MORE than just surveillance. We’re your one stop shop for all your on-site logistical needs. We also offer custom solutions for:
+
+              </td> 
+            </tr> 
+              <!-- space  start --> 
+              <tr> 
+                <td height="2" style="font-size:1px; mso-line-height-rule:exactly;  line-height:2px;">&nbsp;</td> 
+            </tr> 
+
+                      <!-- space  start --> 
+                      <tr> 
+                      <td height="16" style="font-size:1px; mso-line-height-rule:exactly;  line-height:16px;">&nbsp;</td> 
+                      </tr> 
+                      <tr>
+                      <td>
+                        <table width="100%" cellpadding="0" cellspacing="0" border="0"> 
+                          <tbody> 
+                            <tr> 
+                            
+                              
+                                <td valign="top"> 
+                                  <table width="100%" cellpadding="0" cellspacing="0" border="0"> 
+                                    <tbody> 
+
+                                      <!-- single line  -->
+                                      <tr> 
+                                       <td>
+                                        <table width="100%" cellpadding="0" cellspacing="0" border="0">
+                                          <tbody>
+                                            <tr>
+                                              <td valign="top" width="25" style="font-size: 12px;line-height: 10px;"> <span style="color:#FB471F;font-size:20px;line-height: 20px;">●
+                                              </span></td>
+
+                                              <td style="font-family: 'Montserrat','Arial', sans-serif; font-size:16px;  mso-line-height-rule:exactly;  line-height: 22px;color:#272727;font-weight: 600;">Communication and connectivity 
+
+
+                                              </td>
+                                            </tr>
+                                          </tbody>
+                                         </table>
+                                       </td>
+                                        </tr>
+
+                                      <!-- extra space  --> 
+                                      <tr> 
+                                        <td height="15" style="font-size:15px; mso-line-height-rule:exactly;  line-height:15px;">&nbsp;</td> 
+                                      </tr> 
+                                      <!-- single line  -->
+                                      <tr> 
+                                        <td>
+                                          <table width="100%" cellpadding="0" cellspacing="0" border="0">
+                                            <tbody>
+                                              <tr>
+                                                <td valign="top" width="25" style="font-size: 12px;line-height: 10px;"> <span style="color:#FB471F;font-size:20px;line-height: 20px;">●
+                                              </span></td>
+
+                                                <td style="font-family: 'Montserrat','Arial', sans-serif; font-size:16px;  mso-line-height-rule:exactly;  line-height: 22px;color:#272727;font-weight: 600;">Workforce housing and mobile offices 
+ 
+
+                                                </td>
+                                              </tr>
+                                            </tbody>
+                                          </table>
+                                        </td>
+                                        </tr>
+
+                                      <!-- extra space  --> 
+                                      <tr> 
+                                        <td height="15" style="font-size:15px; mso-line-height-rule:exactly;  line-height:15px;">&nbsp;</td> 
+                                      </tr> 
+                                      <!-- single line  -->
+                                      <tr> 
+                                       <td>
+                                        <table width="100%" cellpadding="0" cellspacing="0" border="0">
+                                          <tbody>
+                                            <tr>
+                                              <td valign="top" width="25" style="font-size: 12px;line-height: 10px;"> <span style="color:#FB471F;font-size:20px;line-height: 20px;">●
+                                              </span></td>
+
+                                              <td style="font-family: 'Montserrat','Arial', sans-serif; font-size:16px;  mso-line-height-rule:exactly;  line-height: 22px;color:#272727;font-weight: 600;">Power and lighting 
+                                              </td>
+                                            </tr>
+                                          </tbody>
+                                        </table>
+                                       </td>
+                                        </tr>
+                              
+
+
+                                        </tbody>
+                                        </table>
+
+                                </td> 
+
+                              
+                                
+                               
+                            </tr>
+                            </tbody>
+                            </table>
+                      </td>
+                      </tr>
+                        </tbody>
+                      </table>
+                     </td>
+                     
+                   
+                    </tr>
+
+
+                    <!-- space  start --> 
+                    <tr> 
+                    <td height="27" style="font-size:1px; mso-line-height-rule:exactly;height:27px;  line-height:27px;">&nbsp;</td> 
+                </tr> 
+                <!-- space  end-->
+
+                  <!-- button--> 
+                <tr> 
+                  <td align="left" valign="top"> 
+                    <table cellpadding="0" width="180" class="button-sm" height="38" cellspacing="0" border="0"> 
+                      <tbody> 
+                        <tr> 
+                          <td align="center" height="38" bgcolor="#fff" valign="middle" style="font-family: 'Montserrat','Arial', sans-serif; font-size:18px; font-weight:500; background-color:#005A8B;display:block; color: #fff;"> <a class="outlookbutton" href="https://www.stallionis.com/solutions/surveillance-monitoring" style="padding: 10px; display:block; font-family:'Montserrat', 'Arial', sans-serif; color: #fff;  text-decoration: none; mso-line-height-rule:exactly;  line-height: 18px; font-weight: 500; font-size: 18px;" target="_blank"> Learn More </a> </td> 
+                        </tr> 
+                      </tbody> 
+                    </table> </td> 
+                </tr> 
+                <!-- space  start --> 
+                <tr> 
+                  <td height="36" style="font-size:1px; mso-line-height-rule:exactly;height:36px;  line-height:36px;">&nbsp;</td> 
+              </tr> 
+              <!-- space  end-->
+            <tr> 
+              <td  style="color:#272727; font-family: 'Montserrat','Arial',sans-serif;font-size:16px;mso-line-height-rule:exactly;  line-height:24px;font-weight: 400;letter-spacing: 0px; " align="left" valign="top"> 
+                I’m looking forward working with you and let me know if there’s anything else I can do to help. 
+
+              </td> 
+             
+            </tr> 
+              
+                  </tbody> 
+                </table>
+                </td> 
+                
+            </tr> 
+  
+
+    
+          </tbody> 
+        </table> </td> 
+    </tr> 
+ 
+  </tbody> 
+</table>

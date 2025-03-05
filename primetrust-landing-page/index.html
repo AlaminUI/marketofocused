@@ -1,0 +1,587 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <link rel="shortcut icon" href="favicon.png" type="image/x-icon">
+    <link rel="icon" href="<favicon url>" type="image/x-icon">
+    <meta property="og:url" content="${OGShareURL}">
+    <meta property="og:type" content="article">
+    <meta property="og:title" content="${OGCampaignTitle}">
+    <meta property="og:description" content="${OGCampaignDesciption}">
+    <meta property="og:image" content="${OGCampaignThumbURL}">
+    <meta class="mktoString" mktoname="OG Share URL" id="OGShareURL" default>
+    <meta class="mktoString" mktoname="OG Campaign Title" id="OGCampaignTitle" default>
+    <meta class="mktoString" mktoname="OG Campaign Desciption" id="OGCampaignDesciption" default>
+    <meta class="mktoString" mktoname="OG Campaign Thumb Image URL" id="OGCampaignThumbURL" default>
+    <meta class="mktoString" mktoname="Banner (1920px x min 230px)" id="bannerBg" default>
+    <meta class="mktoString" mktoname="Custom BODY HTML" id="customBodyHtml" allowhtml="true">
+    <meta class="mktoColor" mktoname="Page Background" id="bodyBackgroundColor" default>
+    <meta class="mktoColor" mktoname="Content Background" id="contentBackgroundColor" default>
+    <meta class="mktoColor" mktoname="Header Background" id="headerBackgroundColor" default>
+    <meta class="mktoColor" mktoname="Banner Gradient Top Color" id="bgGradientTop" default>
+    <meta class="mktoColor" mktoname="Banner Gradient Bottom Color" id="bgGradientBottom" default>
+    <meta class="mktoColor" mktoname="Primary Color" id="primaryColor" default>
+    <meta class="mktoColor" mktoname="Accent Background" id="accentBg" default>
+    <meta class="mktoColor" mktoname="Button Color" id="buttonColor" default>
+    <meta class="mktoColor" mktoname="Button Hover Color" id="buttonHoverColor" default>
+    <meta class="mktoBoolean" id="showHeader" mktoname="Show Header" default true_value="block" false_value="none"
+        true_value_name="Show" false_value_name="Hide">
+    <meta class="mktoBoolean" id="headerBackground" mktoname="Header Background" default true_value="img-bg"
+        false_value="grad-bg" true_value_name="Image" false_value_name="Gradient">
+    <meta class="mktoBoolean" id="showFormAsterisks" mktoname="Show Form Asterisks" default true_value="block"
+        false_value="none" true_value_name="Show" false_value_name="Hide">
+    <meta class="mktoBoolean" id="showSocial" mktoname="Show Social" default true_value="block" false_value="none"
+        true_value_name="Show" false_value_name="Hide">
+    <meta class="mktoBoolean" id="showFooter" mktoname="Show Footer" default true_value="block" false_value="none"
+        true_value_name="Show" false_value_name="Hide">
+    <meta class="mktoBoolean" id="showSocialShareButtons" mktoname="Show Social Share Buttons" default
+        true_value="block" false_value="none" true_value_name="Show" false_value_name="Hide">
+    <title>Prime Trust</title>
+    <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css"
+        href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+    <style type="text/css">
+        body {
+            font-family: Helvetica, sans-serif;
+            font-size: 14px
+        }
+
+        .clear {
+            clear: both
+        }
+
+        .mktoImg,
+        img {
+            max-width: 100%;
+            height: auto !important
+        }
+
+        h1,
+        h2,
+        h3,
+        h4,
+        h5,
+        h6 {
+            margin-top: 0;
+            font-weight: 700
+        }
+
+        .btn,
+        a,
+        button,
+        input[type=submit] {
+            -webkit-transition: all .2s linear;
+            -moz-transition: all .2s linear;
+            -o-transition: all .2s linear;
+            transition: all .2s linear
+        }
+
+        ul {
+            list-style: none;
+            padding-left: 0;
+            position: relative
+        }
+
+        .mktoText ul li:before {
+            content: "•";
+            font-size: 40px;
+            line-height: 20px;
+            vertical-align: middle;
+            position: absolute;
+            left: 0
+        }
+
+        ul li {
+            padding-bottom: 1em;
+            padding-left: 20px
+        }
+
+        .container {
+            max-width: 970px
+        }
+
+        .borderImage img {
+            max-width: 100%
+        }
+
+        .borderImage .mktoImg {
+            display: block !important
+        }
+
+        .borderImage {
+            box-sizing: border-box;
+            display: block;
+            margin: 0 auto 20px
+        }
+
+        .borderImage p {
+            margin: 0
+        }
+
+        header {
+            padding-top: 15px;
+            padding-bottom: 15px;
+            font-size: 22px
+        }
+
+        footer {
+            padding-top: 100px;
+            padding-bottom: 50px
+        }
+
+        main {
+            padding-bottom: 50px
+        }
+
+        .pad-top {
+            padding-top: 50px
+        }
+
+        @media only screen and (min-width:768px) {
+            .colSeparator-sm {
+                border-right: 1px solid #dadada
+            }
+
+            .col-sm-pad-right {
+                padding-right: 40px
+            }
+
+            .col-sm-pad-left {
+                padding-left: 40px
+            }
+        }
+
+        @media only screen and (min-width:481px) {
+            .borderImage {
+                float: left;
+                max-width: 45%;
+                display: inline-block;
+                margin-right: 20px
+            }
+
+            .borderImage img {
+                padding-right: 20px
+            }
+        }
+    </style>
+    <style type="text/css">
+        .mktoForm {
+            font-family: Helvetica, sans-serif !important
+        }
+
+        .mktoForm option {
+            padding: 0 !important
+        }
+
+        .mktoForm {
+            padding: 0 !important;
+            box-sizing: border-box !important;
+            width: 100% !important
+        }
+
+        .mktoForm .mktoAsterix {
+            float: left !important;
+            padding-right: 5px !important;
+            padding-left: 0 !important
+        }
+
+        .mktoForm label {
+            font-size: 14px !important
+        }
+
+        .mktoForm .mktoLabel {
+            font-size: 14px !important;
+            width: 100% !important;
+            margin-bottom: 10px !important
+        }
+
+        .mktoForm input[type=date],
+        .mktoForm input[type=email],
+        .mktoForm input[type=number],
+        .mktoForm input[type=tel],
+        .mktoForm input[type=text],
+        .mktoForm input[type=url],
+        .mktoForm select,
+        .mktoForm textarea {
+            border: 1px solid #dadada !important;
+            margin: 0 auto !important;
+            float: none !important;
+            margin-bottom: 4px !important;
+            padding: 10px 6px !important;
+            -moz-border-radius: 0 !important;
+            -webkit-border-radius: 0 !important;
+            -ms-border-radius: 0 !important;
+            border-radius: 0 !important;
+            width: 100% !important;
+            font-size: 14px !important;
+            line-height: 1.2em !important;
+            min-height: 40px !important;
+            -webkit-box-shadow: none !important;
+            box-shadow: none !important
+        }
+
+        .mktoFieldDescriptor.mktoFormCol {
+            margin-bottom: 10px !important
+        }
+
+        .mktoButtonRow {
+            display: block !important
+        }
+
+        .mktoForm .mktoGutter,
+        .mktoForm .mktoOffset {
+            display: none !important
+        }
+
+        .mktoForm .mktoFieldWrap,
+        .mktoForm .mktoFormCol {
+            float: none !important
+        }
+
+        .mktoForm .mktoButtonWrap {
+            margin: 0 !important
+        }
+
+        .mktoForm .mktoButton {
+            font-size: 16px !important;
+            border-radius: 0 !important;
+            border: 0 !important;
+            text-transform: uppercase !important;
+            font-weight: 700 !important;
+            margin-top: 25px !important;
+            border: none;
+            border-radius: 6px !important;
+            background-color: #008fff !important;
+            background: #008fff !important;
+            color: #fff;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: .75px;
+            margin: 1rem 0;
+            display: inline-block;
+            padding: 12px 32px !important;
+            background-image: none !important
+        }
+    </style>
+    <style>
+        .header-bg {
+            background-image: url(https://go.primetrust.com/rs/152-APF-177/images/shape.png);
+            background-repeat: no-repeat;
+            background-size: 30%;
+            background-position: right bottom;
+            padding: 4rem 30% 14rem 7rem;
+            color: #fff;
+            background-color: #182749
+        }
+
+        .container-2 {
+            max-width: 1170px;
+            margin: 0 auto
+        }
+
+        .header-content {
+            padding-top: 165px;
+            max-width: 1080px
+        }
+
+        .header-content h1 {
+            font-size: 65px;
+            margin-bottom: 15px;
+            font-weight: 500
+        }
+
+        .header-content p {
+            font-size: 22px;
+            font-weight: 300;
+            margin-top: 15px;
+            line-height: 42px;
+            padding-right: 20%
+        }
+
+        .big-btn {
+            border: none;
+            border-radius: 6px;
+            background-color: #008fff;
+            color: #fff;
+            font-size: 14px;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: .75px;
+            margin: 1rem 0;
+            display: inline-block;
+            padding: 12px 32px;
+            margin-top: 20px
+        }
+
+        .big-btn:hover {
+            opacity: .9;
+            color: #fff;
+            text-decoration: none
+        }
+
+        .cta-area {
+            background: #142c64;
+            padding: 100px 0
+        }
+
+        .container2 {
+            max-width: 1140px;
+            margin: 0 auto;
+            padding: 0 15px
+        }
+
+        .cta-wrap h2 {
+            font-size: 38px;
+            color: #fff;
+            margin: 0;
+            text-align: center;
+            width: 100%
+        }
+
+        .align-items-center {
+            align-items: center
+        }
+
+        .cta-wrap {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            width: 100%
+        }
+
+        .cta-wrap a {
+            margin: 0
+        }
+
+        li.link-title {
+            color: #142c64;
+            font-size: 24px;
+            font-weight: 600;
+            margin-bottom: 20px !important
+        }
+
+        .footer-content ul li a {
+            color: #142c64;
+            text-decoration: none;
+            font-size: 16px;
+            font-weight: 300;
+            line-height: 42px
+        }
+
+        .footer-content ul li a:hover {
+            opacity: .9
+        }
+
+        .footer-content ul li {
+            margin: 0;
+            padding: 0
+        }
+
+        header.header-bg .container {
+            max-width: 1140px
+        }
+
+        @media (max-width:767px) {
+            .header-content h1 {
+                font-size: 40px
+            }
+
+            .header-content {
+                padding-top: 80px;
+                max-width: 100%
+            }
+
+            .header-bg {
+                padding: 4rem 0 7rem 0
+            }
+
+            .header-content p {
+                font-size: 18px;
+                line-height: 33px;
+                padding-right: 0
+            }
+
+            .cta-wrap {
+                justify-content: center;
+                flex-direction: column
+            }
+
+            .cta-wrap h2 {
+                color: #fff;
+                text-align: center;
+                font-size: 32px;
+                margin-bottom: 16px
+            }
+
+            .cta-area {
+                background: #142c64;
+                padding: 56px 0
+            }
+        }
+
+        @media (max-width:420px) {
+            .header-bg {
+                padding: 3rem 0 6rem 0
+            }
+
+            .header-content h1 {
+                font-size: 30px;
+                line-height: 1.4
+            }
+
+            .header-content p {
+                font-size: 16px;
+                line-height: 1.6
+            }
+
+            .cta-wrap h2 {
+                font-size: 28px;
+                line-height: 1.5
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header class="header-bg">
+        <div class="container">
+            <div class="header-logo"><img src="logo.svg" alt="logo"></div>
+            <div class="header-content">
+                <h1><strong>Financial</strong> infrastructure powering the<strong> future of fintech</strong></h1>
+                <p>Prime Trust enables our clients to build the next generation of financial solutions on top of our API
+                    and widget-based infrastructure to bring their products to market faster, more reliably, and
+                    compliantly.</p><a href="" class="big-btn">Explore our Platform</a>
+            </div>
+        </div>
+    </header>
+    <main>
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-7 col-md-8 col-sm-pad-right pad-top colSeparator-sm">
+                    <div>
+                        <div class="borderImage text-center">
+                            <div class="mktoText" id="thumbnail" mktoname="Thumbnail"><img
+                                    src="https://placehold.it/300x350&amp;text=Optimal%20Size%20300x350"></div>
+                        </div>
+                        <div class="mktoText" id="content1" mktoname="Content 1">
+                            <p style="font-weight:700"><br>Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                                Pellentesque convallis dui non ante fringilla, ac cursus purus tincidunt. Pellentesque
+                                et elit sit amet nunc mattis maximus quis ut est. Donec eget posuere lectus. Quisque nec
+                                ligula iaculis, faucibus mi id, elementum nisi. Praesent vitae lacus a elit fermentum
+                                mattis eget eget sapien.</p>
+                            <p>Maecenas pharetra ante eu dolor molestie, eu molestie quam aliquet. Aenean dui ex,
+                                euismod a turpis eget, congue porta nulla. Nulla iaculis eget nisi a ullamcorper.</p>
+                        </div>
+                    </div>
+                    <div class="clear">
+                        <div class="mktoText" id="content2" mktoname="Content 2">
+                            <p>Morbi sit amet est aliquet purus vestibulum volutpat. Nam quis lacus pharetra, iaculis
+                                urna nec, imperdiet augue.</p>
+                            <ul>
+                                <li>Class aptent taciti sociosqu ad litora torquent</li>
+                                <li>Class aptent taciti sociosqu ad litora torquent</li>
+                                <li>Class aptent taciti sociosqu ad litora torquent</li>
+                                <li>Class aptent taciti sociosqu ad litora torquent</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="clear">
+                        <div class="mktoText" id="content3" mktoname="Content 3">
+                            <p>Morbi sit amet est aliquet purus vestibulum volutpat. Nam quis lacus pharetra, iaculis
+                                urna nec, imperdiet augue.</p>
+                            <ul>
+                                <li>Class aptent taciti sociosqu ad litora torquent</li>
+                                <li>Class aptent taciti sociosqu ad litora torquent</li>
+                                <li>Class aptent taciti sociosqu ad litora torquent</li>
+                                <li>Class aptent taciti sociosqu ad litora torquent</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-5 col-md-4 col-sm-pad-left pad-top">
+                    <div class="mktoText" id="formHeadline" mktoname="Form Headline">
+                        <h3 class="tkn_primary_color">FREE DOWNLOAD</h3>
+                    </div>
+                    <div>
+                        <script src="//go.primetrust.com/js/forms2/js/forms2.min.js"></script>
+                        <form id="mktoForm_1024"></form>
+                        <script>
+                            MktoForms2.loadForm("//go.primetrust.com", "152-APF-177", 1024, function (t) {
+                                t.onSuccess(function (o, e) {
+                                    return t.getFormElem().hide(), document.getElementById(
+                                        "confirmform").style.visibility = "visible", !1
+                                })
+                            })
+                        </script>
+                        <div id="confirmform" style="visibility:hidden">
+                            <p><strong>Thank you. You're subscribed to In Crowd's episode resource guide. You'll receive
+                                    an email on the Tuesday after each episode.</strong></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <div class="cta-area">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-md-9">
+                    <div class="cta-wrap">
+                        <h2>Explore Asset Platform</h2>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="cta-wrap"><a href="" class="big-btn">Learn More</a></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="row d-flex justify-content-between">
+                    <div class="col-md-3 col-6">
+                        <ul>
+                            <li class="link-title">Products</li>
+                            <li><a href="/primecore">PrimeCore</a></li>
+                            <li><a href="https://www.fundamerica.com/" rel="noopener noreferrer"
+                                    target="___blank">FundAmerica</a></li>
+                            <li><a href="https://coinramp.io" rel="noopener noreferrer" target="___blank">CoinRamp</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-md-3 col-6">
+                        <ul>
+                            <li class="link-title">Company</li>
+                            <li><a href="">About</a></li>
+                            <li><a href="" target="___blank" rel="noopener noreferrer">Blog</a></li>
+                            <li><a href="">Careers</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-md-3 col-6">
+                        <ul>
+                            <li class="link-title">Legal</li>
+                            <li><a href="">ToS &amp; EULA</a></li>
+                            <li><a href="">Privacy Policy</a></li>
+                            <li><a href="" rel="noopener norefferer" target="___blank">Gramm-Leach Notice</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-md-3 col-6">
+                        <ul>
+                            <li class="link-title">Get in Touch</li>
+                            <li><a href="tel:+1-702-840-4000">702.840.4000</a></li>
+                            <li><a href="mailto:info@primetrust.com">info@primetrust.com</a></li>
+                            <li><a href="" rel="noopener norefferer" target="___blank">Support</a></li>
+                            <li><a href="">Contact</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>

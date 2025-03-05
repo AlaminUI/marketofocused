@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+    <meta charset="utf-8">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>1802 DE Video LP FINAL</title>
+    
+    <link rel="stylesheet" type="text/css" media="all" href="/css/mktLPSupportCompat.css">
+   
+
+    <style>
+
+ @font-face{font-family:"Graphik";src:url(fonts/Graphik-Light.woff);font-weight:300;font-style:normal;font-stretch:normal}
+ @font-face{font-family:"Graphik";src:url(fonts/Graphik-Regular-Web.woff2);font-weight:400;font-style:normal;font-stretch:normal}
+@font-face{font-family:"Graphik";src:url(fonts/Graphik-Medium-Web.woff2);font-weight:500;font-style:normal;font-stretch:normal}
+@font-face{font-family:"Graphik";src:url(fonts/Graphik-Semibold.woff);font-weight:600;font-style:normal;font-stretch:normal}
+
+*{padding:0;margin:0;-webkit-box-sizing:border-box;box-sizing:border-box}
+body{font-family:Graphik;background:#fff;color:#0a0a0a;font-weight:300;overflow-x: hidden;}
+.container{max-width:1230px;margin:0 auto;padding:0 15px}
+header{position:relative;padding:35px 0; }
+.request-button{--transition-duration:500ms;--transition-easing:ease-out;-webkit-backdrop-filter:blur(2px);backdrop-filter:blur(2px);overflow:hidden}
+.request-button::before{content:"";background:rgba(255,255,255,0.4);width:60%;height:100%;top:0;left:-125%;-webkit-transform:skew(45deg);-ms-transform:skew(45deg);transform:skew(45deg);position:absolute;-webkit-transition:left var(--transition-duration) var(--transition-easing);-o-transition:left var(--transition-duration) var(--transition-easing);transition:left var(--transition-duration) var(--transition-easing)}
+.request-button:hover{opacity:.7}
+.request-button:hover::before{left:150%}
+header:after{position:absolute;left:-24px;top:0;background:#000;height:100%;content:"";z-index:-2;width:calc(100% - 384px);-webkit-transform:skew(-13deg);-ms-transform:skew(-13deg);transform:skew(-13deg)}
+.header-white-logo img{width:100%;max-width:202px}
+header:before{position:absolute;left:-24px;top:0;border:2px solid #178E8A;height:calc(100% + 8px);content:"";border-top:1px solid #000;width:calc(100% - 400px);-webkit-transform:skew(-13deg);-ms-transform:skew(-13deg);transform:skew(-13deg);z-index:-1}
+.header-bain-logo{padding-top:24px;padding-bottom:70px}
+img{width:100%}
+.women-slice{position:absolute;right:-16px;max-width:440px;top:0}
+.women-slice img{width:100%}
+.bain-logo img{width:100%;max-width:413px}
+h1{font-size:54px;font-weight:400;line-height:74px;padding-bottom:40px}
+.competitive-wrap{display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-align:center;-ms-flex-align:center;align-items:center;position:relative;padding-top:36px}
+.competitive-wrap:after{position:absolute;top:0;left:0;width:100%;max-width:680px;height:1px;background:#178E8A;content:""}
+.left-descripton{width:100%;max-width:100%}
+.competitive-section{padding-top:95px}
+.left-descripton h2{font-size:32px;font-weight:400;line-height:50px;margin-bottom:10px}
+.left-descripton p{font-size:18px;line-height:30px;margin-bottom:16px}
+a.request-button{background:#C00;color:#fff;padding:19px;width:100%;display:block;max-width:366px;text-align:center;text-decoration:none;font-size:24px;font-weight:400}
+.left-descripton ul{padding-left:48px;list-style:none;padding-top:12px;padding-bottom:14px}
+.left-descripton ul li{position:relative;padding-left:20px;font-size:18px;line-height:28px;margin-bottom:12px}
+.left-descripton ul li:after{position:absolute;left:0;top:11px;width:6px;height:6px;background:#C00;content:"";border-radius:50%}
+.left-descripton a{margin-top:53px}
+.left-descripton ul li b{font-weight:400}
+.leverage-title-area{position:relative;padding-top:32px}
+.leverage-title-area:after{position:absolute;left:0;width:100%;height:2px;background:#178E8A;content:"";top:0;max-width:1032px}
+.leverage-title-area h2{font-size:32px;font-weight:400;line-height:30px;letter-spacing:-.15px;margin-bottom:48px}
+.leverage-title-area p{font-size:18px;line-height:30px;letter-spacing:-.5px;margin-bottom:18px}
+.leverage-title-area ul{padding-left:48px;list-style:none}
+.leverage-title-area ul li{position:relative;padding-left:24px;margin-bottom:18px;font-size:18px;letter-spacing:-.15px}
+.leverage-title-area ul li a{color:#C00;text-decoration:none}
+.leverage-title-area ul li:after{position:absolute;left:0;top:8px;width:6px;height:6px;background:#C00;content:"";border-radius:50%}
+.leverage-card-area{background:#EFEFEF;margin-top:85px;display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-pack:space-evenly;-ms-flex-pack:space-evenly;justify-content:space-evenly;padding:24px 0;padding-bottom:44px}
+.single-leverage-card{width:100%;max-width:450px}
+.single-leverage-card img{width:100%;max-width:77px;display:block;margin:0 auto;margin-bottom:14px}
+.single-leverage-card h5{font-size:18px;font-weight:400;line-height:27px;margin-bottom:8px}
+.single-leverage-card p{font-size:18px;line-height:27px}
+img.leverage-lg-img{max-width:94px!important;margin-top:14px}
+.leverage-section{padding-top:104px}
+.leverage-bottom a{text-align:center;margin:0 auto}
+.leverage-bottom{margin-top:60px;padding-bottom:68px}
+footer{background:#000;padding:27px 0;padding-top:40px}
+.footer-nav ul{list-style:none;padding:0;display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-align:center;-ms-flex-align:center;align-items:center}
+.footer-nav ul li a{color:#fff;text-decoration:none;font-weight:400;font-size:16px;margin-right:24px}
+.footer-nav ul li a:hover{color:#cc0600}
+.copyright p{font-size:16px;color:#b7b3b3;padding-bottom:32px;margin-top:32px;line-height:1.5}
+.footer-logo img{width:100%;max-width:125px}
+.footer-logo{margin-bottom:190px}
+.footer-nav ul li{margin-right:24px}
+.right-img a{display:none}
+h4{font-size:26px;font-weight:400}
+.top-information-box p{font-size:22px;margin-top:46px;line-height:1.4}
+.top-information-box{padding-bottom:45px}
+.information-box p{font-size:18px;margin-bottom:16px;line-height:1.5}
+.information-box h4{margin-bottom:16px}
+.information-box{padding-top:72px}
+.content-wrap img{width:100%;max-width:1056px}
+.information-box.ebitda-top{padding-top:15px;padding-bottom:24px}
+.information-box.invest-top{padding-top:55px}
+.information-box.value-creation{padding-top:40px}
+@media (max-width:1199px) {
+.women-slice{display:none}
+header:before{width:calc(100% - 74px)}
+header:after{width:calc(100% - 57px)}
+.container{max-width:970px}
+header{position:relative;padding:25px 0}
+.header-white-logo img{width:100%;max-width:180px}
+h1{font-size:51px;line-height:68px;padding-bottom:40px}
+.left-descripton h2{font-size:26px;line-height:40px}
+.left-descripton ul{padding-left:32px}
+.leverage-title-area h2{font-size:30px;line-height:32px;margin-bottom:40px}
+.leverage-card-area{margin-top:70px;padding:24px;padding-bottom:32px}
+.single-leverage-card{padding:0 16px}
+}
+@media (max-width:991px) {
+.container{max-width:760px}
+h1{font-size:38px;line-height:1.5}
+.header-bain-logo{padding-bottom:48px}
+.left-descripton h2{font-size:22px;line-height:1.5}
+.left-descripton p{font-size:16px;line-height:1.5}
+.left-descripton ul li{font-size:16px;line-height:1.5}
+a.request-button{font-size:20px}
+.leverage-title-area h2{font-size:23px;line-height:1.2;margin-bottom:24px}
+.leverage-title-area p{font-size:16px;line-height:1.5}
+.leverage-title-area ul li{line-height:1.4;font-size:16px}
+.single-leverage-card h5{font-size:17px;line-height:1.4}
+.single-leverage-card p{font-size:16px;line-height:1.5;font-weight:400}
+.video-caption p{font-size:16px;line-height:1.5}
+}
+@media (max-width:767px) {
+.container{padding:0 20px}
+.header-white-logo img{width:100%;max-width:140px}
+header{position:relative;padding:23px 0}
+header:after{left:-27px;width:calc(100% - 27px)}
+header:before{left:-35px;width:calc(100% - 35px)}
+.bain-logo img{width:100%;max-width:319px}
+.header-bain-logo{padding-bottom:32px}
+h1{font-size:28px;line-height:1.5;padding-bottom:28px}
+.video-caption p{font-size:15px;line-height:1.5}
+.competitive-wrap{-webkit-box-orient:vertical;-webkit-box-direction:normal;-ms-flex-direction:column;flex-direction:column}
+.left-descripton p{font-size:15px;line-height:1.5}
+.left-descripton ul li{font-size:15px;line-height:1.5}
+.left-descripton ul{padding-left:24px}
+.left-descripton a{margin-top:38px}
+.right-img{width:100%;max-width:100%;margin-left:0}
+.right-img img{width:100%;max-width:320px;margin:0 auto;display:block}
+a.request-button{font-size:24px;margin:0 auto}
+.left-descripton a{margin-top:38px}
+.right-img a{display:block}
+.leverage-section{padding-top:68px}
+.leverage-title-area h2{font-size:22px;line-height:1.5;margin-bottom:32px}
+.leverage-title-area p{font-size:15px;line-height:1.5}
+.leverage-title-area ul li{line-height:1.4;font-size:15px}
+.leverage-title-area ul{padding-left:32px;list-style:none}
+.leverage-card-area{margin-top:48px;-webkit-box-orient:vertical;-webkit-box-direction:normal;-ms-flex-direction:column;flex-direction:column;padding-top:32px}
+.single-leverage-card{padding:0;margin:0 auto;margin-bottom:32px}
+.single-leverage-card p{font-size:15px}
+.single-leverage-card h5{font-size:15px;line-height:1.4}
+.footer-nav ul{-webkit-box-orient:vertical;-webkit-box-direction:normal;-ms-flex-direction:column;flex-direction:column;-webkit-box-orient:vertical;-webkit-box-direction:normal;-ms-flex-direction:column;flex-direction:column;-webkit-box-align:start;-ms-flex-align:start;align-items:start}
+.footer-nav ul li{margin-right:0;margin-bottom:12px}
+.footer-logo{margin-bottom:40px}
+h4{font-size:20px;line-height:1.3}
+.top-information-box p{font-size:15px;line-height:1.5}
+.information-box{padding-top:32px}
+.information-box p{font-size:15px}
+.competitive-section{padding-top:60px}
+.top-information-box{padding-bottom:32px}
+.information-box.first-info-box{padding-bottom:24px}
+.information-box.invest-top{padding-bottom:24px;padding-top:32px}
+.competitive-wrap:after{height:2px}
+}
+    </style>
+
+</head>
+<body>
+    
+
+<header>
+    <div class="container">
+        <div class="header-white-logo">
+            <img src="images/eps_dealedge_dig_wht.png" alt="eps_dealedge_dig_wht">
+        </div>
+    </div>
+    <div class="women-slice">
+        <img src="images/woman_slice.png" alt="women slice">
+    </div>
+</header>
+
+<!-- header bain logo start  -->
+<div class="header-bain-logo">
+    <div class="container">
+        <div class="bain-logo">
+           <a href="https://www.dealedge.com/"><img src="images/cepres_bain_horizontal_logos.png" alt="cepres_bain_horizontal_logos"></a> 
+        </div>
+    </div>
+</div>
+<!-- header bain logo end  -->
+
+
+ 
+
+<div class="content-section">
+    <div class="container">
+        <div class="content-wrap">
+            <h1>How DealEdge Sharpens <br>
+                Deal Teams’ Focus </h1>
+
+                <div class="top-information-box">
+                    <h4>Make investment decisions more quickly and confidently with DealEdge</h4>
+                <p>Have you ever wondered what the returns or deal multiples are for a certain sector, or what EBITDA margin or revenue CAGR you should include in your due diligence model? Whether you are evaluating opportunities, testing your investment theses, or making investment recommendations, you can sharpen your investment edge with DealEdge.</p>
+                </div>
+                <img src="images/group_1458.png" alt="group">
+             <div class="information-box first-info-box">
+                <h4>Deal analysis like never before
+                </h4>
+                <p>Actionable data-driven intelligence is an increasingly important part of the modern private equity decision-making process. But when it comes to evaluating investment opportunities, investment professionals are too often forced to rely on anecdotal evidence or incomplete data.
+                </p>
+
+
+                <p>That is where DealEdge comes in. It is a revolutionary platform that offers deal-level performance analytics, built for the specialized needs of the private equity industry. The depth of analysis represents a breakthrough for data-driven decision-making: it covers more than 20 outputs including IRRs, CAGRs, EBITDA margins, MOICs, and value creation metrics, backed by directly reported cashflow data from more than 30,000 private equity deals.
+                </p>
+             </div>
+
+                <img src="images/ebitda.png" alt="ebitda">
+         <div class="information-box ebitda-top">
+            <h4>Streamline your due diligence                </h4>
+            <p>Evaluating potential investment opportunities can be a difficult and time-consuming process. With DealEdge you can evaluate businesses more quickly, and be confident you are selecting the best opportunities.
+            </p>
+            <p>With more than 560 industry subsectors in our custom-built taxonomy, you can drill down to look at the specific segments your opportunities are in and gauge the performance of similar deals in the past. Compare that to wider sector and industry performance to get an accurate picture of their performance potential.
+            </p>
+            <p>Examine risk metrics like loss rates and write-off rates to weigh the downside potential, and explore the growth rates and returns of winning deals to see the upside. Eliminate higher-risk and lower-reward opportunities with speed and certainty, and focus on the most attractive businesses.
+            </p>
+         </div>
+                <img src="images/revanue.png" alt="revenue">
+                <div class="information-box invest-top">
+                    <h4>Test your investment theses                </h4>
+                <p>DealEdge gives you unprecedented ability to pressure test your investment theses. See where value has been created in comparable businesses with value creation waterfall charts and analysis of winning deals. Fine tune your investment approach with aggregate data to ensure that you are creating operational plans that maximize the portfolio company’s potential. Reach far beyond top-level IRR returns with an unbiased source of data to benchmark your assumptions against: MOIC, revenue CAGR, margin expansion, and more.</p>
+                </div>
+                <img src="images/value-creation.png" alt="value ">
+                <div class="information-box value-creation">
+                    <p>DealEdge keeps your focus sharp throughout the due diligence process, offering you a faster and more certain basis for making data-driven decisions. Take your due diligence to the next level with DealEdge.</p>
+                </div>
+        </div>
+
+
+    </div>
+</div>
+
+<!-- competitive section start  -->
+
+<div class="competitive-section">
+    <div class="container">
+        <div class="competitive-wrap">
+            <div class="left-descripton">
+                <h2>Keep your competitive edge with DealEdge</h2>
+                <p>Make data-driven investment decisions more quickly and confidently with the private equity industry’s premier deal performance analytics platform:​
+                </p>
+                 
+                <ul>
+                    <li> <b>Analyze returns, margins, multiples, value creation, risk, and more</b> to get an in-depth understanding of performance </li>
+                    <li> <b>Get an at-a-glance understanding of performance across sectors</b> to see the shape of the investment landscape </li>
+                    <li> <b>Filter for industry, region, deal type, and realization status</b> to cut straight to what you need </li>
+                </ul>
+                <p>Whether you are conducting due diligence, benchmarking your activities, or reporting to LPs, DealEdge can sharpen your investment edge and take your private equity program to the next level.​</p>
+
+                <a href="https://go.dealedge.com/contact-us.html" class="request-button">REQUEST A DEMO</a>
+            </div>
+
+       
+        </div>
+    </div>
+</div>
+
+<!-- competitive section end  -->
+
+
+<!-- leverage section start  -->
+<div class="leverage-section">
+    <div class="container">
+        <div class="leverage-title-area">
+            <h2>Leverage the combined power of industry experts CEPRES and Bain
+            </h2>
+            <p>Benefit from Bain’s battle-proven private equity experience and CEPRES’s digital analytics expertise, fused together into a platform built for your needs:</p>
+            <ul>
+                <li> <a>Bain’s proprietary industry taxonomy includes over 560 subsectors</a> that map PE deal activity </li>
+                <li> <a>CEPRES’s cashflow-level data</a> encompasses more than 30,000 private equity deals </li>
+            </ul>
+        </div>
+
+        <div class="leverage-card-area">
+
+            <!-- single leverage card  -->
+            <div class="single-leverage-card">
+                <img src="images/layered_analysis.png" alt="layered_analysis">
+                <h5>Get a layer of analysis that’s never been possible on this scale before
+                </h5>
+                <p>Access deal-level metrics like IRR, MOIC, revenue CAGR, and EBITDA multiple on a cutting-edge platform built for your needs. Even prove your position as a best-in-class, next-generation manager with a revolutionary level of insight and analysis.</p>
+            </div>
+
+            <!-- single leverage card  -->
+            <div class="single-leverage-card">
+                <img class="leverage-lg-img" src="images/sharp_focus.png" alt="layered_analysis">
+                <h5>Rely on a platform that’s intuitive, efficient, and easy to use from day one
+                </h5>
+                <p>Keep your focus sharp with intuitive filters and at-a-glance analysis. Plus, get straight to the insight you need — no installation, no onboarding, and no data transfer required.</p>
+            </div>
+
+
+        </div>
+
+        <div class="leverage-bottom">
+            <a href="https://go.dealedge.com/contact-us.html" class="request-button">REQUEST A DEMO</a>
+        </div>
+    </div>
+</div>
+<!-- leverage section end  -->
+
+
+<!-- footer section start  -->
+<footer>
+    <div class="container">
+        <div class="footer-content">
+            <div class="footer-logo">
+                <img src="images/dealedge-logo.png" alt="logo">
+            </div>
+                
+            <div class="footer-nav">
+                <ul>
+                    <li><a href="https://www.dealedge.com/contact/"> Contact Us </a></li>
+                    <li><a href="https://www.dealedge.com/explore/"> Product </a></li>
+                    <li><a href="https://www.dealedge.com/about/"> About </a></li>
+                    <li><a href="https://www.bain.com/about/privacy/"> Privacy </a></li>
+                    <li><a href="https://www.bain.com/about/cookie-policy/"> Cookie Policy </a></li>
+                </ul>
+            </div>
+            
+            <div class="copyright">
+                <p>DealEdge℠ is a service mark of Bain &amp; Company, Inc. and CEPRES GmbH.
+                </p>
+            </div>
+        </div>
+    </div>
+</footer>
+<!-- footer section end  -->
+<div class="mktoContent"></div>
+
+ 
+
+ 
+ 
+
+</body>
+</html>

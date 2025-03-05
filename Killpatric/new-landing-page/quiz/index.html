@@ -1,0 +1,414 @@
+
+
+<!DOCTYPE html>
+<html lang="en"><head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"><meta name="robots" content="index, nofollow">
+    <title>Landing page</title>
+ <link rel="shortcut icon" href type="image/x-icon">
+    <style>
+        *{
+            padding:0;
+            margin:0;
+            box-sizing: border-box;
+        }
+
+
+        body{
+            padding:0px;
+            margin:0px;
+            font-family: Helvetica, Arial !important;
+            background: #2F5383;
+            padding: 0px 15px;
+            color:#21354D;
+            border: 2px solid #fff;
+           min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+.container {
+    max-width: 970px;
+    padding: 0px 15px;
+    margin: 0 auto;
+    height: 100%;
+}
+
+ 
+ 
+.review-wrap {
+    max-width: 1180px;
+    margin: 0 auto;
+    padding: 72px 24px;
+    background: #fff;
+    margin-top: 32px;
+    margin-bottom: 32px;
+    border-radius: 4px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    height: auto;
+    padding-top:40px;
+}
+
+.review-links a img {
+    width: 100%;
+    max-width: 220px;
+}
+
+.review-links {
+    display: flex;
+    align-items: center;
+    gap: 24px;
+    justify-content: center;
+    margin-top: 40px;
+}
+
+.review-wrap-inner {
+    text-align: center;
+    max-width: 700px;
+    margin: 0 auto;
+    width: 100%;
+}
+
+.review-wrap-inner h2 {
+    font-size: 36px;
+    line-height: 1.3;
+    margin-bottom: 8px;
+}
+
+.review-wrap-inner p {
+    font-size: 20px;
+    line-height: 1.5;
+}
+.form-modal {
+    width: 100%;
+    max-width: 700px;
+    padding: 0px;
+}
+
+.form-modal img {
+    width: 100%;
+    display: block;
+    border-radius: 5px;
+}
+.logo img {
+    max-width: 200px;
+    width: 100%;
+    margin-bottom: 24px;
+}
+.review-flex {
+    display: flex;
+    align-items: center;
+    width: 100%;
+}
+/* Form Normalizer CSS */
+.mktoForm, .mktoForm .mktoFieldWrap, .mktoForm .mktoHtmlText, .mktoForm input, .mktoLogicalField .mktoCheckboxList {width:100% !important;}
+@media only screen and (min-width:480px) {
+.mktoFormCol:first-child:nth-last-child(2), .mktoFormCol:first-child:nth-last-child(2) ~ .mktoFormCol {width: 100% !important;}
+.mktoFormCol:first-child:nth-last-child(3), .mktoFormCol:first-child:nth-last-child(3) ~ .mktoFormCol {width: 50% !important;}
+.mktoFormCol:first-child:nth-last-child(4), .mktoFormCol:first-child:nth-last-child(4) ~ .mktoFormCol {width: 33.3333% !important;}
+.mktoFormCol:first-child:nth-last-child(3) ~ .mktoFormCol {padding-left: 0.8em !important;}
+}
+@media only screen and (max-width:480px) {.mktoFormCol {width:100% !important;}}
+.mktoAsterix{display:none !important;}
+.mktoForm .mktoGutter {display:none !important;}
+.mktoButtonWrap {margin-left:0 !important;}
+.mktoForm input[type=text], .mktoForm input[type=url], .mktoForm input[type=email], .mktoForm input[type=tel], .mktoForm input[type=number], .mktoForm input[type=date], .mktoForm textarea.mktoField, .mktoForm select.mktoField {padding: 0.3em; width: 100% !important;}
+.mktoForm {clear: both; margin-bottom: 0.3em;}
+.mktoForm .mktoRadioList, .mktoForm .mktoCheckboxList {float: left !important; width: auto !important;}
+.mktoForm .mktoRadioList > label, .mktoForm .mktoCheckboxList > label {display: inherit !important;}
+.mktoForm input[type="radio"], .mktoForm input[type="checkbox"] {width: auto !important;}
+.mktoForm fieldset legend {margin: inherit !important;}
+	
+ .mktoFormCol {width:100% !important; padding-left: 0em !important;}	
+ .mktoForm input[type="text"],  .mktoForm input[type="url"],
+ .mktoForm input[type="email"],  .mktoForm input[type="tel"],
+ .mktoForm input[type="number"],  .mktoForm input[type="date"],
+ .mktoForm textarea.mktoField,  .mktoForm select.mktoField {
+    border-bottom: 1px solid #D9D9D9 !important;
+    border-radius: 0px;
+    color: #21354D !important;
+    font-family:
+    Helvetica, Arial !important;
+    font-size: 16px !important;
+    height: 31px !important;
+    padding: 0 !important;
+    width: 100% !important;
+    border-top: 0 !important;
+    border-left: 0 !important;
+    border-right: 0 !important;
+    line-height: 19px;
+    background-color: transparent !important;
+    box-shadow: none !important;
+}
+.mktoHtmlText.mktoHasWidth {
+    width: 100% !important;
+}
+
+.mktoForm .mktoLabel {
+   
+    font-size: 16px;
+    width: auto !important;
+}
+.mktoForm .mktoButtonWrap.mktoShadow .mktoButton {
+    background: #FFC000 !important;
+    border-color: #FFC000 !important;
+    color: #fff!important;
+    padding: 12px 24px!important;
+    font-size: 18px!important;
+    border-radius: 3px!important;
+    transition: 0.4s!important;
+}
+
+.mktoButtonRow {
+    width: 100% !important;
+    display: flex!important;
+    justify-content: center;
+    margin-top: 24px !important;
+}
+
+.mktoForm .mktoButtonWrap.mktoShadow .mktoButton:hover {
+    opacity: 0.8;
+}
+
+.servey-progress-bar img {
+    width: 100%;
+    max-width: 400px;
+    margin-top: 24px;
+}
+
+.servey-progress-bar {
+    padding-bottom: 32px;
+}
+
+.mktoForm input[type=text]:focus {
+    border-bottom: 1px solid #b8b8b8 !important;
+}
+/* form css end  */
+@media (max-width:767px) {
+    .review-links a img {
+    width: 100%;
+    max-width: 132px;
+}
+.mktoForm .mktoButtonWrap.mktoShadow .mktoButton {
+    font-size: 17px !important;
+}
+.review-wrap-inner h2 {
+    font-size: 28px;
+     
+}
+.mktoForm .mktoLabel {
+    font-size: 15px;
+     
+}
+.review-wrap-inner p {
+    font-size: 17px;
+    line-height: 1.4;
+}
+.review-wrap {
+ 
+    padding: 24px 16px;
+   
+}
+.logo img {
+    max-width: 160px;
+    width: 100%;
+    margin-bottom: 32px;
+}
+}
+    </style>
+<link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" >
+<link rel="icon" href="/favicon.ico" type="image/x-icon" >
+
+
+<style>.mktoGen.mktoImg {display:inline-block; line-height:0;}</style>
+</head>
+<body id="bodyId">
+ 
+
+ 
+
+
+
+
+
+ 
+
+ 
+
+
+
+
+<div class="review-wrap">
+    <div class="logo">
+        <img id="logo" src alt="">
+    </div>
+   <div class="review-flex">
+    <div class="review-wrap-inner">
+        
+        <h2>How Prepared Are You?
+        </h2>
+        
+        <div class="servey-progress-bar">
+            <img src alt="">
+        </div>
+
+       <div class="servey-form">
+       
+         <form id="mktoForm_1319"></form>
+         
+       </div>
+    </div>
+   </div>
+</div>
+
+ 
+<script src="//info.preplanafuneral.com/js/forms2/js/forms2.min.js"></script>
+<script>MktoForms2.loadForm("//info.preplanafuneral.com", "852-LNK-689", 1319);</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.0.0/jquery.min.js"></script>
+
+<!-- jQuery Modal -->
+<script src="data.js"></script>
+
+<script>
+ var query = window.location.search.match(/client_code=([^&]*)/i)[1];
+
+ MktoForms2.whenReady(function(form){
+form.onSuccess(function(vals,formLevelTyURL){
+    // console.log(formLevelTyURL)
+  location.href = 'https://info.preplanafuneral.com/Survey-pt2.html?client_code='+ query;
+  return false;
+});
+});
+ 
+
+
+ 
+var ReviewData=[]
+     
+listing_data.forEach(function(d) {
+   
+    ReviewData.push({
+        Parameter:  d['URL param'] ,
+        CompanyLogo:  d['Logo link'] 
+});
+
+});
+
+ 
+
+for(let a=0; a<ReviewData.length; a++){
+    if(ReviewData[a].Parameter == query){
+        document.getElementById('logo').src=ReviewData[a].CompanyLogo;
+    } 
+   
+}
+
+</script>
+
+   <script>
+//          function setCookie(cname, cvalue, exdays) {
+//   const d = new Date();
+//   d.setTime(d.getTime() + (exdays*24*60*60*1000));
+//   let expires = "expires="+ d.toUTCString();
+//   document.cookie = cname + "=" + cvalue + ";" + expires + ";path=/";
+// }
+
+MktoForms2.whenReady(function(form){
+ 
+  document.querySelector("button").addEventListener("click",function(e) {
+      
+
+// Assuming you have an array of values like this
+const quizValues = [
+     form.getValues().leadQuizContacts,
+     form.getValues().leadQuizEmploymentHistory,
+     form.getValues().leadQuizInsurancePolicies,
+     form.getValues().leadQuizPersonalPreferences,
+     form.getValues().leadQuizTaxRecords,
+     form.getValues().leadQuizWill,
+     form.getValues().leadQuiz_FuneralOptions,
+     form.getValues().leadQuiz_MedicalRecords,
+     form.getValues().leadQuiz_MilitaryRecords,
+     form.getValues().leadQuiz_Propertyassetsdebt,
+     form.getValues().leadQuiz_VitalStats,
+];
+
+// Count the number of "Yes" values
+const yesCount = quizValues.filter(value => value === 'Yes').length;
+ 
+ 
+switch (yesCount) {
+    case 11:
+        window.location.href = 'https://info.preplanafuneral.com/Quiz--Thank-you-100.html';
+        break;
+    case 10:
+        window.location.href = 'https://info.preplanafuneral.com/Quiz--Thank-you-91.html';
+        break;
+    case 9:
+        window.location.href = 'https://info.preplanafuneral.com/Quiz--Thank-you-82.html';
+        break;
+    case 8:
+        window.location.href = 'https://info.preplanafuneral.com/Quiz--Thank-you-73.html';
+        break;
+    case 7:
+        window.location.href = 'https://info.preplanafuneral.com/Quiz--Thank-you-64.html';
+        break;
+    case 6:
+        window.location.href = 'https://info.preplanafuneral.com/Quiz--Thank-you-55.html';
+        break;
+    case 5:
+        window.location.href = 'https://info.preplanafuneral.com/Quiz--Thank-you-45.html';
+        break;
+    case 4:
+        window.location.href = 'https://info.preplanafuneral.com/Quiz--Thank-you-36.html';
+        break;
+    case 3:
+        window.location.href = 'https://info.preplanafuneral.com/Quiz--Thank-you-27.html';
+        break;
+    case 2:
+        window.location.href = 'https://info.preplanafuneral.com/Quiz--Thank-you-18.html';
+        break;
+    case 1:
+        window.location.href = 'https://info.preplanafuneral.com/Quiz--Thank-you-9.html';
+        break;
+    case 0:
+        window.location.href = 'https://info.preplanafuneral.com/Quiz--Thank-you-0.html';
+        break;
+    default:
+        // Handle unexpected values or add additional cases as needed
+        break;
+}
+ 
+      
+   })
+
+
+ form.onSuccess(function(vals,formLevelTyURL){
+  
+//    location.href = 'https://info.preplanafuneral.com/Survey-thankyou.html?client_code='+ querys;
+ console.log("success");
+   return false;
+ 
+ });
+ 
+ });
+
+ 
+      </script>
+
+      
+<script type="text/javascript" src="//munchkin.marketo.net//munchkin-beta.js"></script><script>Munchkin.init('852-LNK-689', {customName: 'Prepared-Quiz', wsInfo: 'j1RR'});</script>
+
+      
+<script type="text/javascript" src="/js/stripmkttok.js"></script></body>
+
+ 
+ 
+ 
+
+</html>

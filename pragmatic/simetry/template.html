@@ -1,0 +1,44 @@
+<!--
+    templateType: email
+    isAvailableForNewContent: true
+-->
+<!DOCTYPE html>
+<html xml:lang="en" lang="en" xmlns="http://www.w3.org/1999/xhtml" xmlns:v="urn:schemas-microsoft-com:vml" xmlns:o="urn:schemas-microsoft-com:office:office">
+  <head> 
+    <title>{% if content.html_title and content.html_title != '' %}{{ content.html_title }}{% else %}{{ content.body.subject }}{% endif %}</title>
+    {% if content.meta_description %}<meta name="description" content="{{ content.meta_description }}"/>{% endif %}
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" /> 
+    <meta name="viewport" content="width=device-width, initial-scale=1" /> 
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" /> 
+     <!--Help prevent blue links and autolinking-->
+     <meta name="format-detection" content="telephone=no, date=no, address=no, email=no">
+     <!--prevent Apple from reformatting and zooming messages.-->
+     <meta name="x-apple-disable-message-reformatting">
+    <meta name="color-scheme" content="light dark">
+    <meta name="supported-color-schemes" content="light dark">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+             <!-- Allow for better image rendering on Windows hi-DPI displays. -->
+          <!--[if mso]>
+          <noscript>
+          <xml>
+          <o:OfficeDocumentSettings>
+          <o:AllowPNG/>
+          <o:PixelsPerInch>96</o:PixelsPerInch>
+          </o:OfficeDocumentSettings>
+          </xml>
+          </noscript>
+          <![endif]-->
+  
+    
+       <!--[if mso]>
+    <style type="text/css" id="hs-inline-css">
+    h1,h2,h3,h4,h5,h6,p,a,span,td,strong,li {
+        font-family:Arial,sans-serif !important;
+    }
+    </style>
+<![endif]-->
+  </head>
+  
+</html>

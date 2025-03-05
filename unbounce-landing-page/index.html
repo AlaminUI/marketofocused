@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html>
+    <head>
+            <meta charset="utf-8">
+            <title>Mythical Accordion Mini-Project</title>
+          
+            <link href="https://fonts.googleapis.com/css?family=Oswald:300,700|Pacifico" rel="stylesheet">
+
+
+
+            <style>
+                *{
+                    padding:0px;
+                    margin:0px;
+                    box-sizing: border-box;
+                }
+
+                .accordion-toggle {
+display: block;
+}
+
+.accordion-content {
+
+padding-bottom: 0px;padding-top: 8px;height: 0px;overflow: hidden;
+-webkit-transition-timing-function: ease-in-out;
+-o-transition-timing-function: ease-in-out;
+transition-timing-function: ease-in-out;
+-webkit-transition:  0.5s;
+-o-transition:  0.5s;
+transition:  0.5s;
+
+}
+
+.accordion-content.active {
+overflow:visible;
+height: auto;padding-top: 18px;border-bottom: 1px solid #000;padding-bottom: 20px;margin-bottom: 20px;}
+a.accordion-toggle {
+font-size: 25px;
+text-decoration: none;
+color: #000;
+font-weight: 600;
+padding-bottom: 0px;
+position: relative;
+}
+.accordion-content p {font-size: 20px;line-height: 1.5;margin-bottom: 18px;}
+
+.single-accordian {padding-bottom: 40px;margin-bottom: 0;}
+.single-accordian:last-child{
+border-bottom:0px solid #fff;
+}
+a.accordion-toggle:after {position: absolute;right: 0;top: 8px;background: url(https://user-assets-unbounce-com.s3.amazonaws.com/91d356fc-71e0-11e4-b7fa-22000aa600f2/50fd85f5-45f5-4eaa-be3d-cde55b2bd9de/down-arrow.small.png);width: 24px;height: 8px;content: "";background-repeat: no-repeat;background-size: contain;-webkit-transform: rotate(-90deg);-ms-transform: rotate(-90deg);transform: rotate(-90deg);  }
+a.accordion-toggle.active:after {position: absolute;right: 0;top: 8px;background: url(https://user-assets-unbounce-com.s3.amazonaws.com/91d356fc-71e0-11e4-b7fa-22000aa600f2/50fd85f5-45f5-4eaa-be3d-cde55b2bd9de/down-arrow.small.png);width: 24px;height: 8px;content: "";background-repeat: no-repeat;background-size: contain;-webkit-transform: rotate(0deg);-ms-transform: rotate(0deg);transform: rotate(0deg);} 
+</style>
+    </head>
+    <body>
+
+      
+
+<div class="acccordian-wrap">
+
+<div class="single-accordian">
+<a href="#acccordian1" class="accordion-toggle active">How is Inspire different from my current utility company?</a>
+<div class="accordion-content active" id="acccordian1">
+ <p>Many power companies connect you with energy sourced from fossil fuels, like natural gas and coal, that have to be burned to generate energy. But the burning of these fossil fuels adds harmful emissions into the atmosphere, which contributes to the effects of climate change. 
+</p>
+<p>When you choose Inspire Clean Energy, we match your energy usage with renewable energy sources like wind and solar, so you can rest easy knowing you’re helping avoid carbon emissions and getting closer to achieving a net-zero carbon home. 
+</p>
+<p>When you sign up for one of our retail electricity supply plans provided by Inspire Energy Holdings, LLC, Inspire becomes your electricity supplier. You’ll still pay your utility company directly as usual — the only difference is that you’ll see Inspire listed as your electricity supplier under the “supply” or “generation” section of your bill. This section is often listed after your distribution charges, which your utility still controls. If you have trouble finding Inspire on your next utility bill or have questions about how billing works on your specific plan, feel free to reach out to us, and we’ll be happy to walk you through it!
+</p>
+<p>In all cases, your local utility company will still be responsible for delivering energy to your home and handling any service interruptions.</p>
+</div>
+</div>
+
+
+<div class="single-accordian">
+<a href="#acccordian3" class="accordion-toggle">Who is Inspire?  </a>
+<div class="accordion-content" id="acccordian3">
+   <p>Inspire is a mission-driven, clean energy company. Founded in 2014, we are a certified B Corp that has made it easy for hundreds of thousands of people to access clean energy for their homes, help shift from a reliance on fossil fuels, and join the fight against climate change. As an additional benefit, for every year our members are with Inspire, we provide clean energy solutions—like clean drinking water powered by the sun—to one person in critical need for one year in partnership with the nonprofit GivePower.  
+</p>
+<p>In deregulated states, we offer our energy services through our licensed electricity supplier, Inspire Energy Holdings, LLC (DC Dkt # EA2019-10, DE Dkt # 19-2018, IL Dkt # 17-0083, MA License # CS-117, MD License # IR-3295, NJ License # ESL-0156, Licensed by the NY PSC, OH Certificate # 15-963E(3), PA License # A-2013-237-6082).</p>
+</div>
+</div>
+
+
+<div class="single-accordian">
+<a href="#acccordian4" class="accordion-toggle"> After I sign up for Inspire, what will happen to my utility service? </a>
+<div class="accordion-content" id="acccordian4">
+   <p>Once you sign up for a clean energy plan with Inspire, we’ll take care of all the details for you to make sure  your switch is simple and seamless. Inspire works alongside your utility to ensure a smooth transition to Inspire with no disruption to your service.
+</p>
+<p>With our retail electricity supply plans, your utility company will continue to manage the billing experience and you will continue to pay your utility each month. 
+</p>
+<p>Your local utility company will still be responsible for delivering energy to your home and handling any service interruptions.</p>
+</div>
+</div>
+
+<div class="single-accordian">
+<a href="#acccordian5" class="accordion-toggle"> How does your clean energy plan work? </a>
+<div class="accordion-content" id="acccordian5">
+   <p>By connecting to the local energy grid, the electricity you receive comes from a mix of energy sources. You will not receive electricity from any specific generation facility delivered directly to your service address, however Inspire ensures that 100% of your electricity consumption is sourced from clean energy generation facilities or otherwise paired with renewable Energy Certificates (“RECs”) from generation facilities located in the U.S By purchasing RECs to match your electricity usage and retiring them in a generation attribute tracking systems, we enable you to directly support the continued use and development of clean electricity. Increased demand for, and generation of, clean electricity helps reduce carbon emissions and provides other local and global environmental benefits in the region where the clean electricity generator is located. Environmental disclosures can be found at www.inspirecleanenergy.com.</p>
+</div>
+</div>
+
+<div class="single-accordian">
+<a href="#acccordian6" class="accordion-toggle"> When should I expect Inspire to begin service? </a>
+<div class="accordion-content" id="acccordian6">
+   <p>Your service start date is determined by your local utility company but typically occurs within 1-2 billing cycles.</p>
+</div>
+</div>
+
+<div class="single-accordian">
+<a href="#acccordian7" class="accordion-toggle"> If my power goes out, who do I call to fix it?  </a>
+<div class="accordion-content" id="acccordian7">
+   <p>Your utility company will continue to maintain the power lines and handle outages, emergencies, and other service issues. </p>
+</div>
+</div>
+
+<div class="single-accordian">
+<a href="#acccordian8" class="accordion-toggle"> How will I receive my Reward Card? </a>
+<div class="accordion-content" id="acccordian8">
+   <p> You will receive a $100 Reward Card via mail within 10-14 business days after your second billing cycle with Inspire closes. No action is needed on your part. </p>
+</div>
+</div>
+
+<div class="single-accordian">
+<a href="#acccordian9" class="accordion-toggle"> Where do I find my utility account identifier?  </a>
+<div class="accordion-content" id="acccordian9">
+   <p>Inspire may require a different account identifier or number to complete your switch, depending on your utility company. Click on your respective utility company below to view a sample bill, which will show you where to locate it. You can always call our friendly Member Experience team if you are having trouble finding it.</p>
+</div>
+</div>
+
+
+</div>
+ 
+
+
+      
+ 
+
+
+
+ <script>
+  // Listen for click on the document
+document.addEventListener('click', function (event) {
+
+//Bail if our clicked element doesn't have the class
+if (!event.target.classList.contains('accordion-toggle')) return;
+
+// Get the target content
+var content = document.querySelector(event.target.hash);
+if (!content) return;
+
+// Prevent default link behavior
+event.preventDefault();
+
+// If the content is already expanded, collapse it and quit
+if (content.classList.contains('active')) {
+content.classList.remove('active');
+return;
+}
+
+// Get all open accordion content, loop through it, and close it
+var accordions = document.querySelectorAll('.accordion-content.active');
+for (var i = 0; i < accordions.length; i++) {
+accordions[i].classList.remove('active');
+}
+
+
+
+// Toggle our content
+content.classList.toggle('active');
+})
+
+let togglelink= document.querySelectorAll('.accordion-toggle')
+function removeall(){
+
+
+for (var i = 0; i < togglelink.length; i++) {
+
+togglelink[i].classList.remove('active');
+
+
+}
+}
+
+
+for (var i = 0; i < togglelink.length; i++) {
+
+togglelink[i].addEventListener('click',function(e){
+
+if(e.target.classList.contains('active')){
+e.target.classList.remove('active')
+
+}else{
+removeall()
+e.target.classList.toggle('active')  
+}
+})
+
+
+}
+
+
+</script>
+
+ 
+
+
+
+ 
+
+</body>
+</html>

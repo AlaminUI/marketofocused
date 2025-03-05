@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+   
+    <style>
+        *{
+            padding:0px;
+            margin:0px;
+            font-size:16px;
+    }
+    p{
+        margin-bottom:16px;
+    }
+    
+        .container {
+            max-width:1140px;
+            margin:0px auto;
+            padding:0px 15px;
+        }
+        body.popup-added:after {
+    position: fixed;
+    width: 100%;
+    content: "";
+    height: 100%;
+    background: rgba(0,0,0,0.6);
+    left: 0;
+    top: 0;
+}
+        .custom-popup {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    max-width: 900px;
+    background: #fff;
+    z-index: 9999;
+    padding: 44px 54px;
+    border-radius: 32px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    width: 100%;
+    display:none;
+    padding-bottom:30px;
+}
+.custom-popup ul {
+    list-style: none;
+    margin-bottom: 16px;
+}
+.custom-popup ul li{
+   font-size:16px;
+   margin-bottom:5px;
+}
+.custom-popu-inner {
+    position: relative;
+}
+
+button.popup-close {
+    position: absolute;
+    top: -10px;
+    right: 0;
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    border: 2px solid #777777;
+    background: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 20px;
+    color: #777777;
+    cursor: pointer;
+}
+
+.d-block{display: block;}
+body.popup-added {
+    overflow-y: hidden;
+}
+img#bill-content-2 {
+    /* margin-left: -8px;
+    margin-top:100px; */
+}
+    </style>
+ 
+       
+</head>
+<body>
+    
+ 
+    <div class="popup-area">
+        <div class="container">
+            <img loading="lazy"  class="map" src="https://pulsepowertexas.com/images/default-source/page-content/bill-content-1.jpg" id="bill-content-1" width="100%" alt="bill-content-1" usemap="#image-map">
+
+            <map name="image-map">
+                <area  alt="popup1"  id="star"   href="#popup1" coords="641,39,35" shape="circle">
+                <area  alt="popup2"     href="#popup2" coords="45,232,33" shape="circle">
+                <area  alt="popup3"     href="#popup3" coords="741,336,32" shape="circle">
+                <area  alt="popup4"    href="#popup4" coords="34,370,33" shape="circle">
+                <area  alt="popup5"     href="#popup5" coords="913,681,33" shape="circle">
+                <area  alt="popup6"    href="#popup6" coords="53,1057,34" shape="circle">
+            </map>
+            <img loading="lazy" class="map" src="https://pulsepowertexas.com/images/default-source/page-content/bill-content-2.jpg" id="bill-content-2" width="100%" alt="bill-content-2" usemap="#image-map2">
+
+            <map name="image-map2">
+                <area alt="popup7"   href="#popup7" coords="471,278,33" shape="circle">
+                <area alt="popup8"  href="#popup8" coords="30,330,31" shape="circle">
+                <area alt="popup9"   href="#popup9" coords="662,447,32" shape="circle">
+                <area alt="popup10"   href="#popup10" coords="737,559,31" shape="circle">
+                <area alt="popup11"   href="#popup11" coords="594,658,33" shape="circle">
+                <area alt="popup12"   href="#popup12" coords="349,816,35" shape="circle">
+            </map>
+        </div>
+    </div>
+
+
+
+
+
+
+    <div class="custom-popup popup1">
+        <div class="custom-popu-inner">
+            <h4>Your account number, amount due and due date appear at the top
+            </h4>
+        
+            <p> <b>Quick tip:</b> Use your account number to sign up for My Account to manage your account online
+
+            </p>
+          
+            <button class="popup-close" id="popup-close">✕</button>
+        </div>
+    </div>
+
+
+    <div class="custom-popup popup2">
+        <div class="custom-popu-inner">
+    
+            <p> Need to contact Customer Care? Our hours, phone number, email and web address are here
+            </p>
+     
+            <button class="popup-close">✕</button>
+        </div>
+    </div>
+
+    <div class="custom-popup popup3">
+        <div class="custom-popu-inner">
+    
+            <p> This is a summary of your electricity and delivery charges, along with taxes and other adjustments 
+            </p>
+     
+            <button class="popup-close">✕</button>
+        </div>
+    </div>
+
+
+
+    <div class="custom-popup popup4">
+        <div class="custom-popu-inner">
+    
+            <p> Any account messages will be noted in this area
+            </p>
+     
+            <button class="popup-close">✕</button>
+        </div>
+    </div>
+
+
+
+    <div class="custom-popup popup5">
+        <div class="custom-popu-inner">
+    
+            <p> Prior balances, payments, adjustments and fees show how your total balance was calculated
+            </p>
+     
+            <button class="popup-close">✕</button>
+        </div>
+    </div>
+
+
+
+    <div class="custom-popup popup6">
+        <div class="custom-popu-inner">
+    
+            <p> If paying by mail, detach and return this form with your check. Remember, you can also pay online or set up automatic payments to save a stamp and never miss a due date
+            </p>
+     
+            <button class="popup-close">✕</button>
+        </div>
+    </div>
+
+
+    <div class="custom-popup popup7">
+        <div class="custom-popu-inner">
+            <h4>Here’s where you’ll find details about your electricity usage for this period </h4>
+             
+            <ul>
+                <li> <b>• Meter</b> – your home’s unique meter number.</li>
+                <li><b>• Service Period</b> – the dates covered by this month’s usage.</li>
+                <li><b>• Current Meter Read</b> – the number shown on this period’s reading.</li>
+                <li><b>• Prior Meter Read  </b> – the number shown on your meter during the previous period’s reading.</li>
+                <li><b>• Multiplier </b> – some meters only measure a fraction or multiple of the actual electricity used, so a meter multiplier (also known as a meter constant or Kh) converts the reading into the correct amount of electricity consumed in kilowatt-hours (kWh).</li>
+            </ul>
+            <p> For example, if a meter has a multiplier of 5, it means that each unit on the meter (i.e., one revolution of the dial) represents 5 kWh of electricity consumption. So if the meter reading is 100 units, the actual electricity used would be 100 units multiplied by the meter multiplier of 5, totaling 500 kWh.
+            </p>
+            <ul>
+                <li>Most residential properties won’t require a multiplier, so it would appear as “1” on your bill.
+                </li>
+                <li>• kWh Usage – this is the amount of electricity you used (shown in kWh) times the price you pay per kWh.
+                </li>
+                <li>• Estimated Read — if we weren’t able to take a meter read during this billing cycle, your reading may be estimated based on your average usage. </li>
+            </ul>
+            <button class="popup-close">✕</button>
+        </div>
+    </div>
+
+
+    <div class="custom-popup popup8">
+        <div class="custom-popu-inner">
+    
+            <p> Your account information — including your service address, email, contract expiration and usage history — is listed in this area
+            </p>
+     
+            <button class="popup-close">✕</button>
+        </div>
+    </div>
+
+
+    <div class="custom-popup popup9">
+        <div class="custom-popu-inner">
+    
+            <p> This section indicates the units of electricity used during the billing period multiplied by your fixed price to calculate your total electricity charges
+            </p>
+     
+            <button class="popup-close">✕</button>
+        </div>
+    </div>
+
+
+    <div class="custom-popup popup10">
+        <div class="custom-popu-inner">
+    
+            <p> Here you'll find the fee charged by your TDU, which covers the cost of transmitting and delivering electricity to your home
+            </p>
+     
+            <button class="popup-close">✕</button>
+        </div>
+    </div>
+
+
+    <div class="custom-popup popup11">
+        <div class="custom-popu-inner">
+    
+            <p> Taxes and fees are added here, giving you the grand total current charges for the period
+            </p>
+     
+            <button class="popup-close">✕</button>
+        </div>
+    </div>
+
+
+    <div class="custom-popup popup12">
+        <div class="custom-popu-inner">
+    
+            <p> Additional messaging about your account, and contact information to report fraudulent charges, appear in this section
+            </p>
+     
+            <button class="popup-close">✕</button>
+        </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+
+    <!-- <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.min.js"></script> -->
+    <script type='text/javascript' src='https://projects.davidlynch.org/maphilight/jquery.maphilight.js'></script>
+
+    <script>
+    
+    $(function() {
+        $('.map').maphilight({
+            strokeColor:'fdcd07',
+             strokeWidth:4,
+        });
+      
+       
+        $('map area').click(function(e) {
+        e.preventDefault();
+   
+        $(this).data('maphilight', { 
+          alwaysOn: true 
+    }).trigger('alwaysOn.maphilight');
+         
+    });
+ 
+
+    });
+    
+    </script>
+    <script>
+      
+      popuplist = ['popup1', 'popup2','popup3','popup4','popup5','popup6','popup7','popup8','popup9','popup10','popup11','popup12'];
+            
+      var area =  document.querySelectorAll('area');
+
+for(let i=0; i<area.length; i++){
+    area[i].addEventListener('click',function(e){
+        e.preventDefault();
+        var val = e.target.hash.split("#");
+        popuplist.forEach(element => {
+                     if(element == val[1]){
+                
+                        document.querySelector('.'+element).classList.add('d-block');
+                         document.querySelector('body').classList.add('popup-added');
+                      
+    
+                       
+                     }
+                });
+ 
+            })
+           }
+
+ 
+
+           var closepopup=  document.querySelectorAll('.popup-close');
+           var popupbox=  document.querySelectorAll('.custom-popup');
+
+           for(let i=0; i<closepopup.length; i++){
+            closepopup[i].addEventListener('click',function(e){
+                removePopup()
+                document.querySelector('body').classList.remove('popup-added');
+        
+            })
+           }
+
+           function removePopup(){
+            for(let i=0; i<popupbox.length; i++){
+                popupbox[i].classList.remove('d-block')
+            }
+            var data = $('area').mouseout().data('maphilight') || {};
+            data.alwaysOn =false;
+            $('area').data('maphilight', data).trigger('alwaysOn.maphilight');
+             
+           }
+      
+
+/*! Image Map Resizer (imageMapResizer.min.js ) - v0.5.3 - 2015-01-29
+ *  License: MIT
+ */
+
+!function(){"use strict";function a(){function a(){function a(a){function c(a){return a*b[1===(d=1-d)?"width":"height"]}var d=0;return a.split(",").map(Number).map(c).map(Math.floor).join(",")}for(var b={width:i.width/j.width,height:i.height/j.height},c=0;g>c;c++)f[c].coords=a(h[c])}function b(){j.onload=function(){(i.width!==j.width||i.height!==j.height)&&a()},j.src=i.src}function c(){function b(){clearTimeout(k),k=setTimeout(a,250)}window.addEventListener?window.addEventListener("resize",b,!1):window.attachEvent&&window.attachEvent("onresize",b)}function d(a){return a.coords.replace(/ *, */g,",").replace(/ +/g,",")}var e=this,f=e.getElementsByTagName("area"),g=f.length,h=Array.prototype.map.call(f,d),i=document.querySelector('img[usemap="#'+e.name+'"]'),j=new Image,k=null;b(),c()}function b(){function b(b){if(!b.tagName)throw new TypeError("Object is not a valid DOM element");if("MAP"!==b.tagName.toUpperCase())throw new TypeError("Expected <MAP> tag, found <"+b.tagName+">.");a.call(b)}return function(a){switch(typeof a){case"undefined":case"string":Array.prototype.forEach.call(document.querySelectorAll(a||"map"),b);break;case"object":b(a);break;default:throw new TypeError("Unexpected data type ("+typeof a+").")}}}"function"==typeof define&&define.amd?define([],b):"object"==typeof exports?module.exports=b():window.imageMapResize=b(),"jQuery"in window&&(jQuery.fn.imageMapResize=function(){return this.filter("map").each(a).end()})}();
+//# sourceMappingURL=imageMapResizer.map
+
+jQuery(function($) {
+    $('map').imageMapResize();
+});
+
+
+
+
+    </script>
+
+
+
+</body>
+</html>

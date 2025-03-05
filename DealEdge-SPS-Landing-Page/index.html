@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DealEdge</title>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+
+<style>
+     
+@font-face {
+    font-family: "Graphik";
+    src: url(fonts/graphik-light.woff);
+    font-weight: 300;
+    font-style: normal;
+    font-stretch: normal
+}
+@font-face {
+    font-family: "Graphik";
+    src: url(fonts/graphik-regular.woff);
+    font-weight: 400;
+    font-style: normal;
+    font-stretch: normal
+}
+
+@font-face {
+    font-family: "Graphik";
+    src: url(fonts/graphik-medium.woff);
+    font-weight: 500;
+    font-style: normal;
+    font-stretch: normal
+}
+
+@font-face {
+    font-family: "Graphik";
+    src: url(fonts/graphik-semibold.woff);
+    font-weight: 600;
+    font-style: normal;
+    font-stretch: normal
+}
+*{padding:0;margin:0;-webkit-box-sizing:border-box;box-sizing:border-box}html{scroll-behavior:smooth}body{font-family:Graphik;background:#fff;color:#000;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale}h1,h2,h3,h4,h5{line-height:1.3}.container{max-width:1000px;margin:0 auto;padding:0 15px}p{font-size:16px;font-weight:300;line-height:1.8;margin-bottom:24px}h1{font-size:60px;color:#fff;font-weight:500;line-height:1.25}.banner-text{background:rgba(0,0,0,.5);max-width:930px;padding:38px;position:relative;z-index:99}header{position:relative;padding-top:136px;padding-bottom:100px}header:after{position:absolute;left:0;top:0;width:100%;height:100%;content:"";background-color:rgba(0,0,0,.4)}.header-button a{background:#fff;display:inline-block;text-decoration:none;font-size:20px;padding:18px 37px;text-transform:uppercase;font-weight:500;color:#c00;-webkit-transition:.6s;-o-transition:.6s;transition:.6s}.header-button a:hover{background:#c00;color:#fff}.header-button{position:relative;z-index:999;margin-top:32px;margin-left:44px}.form-wrap{display:-ms-grid;display:grid;-ms-grid-columns:50% 50%;grid-template-columns:50% 50%}.form-section{padding:50px 0}.company-logos{display:-webkit-box;display:-ms-flexbox;display:flex;padding-bottom:34px}.company-logos img:first-child{margin-right:70px}.cards-wrap{display:-ms-grid;display:grid;-ms-grid-columns:auto 40px auto 40px auto;grid-template-columns:auto auto auto;gap:40px;padding-top:17px}.single-card{background-size:100% 100%!important;margin-bottom:24px}.card-header{display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-align:center;-ms-flex-align:center;align-items:center;padding:20px}.card-header h4{font-size:20px;font-weight:600;line-height:1.3}.step-number{width:100%;max-width:90px;margin-right:8px;position:relative;background:#fff;z-index:9999}.step-number img{width:100%}.card-body{padding:20px;padding-top:0;margin-top:8px}.card-body p{margin:0;text-align:center;line-height:2}.card-section-title h2{font-size:30px;margin-bottom:24px}.step-number span{position:absolute;display:inline-block;left:50%;top:50%;-webkit-transform:translate(-50%,-50%);-ms-transform:translate(-50%,-50%);transform:translate(-50%,-50%);font-size:46px;font-weight:600}.setp-button a{display:inline-block;color:#fff;text-decoration:none;background:#cc0100;padding:17px 37px;font-size:20px;font-weight:600;-webkit-transition:.5s;-o-transition:.5s;transition:.5s}.setp-button{text-align:center;margin-top:20px}.level-card{padding-bottom:50px}.setp-button a:hover{background:#96191e}.help-step-heading{display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-align:center;-ms-flex-align:center;align-items:center}.help-step-number{width:100%;max-width:90px;margin-right:8px;position:relative}.help-step-number img{width:100%}.help-step-number span{position:absolute;display:inline-block;left:50%;top:50%;-webkit-transform:translate(-50%,-50%);-ms-transform:translate(-50%,-50%);transform:translate(-50%,-50%);font-size:46px;font-weight:600}.help-step-heading h4{font-size:20px}.section-title h2{font-size:30px}.section-title{padding-bottom:32px}.help-body{display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-align:center;-ms-flex-align:center;align-items:center}.left-help img{width:100%}.left-help{max-width:536px}.help-right{width:100%;padding-left:30px}a{color:#cc0100}.pl-0{padding-left:0}.flex-start{-webkit-box-align:start;-ms-flex-align:start;align-items:flex-start}.helpbody-2 .help-right{padding-top:32px}.help-top-60{padding-top:60px}.left-help.left-help3{width:100%}.about-us-inner{padding:32px;background:#000;color:#fff;display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-align:center;-ms-flex-align:center;align-items:center;-webkit-box-pack:justify;-ms-flex-pack:justify;justify-content:space-between}.about-left{width:100%;max-width:450px}.about-left p{margin:0;color:#fff}.about-left h5{font-weight:600;font-size:20px;margin-bottom:16px}.about-us{margin:56px 0}.about-us.about-bain{margin-top:0}.about-us.about-bain .about-us-inner{background:#a0a0a04d;color:#000;padding-bottom:48px!important}.about-us.about-bain .about-left p{color:#000}footer{background:#000;padding:27px 0;padding-top:40px}.footer-nav ul{list-style:none;padding:0;display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-align:center;-ms-flex-align:center;align-items:center}.footer-nav ul li a{color:#fff;text-decoration:none;font-weight:300;font-size:16px;margin-right:24px}.footer-nav ul li a:hover{color:#cc0600}.copyright p{font-size:16px;color:#b7b3b3;padding-bottom:32px;margin-top:32px;line-height:1.5}.footer-logo img{width:100%;max-width:125px}.footer-logo{margin-bottom:190px}.footer-nav ul li{margin-right:24px}.left-form h3{font-size:30px;position:relative;font-weight:400;padding-top:16px}.left-form h3:after{position:absolute;top:0;width:124px;height:2px;background:#cc0100;content:"""";left:0}@media (min-width:768px) and (max-width:992px){h1{font-size:48px}.company-logos img:first-child{margin-right:24px}.step-number{max-width:64px}.step-number span{font-size:32px}.card-header h4{font-size:17px}.card-header{padding-left:12px;padding-right:12px}.cards-wrap{gap:24px}.single-card{max-width:232px}.card-body{padding-left:12px;padding-right:12px}.left-help{max-width:400px}.about-left{max-width:350px}}@media (max-width:767px){header{padding-top:40px;padding-bottom:40px}h1{font-size:33px}.form-wrap{-ms-grid-columns:auto;grid-template-columns:auto}.right-form-information{padding-top:32px}p{margin-bottom:16px}.card-section-title h2{font-size:26px;margin-bottom:16px}.cards-wrap{-ms-grid-columns:auto;grid-template-columns:auto;padding-bottom:32px}.single-card{max-width:300px;margin:0 auto}.section-title h2{font-size:26px}.help-body{-webkit-box-orient:vertical;-webkit-box-direction:normal;-ms-flex-direction:column;flex-direction:column}.help-right{padding:0;padding-top:24px}.about-us-inner{-webkit-box-orient:vertical;-webkit-box-direction:reverse;-ms-flex-direction:column-reverse;flex-direction:column-reverse}.about-right{width:100%;margin-bottom:24px}.about-left{max-width:100%}.footer-nav ul{-webkit-box-orient:vertical;-webkit-box-direction:normal;-ms-flex-direction:column;flex-direction:column;-webkit-box-orient:vertical;-webkit-box-direction:normal;-ms-flex-direction:column;flex-direction:column;-webkit-box-align:start;-ms-flex-align:start;align-items:start}.footer-nav ul li{margin-right:0;margin-bottom:12px}.footer-logo{margin-bottom:40px}.banner-text{padding:24px}.header-button{margin-left:24px}.form-section{padding-bottom:32px}.company-logos img{max-width:180px}.company-logos img:first-child{margin-right:40px}.setp-button a{padding:17px 19px;font-size:19px}.help-body.flex-start.helpbody-2{-webkit-box-orient:vertical;-webkit-box-direction:reverse;-ms-flex-direction:column-reverse;flex-direction:column-reverse;padding-bottom:32px}.help-body.flex-start.helpbody-2 .help-right{padding-top:8px}.help-body.flex-start.helpbody-2 .left-help{margin-top:16px!important}.help-right.pyramid-descri{padding-top:0}.help-step-number{max-width:70px}.help-step-number span{font-size:32px}.help-step-heading h4{font-size:18px;line-height:1.4}}@media (max-width:400px){.company-logos img{max-width:132px}h1{font-size:25px}.header-button a{font-size:18px;padding:15px 25px}.header-button{margin-top:20px}.about-right img{width:100%}}
+</style>
+
+</head>
+<body>
+    
+
+    <header style="background:url(Hero_Image.jpg);background-size: cover;">
+        <div class="banner-section">
+         <div class="container">
+            <div class="banner-text">
+                <h1>How DealEdge and SPS Can 
+                    Raise Your Sector Strategy to 
+                    the Next Level</h1>
+            </div>
+            <div class="header-button">
+                <a href="">Find out more</a>
+            </div>
+         </div>
+        </div>
+    </header>
+
+
+    <div class="form-section">
+        <div class="container">
+            <div class="form-wrap">
+                <div class="left-form">
+                    <h3>Speak to us today                    </h3>
+                </div>
+
+                <div class="right-form-information">
+                    <div class="company-logos">
+                        <img src="dealedge-dig-red.webp" width="210" alt="dealedge">
+                        <img src="SPS-Bain_DIG_Horiz.png" width="138" alt="SPS-Bain_DIG_Horiz">
+                    </div>
+
+                    <p>DealEdge and SPS are two key elements of Bain & Company’s next generation private equity data platforms.​</p>
+                    <p>Each of them helps GPs unlock the potential of deal-level networks and analytics. Together, they can take your sector strategy to the next level.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+ 
+
+    <div class="level-card">
+        <div class="container">
+            <div class="card-section-title">
+                <h2>Raising Sector Strategy to the Next Level                </h2>
+                <p>The Bain Global PE Report 2022 explored what it takes for your sector strategy to excel. It had three key takeaways:</p>
+            </div>
+
+            <div class="cards-wrap">
+
+                <div class="single-card" style="background: url(step2-bg.webp);">
+                    <div class="card-header">
+                        <div class="step-number">
+                            <img src="step2.webp" alt="setp1">
+                            <span>1</span>
+
+                        </div>
+                        <h4 data-aos="fade-right" data-aos-easing="ease-in-sine" data-aos-duration="1500">Are you in the<br> right sectors? </h4>
+                    </div>
+
+                    <div class="card-body">
+                        <p>Don’t just ask if a sector is a good place to invest – ask if it’s a good place for you to invest.</p>
+                    </div>
+                </div>
+                <div class="single-card" style="background: url(step2-bg.webp);">
+                    <div class="card-header">
+                        <div class="step-number">
+                            <img src="step2.webp" alt="setp1">
+                            <span>2</span>
+                        </div>
+                        <h4 data-aos="fade-right" data-aos-easing="ease-in-sine" data-aos-duration="1700">Are you in <br>
+                            the flow? 
+                            
+                             </h4>
+                    </div>
+
+                    <div class="card-body">
+                        <p>Even the best performers tend
+                            to see fewer than half the
+                            opportunities in their sector</p>
+                    </div>
+                </div>
+                <div class="single-card" style="background: url(step3-bg.webp);">
+                    <div class="card-header">
+                        <div class="step-number">
+                            <img src="step3.webp" alt="setp1">
+                            <span>3</span>
+                        </div>
+                        <h4 data-aos="fade-right" data-aos-easing="ease-in-sine" data-aos-duration="1900">How focused <br> should you be?  </h4>
+                    </div>
+
+                    <div class="card-body">
+                        <p>You have to match your scope to your strengths, your resources,
+                            and your model in order to build replicable success.</p>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="setp-button">
+                <a href="">Speak to us today to find out more</a>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="how-we-help">
+        <div class="container">
+            <div class="section-title">
+                <h2>How we can help                </h2>
+            </div>
+
+
+
+            <div class="single-help-step">
+                <div class="help-step-heading">
+                    <div class="help-step-number">
+                        <img src="step1.webp" alt="setp1">
+                        <span>1</span>
+                    </div>
+                    <h4>Find the right sectors for you with DealEdge</h4>
+                </div>
+
+                <div class="help-body">
+                    <div class="left-help">
+                        <img src="Chart_1_DealEdge.png" alt="Chart_1_DealEdge">
+                    </div>
+
+                    <div class="help-right">
+                        <p>With <strong>DealEdge</strong>, you can <strong>compare performance across more than 560 industry subsectors.</strong></p>
+                        <p>Identify attractive opportunities, and see how winning deals in that subsector have built value. Make sure you’re operating in areas that suit your approach.<br>
+                            <a href="">Chat with us today</a></p>
+                    </div>
+                </div>
+
+            </div>
+
+
+            <div class="single-help-step help-top-60">
+                <div class="help-step-heading">
+                    <div class="help-step-number">
+                        <img src="step2.webp" alt="setp1">
+                        <span>2</span>
+                    </div>
+                    <h4>Put yourself in the middle of the flow with SPS</h4>
+                </div>
+
+                <div class="help-body flex-start helpbody-2">
+                    <div class="help-right pl-0">
+                        <p>SPS gives you the inside track on understanding where deal opportunities come from, and how to get involved with them.</p>
+                        <p>Get unmatched insight into prospective deal flow by size, sector, broker, and more with SPS’s analytics platform.<br>
+                            <a href="">Chat with us today</a></p>
+                    </div>
+                    <div class="left-help">
+                        <img src="Chart_2_SPS.png" alt="Chart_1_DealEdge">
+                    </div>
+
+               
+                </div>
+
+            </div>
+
+
+            <div class="single-help-step">
+                <div class="help-step-heading">
+                    <div class="help-step-number">
+                        <img src="step3.webp" alt="setp1">
+                        <span>3</span>
+                    </div>
+                    <h4> Stay focused with our combined power</h4>
+                </div>
+
+                <div class="help-body">
+                    <div class="left-help left-help3">
+                        <img src="Pyramid_Bain_PE_Taxonomy.png" alt="Pyramid_Bain_PE_Taxonomy">
+                    </div>
+
+                    <div class="help-right pyramid-descri">
+                    <p>Top performers know it is essential to match your strategy to your firm’s unique blend of expertise, capabilities, investing style, and size.</p>
+
+                    <p>As part of Bain’s private equity data suite, <strong>DealEdge and SPS are in the final stages of implementing a shared taxonomy</strong> created by Bain experts for the specific needs of private equity.</p>
+                    <p>Their integrated insights mean that you can build a comprehensive and coherent picture of how your strategy fits with market conditions and your investment playbook.</p>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="setp-button">
+                <a href="">Speak to us today to find out more</a>
+            </div>
+
+        </div>
+    </div>
+
+
+    <div class="about-us">
+        <div class="container">
+            <div class="about-us-inner">
+                <div class="about-left">
+                    <h5>About DealEdge
+                    </h5>
+                    <p>DealEdge is the private equity industry’s leading provider of deal-level performance and operational analytics. Cut to a deeper layer of insight across every stage of the private equity lifecycle, with powerful deal-level intelligence powered by data for over 35,000 private equity deals across more than 560 industry subsectors.
+
+                    </p>
+                </div>
+
+                <div class="about-right">
+                    <img src="dealedge-dig-red.webp" width="266" alt="dealedge">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="about-us about-bain">
+        <div class="container">
+            <div class="about-us-inner">
+                <div class="about-left">
+                    <h5>About SPS
+                    </h5>
+                    <p>SPS is an award-winning provider of actionable data and analytics for PE and M&A professionals to optimize their business development and deal sourcing efforts.
+
+
+
+                    </p>
+                </div>
+
+                <div class="about-right">
+                    <img src="SPS-Bain_DIG_Horiz.png" width="260" alt="Bain_DIG_Horiz">
+                </div>
+            </div>
+        </div>
+    </div>
+ 
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                   <a href=""> <img src="dealedge-dig-red.webp" alt="logo"></a>
+                </div>
+                    
+                <div class="footer-nav">
+                    <ul>
+                        <li><a href="https://www.dealedge.com/contact/"> Contact Us </a></li>
+                        <li><a href="https://www.dealedge.com/explore/"> Product </a></li>
+                        <li><a href="https://www.dealedge.com/about/"> About </a></li>
+                        <li><a href="https://www.bain.com/about/privacy/"> Privacy </a></li>
+                        <li><a href="https://www.bain.com/about/cookie-policy/"> Cookie Policy </a></li>
+                    </ul>
+                </div>
+                
+                <div class="copyright">
+                    <p>DealEdge℠ is a service mark of Bain &amp; Company, Inc. and CEPRES GmbH.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+
+    <script>
+        AOS.init();
+      </script>
+      
+</body>
+</html>
